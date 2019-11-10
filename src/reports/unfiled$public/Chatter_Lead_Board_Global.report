@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>User$Name</field>
+    </columns>
+    <columns>
+        <field>User.ChatterActivity$ParentId$InfluenceRawRank</field>
+    </columns>
+    <columns>
+        <field>User.ChatterActivity$ParentId$LikeReceivedCount</field>
+    </columns>
+    <columns>
+        <field>User.ChatterActivity$ParentId$PostCount</field>
+    </columns>
+    <columns>
+        <field>User.ChatterActivity$ParentId$CommentReceivedCount</field>
+    </columns>
+    <columns>
+        <field>User.ChatterActivity$ParentId$CommentCount</field>
+    </columns>
+    <format>Tabular</format>
+    <name>Chatter Lead Board Global</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Chatter_and_Users__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <sortColumn>User.ChatterActivity$ParentId$InfluenceRawRank</sortColumn>
+    <sortOrder>Asc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>User$ChatterAdoptionStageModifiedDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

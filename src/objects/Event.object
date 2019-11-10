@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <compactLayouts>
+        <fullName>Event_Chatter_Publisher_Page_Layout</fullName>
+        <fields>OwnerId</fields>
+        <fields>Subject</fields>
+        <fields>Classification__c</fields>
+        <fields>Event_Type__c</fields>
+        <fields>Classification_Note__c</fields>
+        <fields>WhatId</fields>
+        <fields>WhoId</fields>
+        <fields>StartDateTime</fields>
+        <fields>EndDateTime</fields>
+        <fields>Location</fields>
+        <label>Event Chatter Publisher Page Layout</label>
+    </compactLayouts>
+    <webLinks>
+        <fullName>New_Event</fullName>
+        <availability>online</availability>
+        <displayType>massActionButton</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>New Event</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <requireRowSelection>true</requireRowSelection>
+        <url>window.open(&apos;/00U/e?who_id={!Contact_Role__c.ContactId__c}&amp;what_id={!Contact_Role__c.Id}&amp;retURL=%2F{!Contact_Role__c.Id}&amp;saveURL=%2F{!Contact_Role__c.Id}&apos;, &apos;_parent&apos;)</url>
+    </webLinks>
+</CustomObject>

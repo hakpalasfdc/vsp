@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <fullName>Client_ID__c</fullName>
+        <externalId>false</externalId>
+        <formula>Contact.Client_ID__c</formula>
+        <label>Client ID</label>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Consumer_ID__c</fullName>
+        <externalId>false</externalId>
+        <formula>Contact.Consumer_ID__c</formula>
+        <label>Consumer ID</label>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Contact_Account_Id__c</fullName>
+        <externalId>false</externalId>
+        <formula>Contact.AccountId</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Contact Account Id</label>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Contact_Name__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF( NOT(ISNULL(ContactId)), HYPERLINK(&quot;/&quot; +  Contact.Id  ,  Contact.FirstName  + &apos; &apos; +  Contact.LastName), &quot;&quot;)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Contact Name</label>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Date_of_Birth__c</fullName>
+        <externalId>false</externalId>
+        <formula>Contact.Birthdate__c</formula>
+        <label>Date of Birth</label>
+        <required>false</required>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Drop_Date__c</fullName>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Drop Date</label>
+        <required>false</required>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Gender__c</fullName>
+        <externalId>false</externalId>
+        <formula>Text(Contact.Gender__c)</formula>
+        <label>Gender</label>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Other_Email__c</fullName>
+        <externalId>false</externalId>
+        <formula>Contact.Other_Email__c</formula>
+        <label>Other Email</label>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>sfxId__c</fullName>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>true</externalId>
+        <label>sfxId</label>
+        <length>18</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <webLinks>
+        <fullName>Create_Opportunity2</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>Create Opportunity</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <url>{!REQUIRESCRIPT(&quot;/soap/ajax/34.0/connection.js&quot;)} 
+{!REQUIRESCRIPT(&quot;/soap/ajax/34.0/apex.js&quot;)} 
+
+if(&quot;{!CampaignMember.Id}&quot;!=&apos;&apos;){ 
+
+window.location = &quot;/006/e?nooverride=1&amp;opp3=Auto+Generated&amp;RecordType=012d0000000StQTAA0&amp;retURL=%2F&quot;+&quot;&amp;opp17=&quot;+&quot;{!CampaignMember.Campaign}&quot;+&quot;&amp;opp17_lkid=&quot;+&quot;{!CampaignMember.CampaignId}&quot;+&quot;&amp;opp4=&quot;+&quot;{!CampaignMember.CompanyOrAccount}&quot;+&quot;&amp;opp4_lkid=&quot;+&quot;{!CampaignMember.Contact_Account_Id__c}&quot;+&quot;&amp;retURL=%2F&quot;;
+
+}</url>
+    </webLinks>
+</CustomObject>

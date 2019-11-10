@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ConnectedApp xmlns="http://soap.sforce.com/2006/04/metadata">
+    <contactEmail>kathbo2@vsp.com</contactEmail>
+    <label>Test API Connection</label>
+    <oauthConfig>
+        <callbackUrl>https://schemapukerhealthcloud.herokuapp.com/oauth_response</callbackUrl>
+        <consumerKey>3MVG98EE59.VIHmwphpbDAEk38GuNnxx4a4ApoR8wdVyKeSutfnFEg5CluyTfrAB9jPT.qHNUdnrRkEWSWEJc</consumerKey>
+        <isAdminApproved>false</isAdminApproved>
+        <scopes>Api</scopes>
+        <scopes>Full</scopes>
+        <scopes>RefreshToken</scopes>
+    </oauthConfig>
+</ConnectedApp>

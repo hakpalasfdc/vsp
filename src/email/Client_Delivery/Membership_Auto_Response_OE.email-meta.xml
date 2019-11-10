@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Auto response for open enrollment</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Membership Auto Response OE</name>
+    <style>none</style>
+    <subject>We have received your Membership Request</subject>
+    <textOnly>Thank you for contacting the VSP EDI Enrollment Integration Team; your inquiry is very important to us. Your request has been received and will be processed within 3-5 business days.
+
+If you are inquiring about the file receipt and/or load, please allow 24 hours for the Electronic Verification Report (EVR) to be generated, which will serve as confirmation of the file load.
+
+For urgent inquiries, you may reach us directly at 877-396-8940. Please reference case number {!Case.CaseNumber} to expedite your call.
+
+We have two options for OE this year, please let us know which one of these options you will use and provide dates if necessary. Attached is an FAQ that should assist you with our 2019 Open Enrollment Process. Please be sure to read the FAQs completely prior to determining the process that will work best for your organization. OE files may not be received prior to November 15, 2018.
+
+Option 1:You may continue to send us 2018 data until the 23rd of December
+
+Send a separate OE file any time prior to the 23rd.
+The OE file should be a full file that contains all of your 2019 elections.
+The OE file name should be: oexxxxxxx (ex. oe1234567)
+Once your OE file is received, VSP will run a test against our database and the results will be sent to you – it is important that you review your results for discrepancies prior to your OE file loading to ensure the data is correct.
+The term by omission date will be 12/31/18; coverage level changes will be effective 01/01/19
+VSP will hold your OE file until December 26th and your file will process between December 26th and December 31st.
+Once your OE file has loaded, we will not be able to process additional files.
+You can resume sending your ongoing eligibility files as of 1/2/19.
+For any urgent manual updates, you can utilize the Client Portal at www.vsp.com
+
+Option 2:This option is based on when you plan to send your last 2018 production file. Please be certain that your file will be sent on the date you provide. If you are unsure, you should extend your date by 1-2 days. If your file is sent after the date provided it will not process.
+
+You will be required to provide VSP with:
+
+The date you will transmit your last 2018 file Date of last file: ____________________
+The date you plan to send your OE file Date of OE File: _________________
+OE file name should be: oexxxxxxx (ex. oe1234567)
+The OE file must be a full file that contains all of your 2019 elections
+Note: If you plan to send your OE file after your last 2018 file please include a 3 day lag between your file transmission dates
+Continue to send us 2018 data until your last 2018 file date occurs
+If your OE is received prior to your last 2018 file; VSP will run a test against our system and the results will be sent to you - it is important that you review your results for discrepancies prior to your OE file loading to ensure the data is correct.
+The term by omission date will be 12/31/18; coverage level changes will be effective 01/01/19
+Your OE file will load after the last 2018 file date
+The term by omission date will be 12/31/18; coverage level changes will be effective 01/01/19
+Once your OE file has loaded, we will not be able to process additional files
+You can resume sending your ongoing eligibility files as of 1/2/19.
+For any urgent manual updates, you can utilize the Client Portal at www.vsp.com
+
+Again, please review the FAQ’s to assist you with understanding our OE process. Please feel free to reach out with additional questions.</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <fullName>Pre_Chat_Date_of_Birth__c</fullName>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Pre-Chat Date of Birth</label>
+        <length>10</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Pre_Chat_Email_Address__c</fullName>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Pre-Chat Email Address</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Email</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Pre_Chat_First_Name__c</fullName>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Pre-Chat First Name</label>
+        <length>80</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Pre_Chat_Last_Name__c</fullName>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Pre-Chat Last Name</label>
+        <length>80</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Pre_Chat_Order_Number__c</fullName>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Pre-Chat Order Number</label>
+        <length>80</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Pre_Chat_Subject__c</fullName>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Pre-Chat Subject</label>
+        <length>80</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Relation_to_Member__c</fullName>
+        <encryptionScheme>None</encryptionScheme>
+        <externalId>false</externalId>
+        <label>Pre-Chat Relation to Member</label>
+        <length>80</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <listViews>
+        <fullName>All_Live_Chat_Transcripts</fullName>
+        <columns>Name</columns>
+        <columns>LiveChatVisitor</columns>
+        <columns>Case</columns>
+        <columns>StartTime</columns>
+        <columns>EndTime</columns>
+        <columns>Status</columns>
+        <columns>Skill</columns>
+        <columns>Owner</columns>
+        <columns>Contact</columns>
+        <columns>Pre_Chat_Date_of_Birth__c</columns>
+        <columns>Pre_Chat_Email_Address__c</columns>
+        <columns>LiveChatButton</columns>
+        <filterScope>Everything</filterScope>
+        <label>All Live Chat Transcripts</label>
+    </listViews>
+    <listViews>
+        <fullName>LiveChat_Transcripts_No_Contact</fullName>
+        <columns>Name</columns>
+        <columns>LiveChatVisitor</columns>
+        <columns>Case</columns>
+        <columns>StartTime</columns>
+        <columns>EndTime</columns>
+        <columns>Status</columns>
+        <columns>Skill</columns>
+        <columns>Owner</columns>
+        <columns>Contact</columns>
+        <columns>Pre_Chat_Date_of_Birth__c</columns>
+        <columns>Pre_Chat_Email_Address__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Contact</field>
+            <operation>equals</operation>
+        </filters>
+        <filters>
+            <field>CreatedDate</field>
+            <operation>greaterThan</operation>
+            <value>5/3/2018 12:00 AM</value>
+        </filters>
+        <label>LiveChat Transcripts No Contact</label>
+    </listViews>
+    <listViews>
+        <fullName>Live_Agent_External_Routing_Queue_LiveChatTranscript</fullName>
+        <filterScope>Queue</filterScope>
+        <label>Live Agent External Routing Queue</label>
+        <queue>Live_Agent_External_Routing_Queue</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>MetLife_LiveChat_Transcripts</fullName>
+        <columns>Name</columns>
+        <columns>LiveChatVisitor</columns>
+        <columns>Case</columns>
+        <columns>StartTime</columns>
+        <columns>EndTime</columns>
+        <columns>Status</columns>
+        <columns>Skill</columns>
+        <columns>Owner</columns>
+        <columns>Contact</columns>
+        <columns>Pre_Chat_Date_of_Birth__c</columns>
+        <columns>Pre_Chat_Email_Address__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>LiveChatButton</field>
+            <operation>equals</operation>
+            <value>MetLife CC</value>
+        </filters>
+        <label>MetLife LiveChat Transcripts</label>
+    </listViews>
+    <listViews>
+        <fullName>Omni_Channel_Test_LiveChatTranscript</fullName>
+        <filterScope>Queue</filterScope>
+        <label>Omni Channel Chat Test</label>
+        <queue>Omni_Channel_Chat_Test</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>VB_Live_Chat_Transcripts</fullName>
+        <columns>Name</columns>
+        <columns>LiveChatVisitor</columns>
+        <columns>Case</columns>
+        <columns>StartTime</columns>
+        <columns>EndTime</columns>
+        <columns>Status</columns>
+        <columns>Skill</columns>
+        <columns>Owner</columns>
+        <columns>Contact</columns>
+        <columns>Pre_Chat_Date_of_Birth__c</columns>
+        <columns>Pre_Chat_Email_Address__c</columns>
+        <columns>LiveChatButton</columns>
+        <filterScope>Everything</filterScope>
+        <label>VB Live Chat Transcripts</label>
+    </listViews>
+</CustomObject>

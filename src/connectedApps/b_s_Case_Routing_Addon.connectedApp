@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ConnectedApp xmlns="http://soap.sforce.com/2006/04/metadata">
+    <contactEmail>melinda.cordell@vsp.com</contactEmail>
+    <label>b+s Case Routing Addon</label>
+    <oauthConfig>
+        <callbackUrl>https://login.salesforce.com/services/eauth2/callback</callbackUrl>
+        <consumerKey>3MVG98EE59.VIHmwphpbDAEk38GuNnxx4a4ApQ3D8pdzPuwU281FoacroQ4z94VK2FbVLh.0rFYCUpTfYlqMw</consumerKey>
+        <isAdminApproved>false</isAdminApproved>
+        <scopes>Api</scopes>
+    </oauthConfig>
+</ConnectedApp>

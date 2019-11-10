@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <fullName>LOB__c</fullName>
+        <externalId>false</externalId>
+        <label>LOB</label>
+        <required>true</required>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Altair</fullName>
+                    <default>false</default>
+                    <label>Altair</label>
+                </value>
+                <value>
+                    <fullName>Marchon</fullName>
+                    <default>false</default>
+                    <label>Marchon</label>
+                </value>
+                <value>
+                    <fullName>Omni-Channel Solutions</fullName>
+                    <default>false</default>
+                    <label>Omni-Channel Solutions</label>
+                </value>
+                <value>
+                    <fullName>Optics Group</fullName>
+                    <default>false</default>
+                    <label>Optics Group</label>
+                </value>
+                <value>
+                    <fullName>Vision Care</fullName>
+                    <default>false</default>
+                    <label>Vision Care</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Requestors_Name__c</fullName>
+        <externalId>false</externalId>
+        <formula>$User.FirstName + &quot; &quot; +  $User.LastName</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Requestor&apos;s Name</label>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <listViews>
+        <fullName>Coming_Soon_and_Now_Available</fullName>
+        <columns>IDEA.TITLE</columns>
+        <columns>IDEA.STATUS</columns>
+        <columns>VOTE_STATS.WEIGHTED_SUM</columns>
+        <columns>IDEA.NUM_COMMENTS</columns>
+        <columns>IDEA.CREATED_BY_NICKNAME</columns>
+        <columns>IDEA.CREATED_DATE</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>IDEA.STATUS</field>
+            <operation>equals</operation>
+            <value>Coming Soon,Now Available</value>
+        </filters>
+        <label>Coming Soon and Now Available</label>
+    </listViews>
+    <listViews>
+        <fullName>Deferred_Feedback</fullName>
+        <columns>IDEA.TITLE</columns>
+        <columns>IDEA.STATUS</columns>
+        <columns>VOTE_STATS.WEIGHTED_SUM</columns>
+        <columns>IDEA.NUM_COMMENTS</columns>
+        <columns>IDEA.CREATED_BY_NICKNAME</columns>
+        <columns>IDEA.CREATED_DATE</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>IDEA.STATUS</field>
+            <operation>equals</operation>
+            <value>Deferred</value>
+        </filters>
+        <label>Deferred</label>
+    </listViews>
+    <listViews>
+        <fullName>Feedback_that_Needs_Follow_Up</fullName>
+        <columns>IDEA.TITLE</columns>
+        <columns>IDEA.STATUS</columns>
+        <columns>VOTE_STATS.WEIGHTED_SUM</columns>
+        <columns>IDEA.NUM_COMMENTS</columns>
+        <columns>IDEA.CREATED_BY_NICKNAME</columns>
+        <columns>IDEA.CREATED_DATE</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>IDEA.STATUS</field>
+            <operation>equals</operation>
+            <value>New,Under Review</value>
+        </filters>
+        <label>Needs Follow Up</label>
+    </listViews>
+    <listViews>
+        <fullName>Needs_Follow_Up</fullName>
+        <columns>IDEA.TITLE</columns>
+        <columns>IDEA.STATUS</columns>
+        <columns>VOTE_STATS.WEIGHTED_SUM</columns>
+        <columns>IDEA.NUM_COMMENTS</columns>
+        <columns>IDEA.CREATED_BY_NICKNAME</columns>
+        <columns>IDEA.CREATED_DATE</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>IDEA.STATUS</field>
+            <operation>equals</operation>
+            <value>New,Under Review,Coming Soon,Now Available</value>
+        </filters>
+        <label>Needs Follow Up</label>
+    </listViews>
+    <listViews>
+        <fullName>Needs_Follow_Up1</fullName>
+        <columns>IDEA.TITLE</columns>
+        <columns>IDEA.STATUS</columns>
+        <columns>VOTE_STATS.WEIGHTED_SUM</columns>
+        <columns>IDEA.NUM_COMMENTS</columns>
+        <columns>IDEA.CREATED_BY_NICKNAME</columns>
+        <columns>IDEA.CREATED_DATE</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>IDEA.STATUS</field>
+            <operation>equals</operation>
+            <value>Coming Soon,New,Under Review</value>
+        </filters>
+        <label>Needs Follow Up</label>
+    </listViews>
+    <listViews>
+        <fullName>Not_Feasible</fullName>
+        <columns>IDEA.TITLE</columns>
+        <columns>IDEA.STATUS</columns>
+        <columns>VOTE_STATS.WEIGHTED_SUM</columns>
+        <columns>IDEA.NUM_COMMENTS</columns>
+        <columns>IDEA.CREATED_BY_NICKNAME</columns>
+        <columns>IDEA.CREATED_DATE</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>IDEA.STATUS</field>
+            <operation>equals</operation>
+            <value>Not Feasible</value>
+        </filters>
+        <label>Not Feasible</label>
+    </listViews>
+    <validationRules>
+        <fullName>Catagories_less_then_2_picklist_val</fullName>
+        <active>true</active>
+        <errorConditionFormula>IF(Includes(Categories,&quot;Training&quot;),1,0)+
+IF(Includes(Categories,&quot;System Issues&quot;),1,0)+
+IF(Includes(Categories,&quot;Support&quot;),1,0)+
+IF(Includes(Categories,&quot;Future Enhancements&quot;),1,0)+
+IF(includes(Categories,&quot;Reporting&quot;),1,0)&gt;1</errorConditionFormula>
+        <errorMessage>You may only select one category for this Idea.  Use a new post for additional feedback.</errorMessage>
+    </validationRules>
+</CustomObject>

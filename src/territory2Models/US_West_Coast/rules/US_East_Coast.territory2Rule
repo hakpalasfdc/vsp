@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Territory2Rule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <name>US East Coast</name>
+    <objectType>Account</objectType>
+    <ruleItems>
+        <field>Account.ShippingState</field>
+        <operation>equals</operation>
+        <value>,ME,VT,NH,MA,NY,MA,CT,PA,NJ,DE,RI,MD,WV,VA,TN,NC</value>
+    </ruleItems>
+</Territory2Rule>

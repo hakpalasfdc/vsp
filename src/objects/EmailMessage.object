@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <fullName>Case_Owner_Queue__c</fullName>
+        <externalId>false</externalId>
+        <formula>Parent.Owner:Queue.DeveloperName</formula>
+        <label>Case Owner Queue</label>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+</CustomObject>
