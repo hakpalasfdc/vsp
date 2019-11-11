@@ -3901,6 +3901,11 @@
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
+        <editable>false</editable>
+        <field>Address__c.Test_SMOD_Flag__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
+    <fieldPermissions>
         <editable>true</editable>
         <field>Address__c.Zip__c</field>
         <readable>true</readable>

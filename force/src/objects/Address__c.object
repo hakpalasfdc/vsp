@@ -202,6 +202,15 @@
         <unique>false</unique>
     </fields>
     <fields>
+        <fullName>Test_SMOD_Flag__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Test SMOD Flag</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
         <fullName>Zip__c</fullName>
         <encrypted>false</encrypted>
         <externalId>false</externalId>

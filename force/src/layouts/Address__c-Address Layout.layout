@@ -36,6 +36,10 @@
                 <behavior>Edit</behavior>
                 <field>Country__c</field>
             </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>Test_SMOD_Flag__c</field>
+            </layoutItems>
         </layoutColumns>
         <layoutColumns>
             <layoutItems>
