@@ -4,7 +4,7 @@
     <enableFeeds>false</enableFeeds>
     <fields>
         <fullName>Id__c</fullName>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <label>Id</label>
         <length>255</length>

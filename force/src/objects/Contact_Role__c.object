@@ -5,27 +5,7 @@
         <type>Default</type>
     </actionOverrides>
     <actionOverrides>
-        <actionName>Accept</actionName>
-        <formFactor>Large</formFactor>
-        <type>Default</type>
-    </actionOverrides>
-    <actionOverrides>
-        <actionName>Accept</actionName>
-        <formFactor>Small</formFactor>
-        <type>Default</type>
-    </actionOverrides>
-    <actionOverrides>
         <actionName>CancelEdit</actionName>
-        <type>Default</type>
-    </actionOverrides>
-    <actionOverrides>
-        <actionName>CancelEdit</actionName>
-        <formFactor>Large</formFactor>
-        <type>Default</type>
-    </actionOverrides>
-    <actionOverrides>
-        <actionName>CancelEdit</actionName>
-        <formFactor>Small</formFactor>
         <type>Default</type>
     </actionOverrides>
     <actionOverrides>
@@ -33,27 +13,7 @@
         <type>Default</type>
     </actionOverrides>
     <actionOverrides>
-        <actionName>Clone</actionName>
-        <formFactor>Large</formFactor>
-        <type>Default</type>
-    </actionOverrides>
-    <actionOverrides>
-        <actionName>Clone</actionName>
-        <formFactor>Small</formFactor>
-        <type>Default</type>
-    </actionOverrides>
-    <actionOverrides>
         <actionName>Delete</actionName>
-        <type>Default</type>
-    </actionOverrides>
-    <actionOverrides>
-        <actionName>Delete</actionName>
-        <formFactor>Large</formFactor>
-        <type>Default</type>
-    </actionOverrides>
-    <actionOverrides>
-        <actionName>Delete</actionName>
-        <formFactor>Small</formFactor>
         <type>Default</type>
     </actionOverrides>
     <actionOverrides>
@@ -61,27 +21,7 @@
         <type>Default</type>
     </actionOverrides>
     <actionOverrides>
-        <actionName>Edit</actionName>
-        <formFactor>Large</formFactor>
-        <type>Default</type>
-    </actionOverrides>
-    <actionOverrides>
-        <actionName>Edit</actionName>
-        <formFactor>Small</formFactor>
-        <type>Default</type>
-    </actionOverrides>
-    <actionOverrides>
         <actionName>List</actionName>
-        <type>Default</type>
-    </actionOverrides>
-    <actionOverrides>
-        <actionName>List</actionName>
-        <formFactor>Large</formFactor>
-        <type>Default</type>
-    </actionOverrides>
-    <actionOverrides>
-        <actionName>List</actionName>
-        <formFactor>Small</formFactor>
         <type>Default</type>
     </actionOverrides>
     <actionOverrides>
@@ -89,27 +29,7 @@
         <type>Default</type>
     </actionOverrides>
     <actionOverrides>
-        <actionName>New</actionName>
-        <formFactor>Large</formFactor>
-        <type>Default</type>
-    </actionOverrides>
-    <actionOverrides>
-        <actionName>New</actionName>
-        <formFactor>Small</formFactor>
-        <type>Default</type>
-    </actionOverrides>
-    <actionOverrides>
         <actionName>SaveEdit</actionName>
-        <type>Default</type>
-    </actionOverrides>
-    <actionOverrides>
-        <actionName>SaveEdit</actionName>
-        <formFactor>Large</formFactor>
-        <type>Default</type>
-    </actionOverrides>
-    <actionOverrides>
-        <actionName>SaveEdit</actionName>
-        <formFactor>Small</formFactor>
         <type>Default</type>
     </actionOverrides>
     <actionOverrides>
@@ -117,27 +37,7 @@
         <type>Default</type>
     </actionOverrides>
     <actionOverrides>
-        <actionName>Tab</actionName>
-        <formFactor>Large</formFactor>
-        <type>Default</type>
-    </actionOverrides>
-    <actionOverrides>
-        <actionName>Tab</actionName>
-        <formFactor>Small</formFactor>
-        <type>Default</type>
-    </actionOverrides>
-    <actionOverrides>
         <actionName>View</actionName>
-        <type>Default</type>
-    </actionOverrides>
-    <actionOverrides>
-        <actionName>View</actionName>
-        <formFactor>Large</formFactor>
-        <type>Default</type>
-    </actionOverrides>
-    <actionOverrides>
-        <actionName>View</actionName>
-        <formFactor>Small</formFactor>
         <type>Default</type>
     </actionOverrides>
     <allowInChatterGroups>false</allowInChatterGroups>
@@ -145,10 +45,10 @@
     <deploymentStatus>Deployed</deploymentStatus>
     <enableActivities>true</enableActivities>
     <enableBulkApi>true</enableBulkApi>
+    <enableChangeDataCapture>false</enableChangeDataCapture>
     <enableEnhancedLookup>true</enableEnhancedLookup>
     <enableFeeds>false</enableFeeds>
     <enableHistory>true</enableHistory>
-    <enableLicensing>false</enableLicensing>
     <enableReports>true</enableReports>
     <enableSearch>true</enableSearch>
     <enableSharing>true</enableSharing>
@@ -324,7 +224,7 @@ LPAD(TEXT(DAY(Account__r.Vision_Care_End_Date__c)),2,&apos;0&apos;)
     </fields>
     <fields>
         <fullName>Contact_Name__c</fullName>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <label>Contact Name</label>
         <length>150</length>
@@ -360,7 +260,7 @@ LPAD(TEXT(DAY(Account__r.Vision_Care_End_Date__c)),2,&apos;0&apos;)
     </fields>
     <fields>
         <fullName>Contact_Role_Phone__c</fullName>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <label>Role Phone</label>
         <required>false</required>
@@ -438,7 +338,7 @@ LPAD(TEXT(DAY(Contact__r.Vision_Care_End_Date__c)),2,&apos;0&apos;)
     <fields>
         <fullName>DS_Altair_Rep_ID__c</fullName>
         <description>Contains all the Altair Rep User IDs</description>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <label>DS Altair Rep IDs</label>
         <length>90</length>
@@ -463,7 +363,7 @@ LPAD(TEXT(DAY(Contact__r.Vision_Care_End_Date__c)),2,&apos;0&apos;)
     </fields>
     <fields>
         <fullName>DS_Date_of_Last_Dispo__c</fullName>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <label>DS Date of Last Dispo</label>
         <required>false</required>
@@ -474,7 +374,7 @@ LPAD(TEXT(DAY(Contact__r.Vision_Care_End_Date__c)),2,&apos;0&apos;)
     <fields>
         <fullName>DS_Datetime_of_Last_Disposition__c</fullName>
         <description>DialSource V3 &quot;Datetime of Last Disposition&quot; field for the Contact Role custom object</description>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <label>DS Datetime of Last Disposition</label>
         <required>false</required>
@@ -484,7 +384,7 @@ LPAD(TEXT(DAY(Contact__r.Vision_Care_End_Date__c)),2,&apos;0&apos;)
     </fields>
     <fields>
         <fullName>DS_Last_Call_List_Name__c</fullName>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <label>DS Last Call List Name</label>
         <length>255</length>
@@ -497,7 +397,7 @@ LPAD(TEXT(DAY(Contact__r.Vision_Care_End_Date__c)),2,&apos;0&apos;)
     <fields>
         <fullName>DS_Last_Disposition__c</fullName>
         <description>DialSource V3 &quot;Last Disposition&quot; field for the Contact Role custom object</description>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <label>DS Last Disposition</label>
         <length>140</length>
@@ -509,7 +409,7 @@ LPAD(TEXT(DAY(Contact__r.Vision_Care_End_Date__c)),2,&apos;0&apos;)
     </fields>
     <fields>
         <fullName>DS_Pending_Event_Date__c</fullName>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <label>DS Pending Event Date</label>
         <required>false</required>
@@ -519,7 +419,7 @@ LPAD(TEXT(DAY(Contact__r.Vision_Care_End_Date__c)),2,&apos;0&apos;)
     </fields>
     <fields>
         <fullName>DS_Pending_Task_Date__c</fullName>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <label>DS Pending Task Date</label>
         <required>false</required>
@@ -601,7 +501,7 @@ LPAD(TEXT(DAY(Contact__r.Vision_Care_End_Date__c)),2,&apos;0&apos;)
     </fields>
     <fields>
         <fullName>End_Date__c</fullName>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <label>End Date</label>
         <required>false</required>
@@ -633,7 +533,7 @@ LPAD(TEXT(DAY(Contact__r.Vision_Care_End_Date__c)),2,&apos;0&apos;)
     </fields>
     <fields>
         <fullName>Fee_Code__c</fullName>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <label>Fee Code</label>
         <length>2</length>
@@ -807,7 +707,7 @@ LPAD(TEXT(DAY(Contact__r.Vision_Care_End_Date__c)),2,&apos;0&apos;)
     <fields>
         <fullName>Provider_NPI__c</fullName>
         <description>NPI of associated Contact record.</description>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <label>Provider NPI</label>
         <length>10</length>
@@ -821,7 +721,7 @@ LPAD(TEXT(DAY(Contact__r.Vision_Care_End_Date__c)),2,&apos;0&apos;)
         <fullName>SFDC_Combo_Key__c</fullName>
         <caseSensitive>true</caseSensitive>
         <description>Used by integration to uniquely identify a Contact role object since DataStage is having issues using 2 fields as unique key.</description>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>true</externalId>
         <label>SFDC Combo Key</label>
         <length>50</length>
@@ -834,7 +734,7 @@ LPAD(TEXT(DAY(Contact__r.Vision_Care_End_Date__c)),2,&apos;0&apos;)
     <fields>
         <fullName>Start_Date__c</fullName>
         <defaultValue>Today()</defaultValue>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <label>Start Date</label>
         <required>true</required>
@@ -892,7 +792,7 @@ LPAD(TEXT(DAY(Contact__r.Vision_Care_End_Date__c)),2,&apos;0&apos;)
     <fields>
         <fullName>Task__c</fullName>
         <defaultValue>$Organization.Id</defaultValue>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <label>Task</label>
         <required>false</required>
@@ -1081,7 +981,7 @@ LPAD(TEXT(DAY(Contact__r.Vision_Care_End_Date__c)),2,&apos;0&apos;)
     </fields>
     <fields>
         <fullName>sfxId__c</fullName>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>true</externalId>
         <label>sfxId</label>
         <length>18</length>

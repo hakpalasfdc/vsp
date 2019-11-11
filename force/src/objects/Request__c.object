@@ -5,27 +5,7 @@
         <type>Default</type>
     </actionOverrides>
     <actionOverrides>
-        <actionName>Accept</actionName>
-        <formFactor>Large</formFactor>
-        <type>Default</type>
-    </actionOverrides>
-    <actionOverrides>
-        <actionName>Accept</actionName>
-        <formFactor>Small</formFactor>
-        <type>Default</type>
-    </actionOverrides>
-    <actionOverrides>
         <actionName>CancelEdit</actionName>
-        <type>Default</type>
-    </actionOverrides>
-    <actionOverrides>
-        <actionName>CancelEdit</actionName>
-        <formFactor>Large</formFactor>
-        <type>Default</type>
-    </actionOverrides>
-    <actionOverrides>
-        <actionName>CancelEdit</actionName>
-        <formFactor>Small</formFactor>
         <type>Default</type>
     </actionOverrides>
     <actionOverrides>
@@ -33,27 +13,7 @@
         <type>Default</type>
     </actionOverrides>
     <actionOverrides>
-        <actionName>Clone</actionName>
-        <formFactor>Large</formFactor>
-        <type>Default</type>
-    </actionOverrides>
-    <actionOverrides>
-        <actionName>Clone</actionName>
-        <formFactor>Small</formFactor>
-        <type>Default</type>
-    </actionOverrides>
-    <actionOverrides>
         <actionName>Delete</actionName>
-        <type>Default</type>
-    </actionOverrides>
-    <actionOverrides>
-        <actionName>Delete</actionName>
-        <formFactor>Large</formFactor>
-        <type>Default</type>
-    </actionOverrides>
-    <actionOverrides>
-        <actionName>Delete</actionName>
-        <formFactor>Small</formFactor>
         <type>Default</type>
     </actionOverrides>
     <actionOverrides>
@@ -61,27 +21,7 @@
         <type>Default</type>
     </actionOverrides>
     <actionOverrides>
-        <actionName>Edit</actionName>
-        <formFactor>Large</formFactor>
-        <type>Default</type>
-    </actionOverrides>
-    <actionOverrides>
-        <actionName>Edit</actionName>
-        <formFactor>Small</formFactor>
-        <type>Default</type>
-    </actionOverrides>
-    <actionOverrides>
         <actionName>List</actionName>
-        <type>Default</type>
-    </actionOverrides>
-    <actionOverrides>
-        <actionName>List</actionName>
-        <formFactor>Large</formFactor>
-        <type>Default</type>
-    </actionOverrides>
-    <actionOverrides>
-        <actionName>List</actionName>
-        <formFactor>Small</formFactor>
         <type>Default</type>
     </actionOverrides>
     <actionOverrides>
@@ -89,27 +29,7 @@
         <type>Default</type>
     </actionOverrides>
     <actionOverrides>
-        <actionName>New</actionName>
-        <formFactor>Large</formFactor>
-        <type>Default</type>
-    </actionOverrides>
-    <actionOverrides>
-        <actionName>New</actionName>
-        <formFactor>Small</formFactor>
-        <type>Default</type>
-    </actionOverrides>
-    <actionOverrides>
         <actionName>SaveEdit</actionName>
-        <type>Default</type>
-    </actionOverrides>
-    <actionOverrides>
-        <actionName>SaveEdit</actionName>
-        <formFactor>Large</formFactor>
-        <type>Default</type>
-    </actionOverrides>
-    <actionOverrides>
-        <actionName>SaveEdit</actionName>
-        <formFactor>Small</formFactor>
         <type>Default</type>
     </actionOverrides>
     <actionOverrides>
@@ -117,27 +37,7 @@
         <type>Default</type>
     </actionOverrides>
     <actionOverrides>
-        <actionName>Tab</actionName>
-        <formFactor>Large</formFactor>
-        <type>Default</type>
-    </actionOverrides>
-    <actionOverrides>
-        <actionName>Tab</actionName>
-        <formFactor>Small</formFactor>
-        <type>Default</type>
-    </actionOverrides>
-    <actionOverrides>
         <actionName>View</actionName>
-        <type>Default</type>
-    </actionOverrides>
-    <actionOverrides>
-        <actionName>View</actionName>
-        <formFactor>Large</formFactor>
-        <type>Default</type>
-    </actionOverrides>
-    <actionOverrides>
-        <actionName>View</actionName>
-        <formFactor>Small</formFactor>
         <type>Default</type>
     </actionOverrides>
     <allowInChatterGroups>false</allowInChatterGroups>
@@ -146,10 +46,10 @@
     <description>TOOLKIT - An object that represents a set of features that provides the ability to handle a capability.</description>
     <enableActivities>false</enableActivities>
     <enableBulkApi>true</enableBulkApi>
+    <enableChangeDataCapture>false</enableChangeDataCapture>
     <enableEnhancedLookup>false</enableEnhancedLookup>
     <enableFeeds>true</enableFeeds>
     <enableHistory>true</enableHistory>
-    <enableLicensing>false</enableLicensing>
     <enableReports>true</enableReports>
     <enableSearch>true</enableSearch>
     <enableSharing>true</enableSharing>
@@ -157,7 +57,7 @@
     <externalSharingModel>ReadWrite</externalSharingModel>
     <fields>
         <fullName>Acceptance_Criteria__c</fullName>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <label>Acceptance Criteria</label>
         <length>4000</length>
@@ -169,7 +69,7 @@
     </fields>
     <fields>
         <fullName>Actual_Build_End__c</fullName>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <label>Actual Build End</label>
         <required>false</required>
@@ -180,7 +80,7 @@
     </fields>
     <fields>
         <fullName>Actual_Build_Start__c</fullName>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <label>Actual Build Start</label>
         <required>false</required>
@@ -236,7 +136,7 @@
     </fields>
     <fields>
         <fullName>Build_CRP__c</fullName>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <label>Build CRP</label>
         <length>128</length>
@@ -249,7 +149,7 @@
     </fields>
     <fields>
         <fullName>Build_Comments__c</fullName>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <label>Build Comments</label>
         <length>32000</length>
@@ -261,7 +161,7 @@
     </fields>
     <fields>
         <fullName>Build_Grouping__c</fullName>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <label>Build Grouping</label>
         <length>25</length>
@@ -435,7 +335,7 @@ High: Aligns to More than Two Defined Business Drivers</inlineHelpText>
     </fields>
     <fields>
         <fullName>Business_Justification__c</fullName>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <label>Business Justification</label>
         <length>255</length>
@@ -448,7 +348,7 @@ High: Aligns to More than Two Defined Business Drivers</inlineHelpText>
     </fields>
     <fields>
         <fullName>Business_Process_Step__c</fullName>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <label>Business Process Step</label>
         <length>255</length>
@@ -665,7 +565,7 @@ Ongoing Maintenance: Activities that need to be performed regularly</inlineHelpT
     </fields>
     <fields>
         <fullName>Client_Request_ID__c</fullName>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <label>Client Request ID</label>
         <length>20</length>
@@ -784,7 +684,7 @@ Ongoing Maintenance: Activities that need to be performed regularly</inlineHelpT
     </fields>
     <fields>
         <fullName>Comments__c</fullName>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <label>Comments</label>
         <length>32000</length>
@@ -796,7 +696,7 @@ Ongoing Maintenance: Activities that need to be performed regularly</inlineHelpT
     </fields>
     <fields>
         <fullName>Communication_Impact__c</fullName>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <label>Communication Impact</label>
         <length>32768</length>
@@ -833,7 +733,7 @@ Ongoing Maintenance: Activities that need to be performed regularly</inlineHelpT
     </fields>
     <fields>
         <fullName>Deployment_Planning_Impact__c</fullName>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <label>Deployment Planning Impact</label>
         <length>32768</length>
@@ -861,7 +761,7 @@ Ongoing Maintenance: Activities that need to be performed regularly</inlineHelpT
     </fields>
     <fields>
         <fullName>Design_CRP__c</fullName>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <label>Design CRP</label>
         <length>128</length>
@@ -885,7 +785,7 @@ Ongoing Maintenance: Activities that need to be performed regularly</inlineHelpT
     </fields>
     <fields>
         <fullName>Estimate_Assumption__c</fullName>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <label>Estimate Assumption</label>
         <required>false</required>
@@ -896,7 +796,7 @@ Ongoing Maintenance: Activities that need to be performed regularly</inlineHelpT
     </fields>
     <fields>
         <fullName>Functional_Description__c</fullName>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <inlineHelpText>Include information about the impacts the functionality will have to the end user. Specifically, what they will see on the interface, how often the data will be updated, etc.</inlineHelpText>
         <label>Functional Description</label>
@@ -939,7 +839,7 @@ Ongoing Maintenance: Activities that need to be performed regularly</inlineHelpT
     </fields>
     <fields>
         <fullName>JIRA_Issue__c</fullName>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <label>JIRA Issue</label>
         <length>255</length>
@@ -1197,7 +1097,7 @@ High: Benefits All LOBs</inlineHelpText>
     <fields>
         <fullName>Objects_Affected__c</fullName>
         <description>List of objects modified in order to meet the requirements</description>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <inlineHelpText>List of objects modified in order to meet the requirements</inlineHelpText>
         <label>Objects Affected</label>
@@ -1224,7 +1124,7 @@ High: Benefits All LOBs</inlineHelpText>
     </fields>
     <fields>
         <fullName>Overall_Priority__c</fullName>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <inlineHelpText>Value is calculated based on the value in the Total Priority Ranking field: 
 High = Any value greater than or equal to 2.50 
@@ -1252,7 +1152,7 @@ Low = Any value less than 1.50</inlineHelpText>
     </fields>
     <fields>
         <fullName>Planned_Build_Complete__c</fullName>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <label>Planned Build End</label>
         <required>false</required>
@@ -1263,7 +1163,7 @@ Low = Any value less than 1.50</inlineHelpText>
     </fields>
     <fields>
         <fullName>Planned_Build_Start__c</fullName>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <label>Planned Build Start</label>
         <required>false</required>
@@ -1290,7 +1190,7 @@ Low = Any value less than 1.50</inlineHelpText>
     </fields>
     <fields>
         <fullName>Post_Deployment_Instructions__c</fullName>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <label>Post-Deployment Instructions</label>
         <required>false</required>
@@ -1301,7 +1201,7 @@ Low = Any value less than 1.50</inlineHelpText>
     </fields>
     <fields>
         <fullName>Pre_Deployment_Instructions__c</fullName>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <label>Pre-Deployment Instructions</label>
         <required>false</required>
@@ -1570,7 +1470,7 @@ Low = Any value less than 1.50</inlineHelpText>
     <fields>
         <fullName>Request_Description__c</fullName>
         <description>Gathers further details for requirements.</description>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <inlineHelpText>Detailed Summary* 
 Screen(s) Impacted* 
@@ -1594,7 +1494,7 @@ Data Volumes
     <fields>
         <fullName>Request_Title__c</fullName>
         <description>Captures the requirement title</description>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <inlineHelpText>Captures the requirement title</inlineHelpText>
         <label>Request Statement</label>
@@ -1831,7 +1731,7 @@ Data Volumes
     </fields>
     <fields>
         <fullName>Security_Notes__c</fullName>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <label>Security Notes</label>
         <length>32768</length>
@@ -1843,7 +1743,7 @@ Data Volumes
     </fields>
     <fields>
         <fullName>Source__c</fullName>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <label>Source</label>
         <length>120</length>
@@ -2273,7 +2173,7 @@ Data Volumes
     </fields>
     <fields>
         <fullName>Technical_Description__c</fullName>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <label>Technical Description</label>
         <length>4000</length>
@@ -2285,7 +2185,7 @@ Data Volumes
     </fields>
     <fields>
         <fullName>Test_Comments__c</fullName>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <label>Test Comments</label>
         <length>255</length>
@@ -2428,7 +2328,7 @@ Low = Any value less than 1.50</inlineHelpText>
     <fields>
         <fullName>Training_Impact__c</fullName>
         <description>Used to describe potential change management implications and training needs.</description>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <label>Training Impact</label>
         <required>false</required>

@@ -1,5 +1,85 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>CallHighlightAction</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>EmailHighlightAction</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>EnableCustomerPortalUser</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>ListClean</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>RequestUpdate</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SmsHighlightAction</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>ViewCustomerPortalUser</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>WebsiteHighlightAction</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <enableEnhancedLookup>true</enableEnhancedLookup>
+    <enableFeeds>true</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <externalSharingModel>Private</externalSharingModel>
+    <fields>
+        <fullName>AccountNumber</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>AccountSource</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+    </fields>
     <fields>
         <fullName>Account_Count__c</fullName>
         <externalId>false</externalId>
@@ -113,7 +193,7 @@ DOLP - Doctor Owned Lab Program.</inlineHelpText>
     <fields>
         <fullName>Accounting_Department_Phone__c</fullName>
         <description>Accounting Phone Number</description>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <inlineHelpText>Accounting Phone Number</inlineHelpText>
         <label>Accounting Department Phone</label>
@@ -154,7 +234,7 @@ DOLP - Doctor Owned Lab Program.</inlineHelpText>
     </fields>
     <fields>
         <fullName>Acquisition_Date__c</fullName>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <label>Acquisition Date</label>
         <required>false</required>
@@ -178,7 +258,7 @@ IF( Marchon__c , &quot;Marchon,&quot;, &quot;&quot;)</formula>
     </fields>
     <fields>
         <fullName>Active_LOBs_Text__c</fullName>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <label>Active LOBs</label>
         <length>55</length>
@@ -846,7 +926,7 @@ IF( Marchon__c , &quot;Marchon,&quot;, &quot;&quot;)</formula>
     </fields>
     <fields>
         <fullName>Agreement_Type__c</fullName>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <inlineHelpText>The type of business agreement the practice is participating with VSP for a set amount of time.</inlineHelpText>
         <label>Agreement Type</label>
@@ -859,7 +939,7 @@ IF( Marchon__c , &quot;Marchon,&quot;, &quot;&quot;)</formula>
     </fields>
     <fields>
         <fullName>Allure_DM__c</fullName>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <label>Allure DM</label>
         <length>255</length>
@@ -871,7 +951,7 @@ IF( Marchon__c , &quot;Marchon,&quot;, &quot;&quot;)</formula>
     </fields>
     <fields>
         <fullName>Allure_Key_s__c</fullName>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <inlineHelpText>SAP Number/ Native ID(s)</inlineHelpText>
         <label>Allure Key(s)</label>
@@ -884,7 +964,7 @@ IF( Marchon__c , &quot;Marchon,&quot;, &quot;&quot;)</formula>
     </fields>
     <fields>
         <fullName>Allure_Rep__c</fullName>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <label>Allure Rep</label>
         <length>128</length>
@@ -905,7 +985,7 @@ IF( Marchon__c , &quot;Marchon,&quot;, &quot;&quot;)</formula>
     </fields>
     <fields>
         <fullName>Altair_Consignment_Date__c</fullName>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <inlineHelpText>Date the Account&apos;s consignment was requested.</inlineHelpText>
         <label>Consignment Date</label>
@@ -916,7 +996,7 @@ IF( Marchon__c , &quot;Marchon,&quot;, &quot;&quot;)</formula>
     </fields>
     <fields>
         <fullName>Altair_Customer_Potential_Grade__c</fullName>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <label>Altair Customer Potential Grade</label>
         <length>10</length>
@@ -950,7 +1030,7 @@ IF( Marchon__c , &quot;Marchon,&quot;, &quot;&quot;)</formula>
     </fields>
     <fields>
         <fullName>Altair_Discount_Programs__c</fullName>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <inlineHelpText>Compiled from multiple SAP fields: Price group, price list (%), buying group name, special customer group.</inlineHelpText>
         <label>Discount Programs</label>
@@ -963,7 +1043,7 @@ IF( Marchon__c , &quot;Marchon,&quot;, &quot;&quot;)</formula>
     </fields>
     <fields>
         <fullName>Altair_Exception__c</fullName>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <label>Altair - Exception</label>
         <length>128</length>
@@ -975,7 +1055,7 @@ IF( Marchon__c , &quot;Marchon,&quot;, &quot;&quot;)</formula>
     </fields>
     <fields>
         <fullName>Altair_Field_Rep__c</fullName>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <label>Altair - Field Rep</label>
         <length>128</length>
@@ -1025,7 +1105,7 @@ IF( Marchon__c , &quot;Marchon,&quot;, &quot;&quot;)</formula>
     <fields>
         <fullName>Altair_Grade__c</fullName>
         <description>Grade of Altair Account.</description>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <label>Altair Revenue Grade</label>
         <length>128</length>
@@ -1037,7 +1117,7 @@ IF( Marchon__c , &quot;Marchon,&quot;, &quot;&quot;)</formula>
     </fields>
     <fields>
         <fullName>Altair_Hybrid_Bebe__c</fullName>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <label>Altair - Hybrid Bebe</label>
         <length>128</length>
@@ -1063,7 +1143,7 @@ IF( Marchon__c , &quot;Marchon,&quot;, &quot;&quot;)</formula>
     </fields>
     <fields>
         <fullName>Altair_Key_Account__c</fullName>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <label>Altair - Key Account</label>
         <length>128</length>
@@ -1076,7 +1156,7 @@ IF( Marchon__c , &quot;Marchon,&quot;, &quot;&quot;)</formula>
     <fields>
         <fullName>Altair_Key_s__c</fullName>
         <description>SAP Number / Native ID(s).</description>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <inlineHelpText>SAP Number / Native ID(s).</inlineHelpText>
         <label>Altair Key(s)</label>
@@ -1089,7 +1169,7 @@ IF( Marchon__c , &quot;Marchon,&quot;, &quot;&quot;)</formula>
     </fields>
     <fields>
         <fullName>Altair_Last_Activity__c</fullName>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <inlineHelpText>The last task completed by an Altair sales user</inlineHelpText>
         <label>Altair Last Activity</label>
@@ -1101,7 +1181,7 @@ IF( Marchon__c , &quot;Marchon,&quot;, &quot;&quot;)</formula>
     <fields>
         <fullName>Altair_Last_Inventory_Mgmt__c</fullName>
         <description>Data integrated information for Altair.</description>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <inlineHelpText>Last completed inventory of consignment frames.</inlineHelpText>
         <label>Last Inventory Mgmt</label>
@@ -1136,7 +1216,7 @@ IF( Marchon__c , &quot;Marchon,&quot;, &quot;&quot;)</formula>
     </fields>
     <fields>
         <fullName>Altair_Performance_Grade__c</fullName>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <label>Altair Performance Grade</label>
         <length>10</length>
@@ -1204,7 +1284,7 @@ IF( Marchon__c , &quot;Marchon,&quot;, &quot;&quot;)</formula>
     </fields>
     <fields>
         <fullName>Altair_RMs__c</fullName>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <label>Altair RMs</label>
         <length>255</length>
@@ -1217,7 +1297,7 @@ IF( Marchon__c , &quot;Marchon,&quot;, &quot;&quot;)</formula>
     <fields>
         <fullName>Altair_Realignment_Requested__c</fullName>
         <description>Updated by Altair LOB Admin</description>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <inlineHelpText>The month and # of frames from the Account&apos;s consignment that Altair has requested to be returned. New request sent quarterly.</inlineHelpText>
         <label>Realignment Requested</label>
@@ -1230,7 +1310,7 @@ IF( Marchon__c , &quot;Marchon,&quot;, &quot;&quot;)</formula>
     </fields>
     <fields>
         <fullName>Altair_Reps__c</fullName>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <label>Altair Reps</label>
         <length>255</length>
@@ -1255,7 +1335,7 @@ IF( Marchon__c , &quot;Marchon,&quot;, &quot;&quot;)</formula>
     </fields>
     <fields>
         <fullName>Altair_SAP_Consignment_Account__c</fullName>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <label>Altair SAP Acct #</label>
         <length>128</length>
@@ -1267,7 +1347,7 @@ IF( Marchon__c , &quot;Marchon,&quot;, &quot;&quot;)</formula>
     </fields>
     <fields>
         <fullName>Altair_Sales_Director__c</fullName>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <label>Altair Sales Director</label>
         <length>255</length>
@@ -1279,7 +1359,7 @@ IF( Marchon__c , &quot;Marchon,&quot;, &quot;&quot;)</formula>
     </fields>
     <fields>
         <fullName>Altair_Standard__c</fullName>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <label>Altair Prospect Rep</label>
         <length>128</length>
@@ -1358,6 +1438,11 @@ IF( Marchon__c , &quot;Marchon,&quot;, &quot;&quot;)</formula>
         </valueSet>
     </fields>
     <fields>
+        <fullName>AnnualRevenue</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
         <fullName>Applied_Tier__c</fullName>
         <deleteConstraint>SetNull</deleteConstraint>
         <externalId>false</externalId>
@@ -1373,7 +1458,7 @@ IF( Marchon__c , &quot;Marchon,&quot;, &quot;&quot;)</formula>
     </fields>
     <fields>
         <fullName>Approval_Notes__c</fullName>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <label>Approval Notes</label>
         <required>false</required>
@@ -1384,7 +1469,7 @@ IF( Marchon__c , &quot;Marchon,&quot;, &quot;&quot;)</formula>
     <fields>
         <fullName>Attention_To__c</fullName>
         <description>Attention To field for printing Mailing Labels. Not intended to store data or be visible on Page Layouts.</description>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <label>Attention To</label>
         <length>50</length>
@@ -1489,7 +1574,7 @@ IF( Marchon__c , &quot;Marchon,&quot;, &quot;&quot;)</formula>
     </fields>
     <fields>
         <fullName>Bank_Account_Number__c</fullName>
-        <encryptionScheme>ProbabilisticEncryption</encryptionScheme>
+        <encrypted>true</encrypted>
         <externalId>false</externalId>
         <label>Bank Account Number</label>
         <length>17</length>
@@ -1526,7 +1611,7 @@ IF( Marchon__c , &quot;Marchon,&quot;, &quot;&quot;)</formula>
     </fields>
     <fields>
         <fullName>Bank_Name__c</fullName>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <label>Bank Name</label>
         <length>60</length>
@@ -1538,7 +1623,7 @@ IF( Marchon__c , &quot;Marchon,&quot;, &quot;&quot;)</formula>
     </fields>
     <fields>
         <fullName>Bank_Routing_Number__c</fullName>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <label>Bank Routing Number</label>
         <length>9</length>
@@ -1549,8 +1634,14 @@ IF( Marchon__c , &quot;Marchon,&quot;, &quot;&quot;)</formula>
         <unique>false</unique>
     </fields>
     <fields>
+        <fullName>BillingAddress</fullName>
+        <encrypted>false</encrypted>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
         <fullName>Billing_Address_Validation_Status__c</fullName>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <label>Billing Address Validation Status</label>
         <length>255</length>
@@ -1562,7 +1653,7 @@ IF( Marchon__c , &quot;Marchon,&quot;, &quot;&quot;)</formula>
     </fields>
     <fields>
         <fullName>Billing_Address_Validation_Timestamp__c</fullName>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <label>Billing Address Validation Timestamp</label>
         <required>false</required>
@@ -1646,7 +1737,7 @@ IF( Marchon__c , &quot;Marchon,&quot;, &quot;&quot;)</formula>
     </fields>
     <fields>
         <fullName>City__c</fullName>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <label>City</label>
         <length>128</length>
@@ -1658,7 +1749,7 @@ IF( Marchon__c , &quot;Marchon,&quot;, &quot;&quot;)</formula>
     </fields>
     <fields>
         <fullName>Client_Id__c</fullName>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <label>Client Id</label>
         <length>10</length>
@@ -1693,7 +1784,7 @@ IF( Marchon__c , &quot;Marchon,&quot;, &quot;&quot;)</formula>
     </fields>
     <fields>
         <fullName>Competitor_Contract_End_Follow_up_Date__c</fullName>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <label>Competitor Contract End/Follow-up Date</label>
         <required>false</required>
@@ -1772,7 +1863,7 @@ IF( Marchon__c , &quot;Marchon,&quot;, &quot;&quot;)</formula>
     </fields>
     <fields>
         <fullName>Consignment_End_Code__c</fullName>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <label>Consignment End Code</label>
         <length>35</length>
@@ -1784,7 +1875,7 @@ IF( Marchon__c , &quot;Marchon,&quot;, &quot;&quot;)</formula>
     </fields>
     <fields>
         <fullName>Consignment_End_Date__c</fullName>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <label>Consignment End Date</label>
         <required>false</required>
@@ -1805,7 +1896,7 @@ IF( Marchon__c , &quot;Marchon,&quot;, &quot;&quot;)</formula>
     </fields>
     <fields>
         <fullName>ConsumerID__c</fullName>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <label>ConsumerID</label>
         <length>15</length>
@@ -1843,7 +1934,7 @@ IF( Marchon__c , &quot;Marchon,&quot;, &quot;&quot;)</formula>
     </fields>
     <fields>
         <fullName>Contact_Lens_Consultant_Last_Contacted__c</fullName>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <inlineHelpText>When an Optics Contact Lens Consultant completes an activity, today’s date is populated</inlineHelpText>
         <label>Contact Lens Consultant Last Contacted</label>
@@ -1975,7 +2066,7 @@ Population on Business account will be manual or through data loader.</descripti
     </fields>
     <fields>
         <fullName>Country__c</fullName>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <label>Country</label>
         <length>128</length>
@@ -1983,6 +2074,91 @@ Population on Business account will be manual or through data loader.</descripti
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Description</fullName>
+        <encrypted>false</encrypted>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>DialSource__DS_Owner_ID__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The record owner&apos;s Salesforce ID. Used in Campaign source reports to distribute the records using the Record Owner Distribution feature</description>
+        <externalId>false</externalId>
+        <formula>OwnerId</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>DS Owner ID</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>DialSource__Datetime_of_Last_Disposition_DS__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Time stamp of when the last Disposition was clicked</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Datetime of Last Disposition</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>DialSource__Last_Call_Campaign_Name__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Name of the Call Campaign the record was last called from</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Last Call Campaign Name</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>DialSource__Last_Disposition_DS__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Name of the last Disposition clicked</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Last Disposition</label>
+        <length>140</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>DialSource__Next_Call_DS__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Datetime field used to set the next call datetime for reference in automation or Reports/List Views</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Next Call</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>DialSource__Total_Call_Count_DS__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Total number of calls made on this record</description>
+        <externalId>false</externalId>
+        <label>Total Call Count</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
         <unique>false</unique>
     </fields>
     <fields>
@@ -2092,7 +2268,7 @@ Population on Business account will be manual or through data loader.</descripti
     </fields>
     <fields>
         <fullName>Email__c</fullName>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <label>Email</label>
         <required>false</required>
@@ -2289,7 +2465,7 @@ Population on Business account will be manual or through data loader.</descripti
     </fields>
     <fields>
         <fullName>Eyefinity_Inside_Sales__c</fullName>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <label>Eyefinity Inside Sales</label>
         <length>128</length>
@@ -2326,7 +2502,7 @@ Population on Business account will be manual or through data loader.</descripti
     </fields>
     <fields>
         <fullName>Eyefinity_Outside_Sales__c</fullName>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <label>Eyefinity Outside Sales</label>
         <length>128</length>
@@ -2451,9 +2627,15 @@ Population on Business account will be manual or through data loader.</descripti
         <type>Currency</type>
     </fields>
     <fields>
+        <fullName>Fax</fullName>
+        <encrypted>false</encrypted>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
         <fullName>Featured_Frame_Brands__c</fullName>
         <description>Custom field to be populated through data integration.</description>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <label>Featured Frame Brands</label>
         <length>255</length>
@@ -2490,7 +2672,7 @@ Population on Business account will be manual or through data loader.</descripti
     </fields>
     <fields>
         <fullName>Frame_Group__c</fullName>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <inlineHelpText>Refers to the tier based on frame purchases made at the Practice Account level.</inlineHelpText>
         <label>Frame Tier</label>
@@ -2512,7 +2694,7 @@ Population on Business account will be manual or through data loader.</descripti
     </fields>
     <fields>
         <fullName>Friday_Business_Hours__c</fullName>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <label>Friday Business Hours</label>
         <length>25</length>
@@ -2924,7 +3106,7 @@ Population on Business account will be manual or through data loader.</descripti
     </fields>
     <fields>
         <fullName>GBDM_Last_Activity__c</fullName>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <inlineHelpText>The Date of the last Task or Event a Global Business Development Manager Completed on the account</inlineHelpText>
         <label>GBDM Last Activity</label>
@@ -2935,7 +3117,7 @@ Population on Business account will be manual or through data loader.</descripti
     </fields>
     <fields>
         <fullName>GBD_Relationship_Manager__c</fullName>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <label>GBD Relationship Manager</label>
         <length>255</length>
@@ -2948,7 +3130,7 @@ Population on Business account will be manual or through data loader.</descripti
     <fields>
         <fullName>GBD_Relationship_Partner__c</fullName>
         <description>GBD Relationship Partner</description>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <label>GBD Relationship Partner</label>
         <length>128</length>
@@ -3272,7 +3454,7 @@ Population on Business account will be manual or through data loader.</descripti
     </fields>
     <fields>
         <fullName>Global_Business_Development_Manager__c</fullName>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <label>Global Business Development Manager</label>
         <length>128</length>
@@ -3284,7 +3466,7 @@ Population on Business account will be manual or through data loader.</descripti
     </fields>
     <fields>
         <fullName>Global_Business_Development_Partner__c</fullName>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <label>Global Business Development Boundary</label>
         <length>128</length>
@@ -3369,7 +3551,7 @@ Population on Business account will be manual or through data loader.</descripti
     </fields>
     <fields>
         <fullName>IRS_Name__c</fullName>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <label>IRS Name</label>
         <length>50</length>
@@ -3381,7 +3563,7 @@ Population on Business account will be manual or through data loader.</descripti
     </fields>
     <fields>
         <fullName>IRS_Tax_ID__c</fullName>
-        <encryptionScheme>CaseSensitiveDeterministicEncryption</encryptionScheme>
+        <encrypted>true</encrypted>
         <externalId>false</externalId>
         <label>IRS Tax ID</label>
         <length>9</length>
@@ -3393,7 +3575,7 @@ Population on Business account will be manual or through data loader.</descripti
     </fields>
     <fields>
         <fullName>Identifying_Address_Validation_Status__c</fullName>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <label>Identifying Address Validation Status</label>
         <length>255</length>
@@ -3405,7 +3587,7 @@ Population on Business account will be manual or through data loader.</descripti
     </fields>
     <fields>
         <fullName>Identifying_Address_Validation_Timestamp__c</fullName>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <label>Identifying Address Validation Timestamp</label>
         <required>false</required>
@@ -3421,6 +3603,12 @@ Population on Business account will be manual or through data loader.</descripti
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Industry</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
     </fields>
     <fields>
         <fullName>Internal_Building_Handicap_Access__c</fullName>
@@ -3441,6 +3629,11 @@ Population on Business account will be manual or through data loader.</descripti
         <type>Checkbox</type>
     </fields>
     <fields>
+        <fullName>IsExcludedFromRealign</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
         <fullName>IsPAException__c</fullName>
         <defaultValue>false</defaultValue>
         <externalId>false</externalId>
@@ -3448,6 +3641,11 @@ Population on Business account will be manual or through data loader.</descripti
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Jigsaw</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
     </fields>
     <fields>
         <fullName>Kaleyedoscope__c</fullName>
@@ -3471,7 +3669,7 @@ Population on Business account will be manual or through data loader.</descripti
     <fields>
         <fullName>Lab_Department_Phone__c</fullName>
         <description>Lab Department Phone Number.</description>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <inlineHelpText>Lab Department Phone Number.</inlineHelpText>
         <label>Lab Department Phone</label>
@@ -3482,7 +3680,7 @@ Population on Business account will be manual or through data loader.</descripti
     </fields>
     <fields>
         <fullName>Lab_Network_Opt_Out_Effective_Date__c</fullName>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <label>Lab Network Opt-Out Effective Date</label>
         <required>false</required>
@@ -3556,7 +3754,7 @@ Population on Business account will be manual or through data loader.</descripti
     </fields>
     <fields>
         <fullName>Location_Description_DBA__c</fullName>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <label>Location Description (DBA)</label>
         <length>50</length>
@@ -3607,7 +3805,7 @@ Population on Business account will be manual or through data loader.</descripti
     </fields>
     <fields>
         <fullName>Location_Medicaid_Number_1__c</fullName>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <label>Location Medicaid Number 1</label>
         <length>15</length>
@@ -3619,7 +3817,7 @@ Population on Business account will be manual or through data loader.</descripti
     </fields>
     <fields>
         <fullName>Location_Medicaid_Number_2__c</fullName>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <label>Location Medicaid Number 2</label>
         <length>15</length>
@@ -3631,7 +3829,7 @@ Population on Business account will be manual or through data loader.</descripti
     </fields>
     <fields>
         <fullName>Location_Medicaid_Number_3__c</fullName>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <label>Location Medicaid Number 3</label>
         <length>15</length>
@@ -3717,7 +3915,7 @@ Population on Business account will be manual or through data loader.</descripti
     </fields>
     <fields>
         <fullName>MDM_Account_Keys__c</fullName>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>true</externalId>
         <inlineHelpText>MDM Account Key.</inlineHelpText>
         <label>MDM Account Key</label>
@@ -3732,7 +3930,7 @@ Population on Business account will be manual or through data loader.</descripti
         <fullName>MDM_Combo_Key__c</fullName>
         <caseSensitive>true</caseSensitive>
         <description>Used to store MDM Account and Location Key that will be leveraged by integration logic to identify a unique account.</description>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>true</externalId>
         <label>MDM Combo Key</label>
         <length>128</length>
@@ -3744,7 +3942,7 @@ Population on Business account will be manual or through data loader.</descripti
     </fields>
     <fields>
         <fullName>MDM_Location_Keys__c</fullName>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>true</externalId>
         <inlineHelpText>MDM Location Key.</inlineHelpText>
         <label>MDM Location Key</label>
@@ -3768,7 +3966,7 @@ Population on Business account will be manual or through data loader.</descripti
     </fields>
     <fields>
         <fullName>Marchon_Buying_Group__c</fullName>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <label>Marchon Buying Group</label>
         <length>50</length>
@@ -3780,7 +3978,7 @@ Population on Business account will be manual or through data loader.</descripti
     </fields>
     <fields>
         <fullName>Marchon_Close_Out__c</fullName>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <label>Marchon - Close Out</label>
         <length>128</length>
@@ -3792,7 +3990,7 @@ Population on Business account will be manual or through data loader.</descripti
     </fields>
     <fields>
         <fullName>Marchon_DMs__c</fullName>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <label>Marchon DMs</label>
         <length>255</length>
@@ -3826,7 +4024,7 @@ Population on Business account will be manual or through data loader.</descripti
     </fields>
     <fields>
         <fullName>Marchon_Key_Account__c</fullName>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <label>Marchon - Key Account</label>
         <length>128</length>
@@ -3839,7 +4037,7 @@ Population on Business account will be manual or through data loader.</descripti
     <fields>
         <fullName>Marchon_Key_s__c</fullName>
         <description>SAP Number / Native ID(s).</description>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <inlineHelpText>SAP Number / Native ID(s).</inlineHelpText>
         <label>Marchon Key(s)</label>
@@ -3852,7 +4050,7 @@ Population on Business account will be manual or through data loader.</descripti
     </fields>
     <fields>
         <fullName>Marchon_Last_Activity__c</fullName>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <inlineHelpText>The date of the last activity a Business Development Rep completed on the account.</inlineHelpText>
         <label>Marchon Last Activity</label>
@@ -3864,7 +4062,7 @@ Population on Business account will be manual or through data loader.</descripti
     <fields>
         <fullName>Marchon_Last_Stock_Date__c</fullName>
         <description>The last time the account placed a stock order (code ZSTK) regardless of brand.</description>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <inlineHelpText>The last time the account placed a stock order (ZSTK or ZIND)</inlineHelpText>
         <label>Last Stock Date</label>
@@ -3875,7 +4073,7 @@ Population on Business account will be manual or through data loader.</descripti
     </fields>
     <fields>
         <fullName>Marchon_Optical__c</fullName>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <label>Marchon Prospect Rep</label>
         <length>128</length>
@@ -3887,7 +4085,7 @@ Population on Business account will be manual or through data loader.</descripti
     </fields>
     <fields>
         <fullName>Marchon_RVPs__c</fullName>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <label>Marchon RVPs</label>
         <length>255</length>
@@ -3900,7 +4098,7 @@ Population on Business account will be manual or through data loader.</descripti
     <fields>
         <fullName>Marchon_Reps__c</fullName>
         <description>SAP Numbers of Marchon Reps assigned to this Account.</description>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <label>Marchon Reps</label>
         <required>false</required>
@@ -3910,7 +4108,7 @@ Population on Business account will be manual or through data loader.</descripti
     </fields>
     <fields>
         <fullName>Marchon_Retail__c</fullName>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <label>Marchon Retail</label>
         <length>128</length>
@@ -3935,7 +4133,7 @@ Population on Business account will be manual or through data loader.</descripti
     <fields>
         <fullName>Marchon_SAP_Account_Number__c</fullName>
         <description>SAP Account Number for Marchon.</description>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <label>Marchon SAP Acct #</label>
         <length>128</length>
@@ -4091,7 +4289,7 @@ Population on Business account will be manual or through data loader.</descripti
     </fields>
     <fields>
         <fullName>Monday_Business_Hours__c</fullName>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <label>Monday Business Hours</label>
         <length>25</length>
@@ -4585,7 +4783,7 @@ NPI_Type_2__c + Trim(Left( ShippingStreet,Find(&quot; &quot;,ShippingStreet)))
     <fields>
         <fullName>NPI_Type_2__c</fullName>
         <description>NPI Type 2 indicator.</description>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <inlineHelpText>National Provider Indicator for organizations such as facilities, hospitals, etc.</inlineHelpText>
         <label>NPI Type 2</label>
@@ -4595,6 +4793,12 @@ NPI_Type_2__c + Trim(Left( ShippingStreet,Find(&quot; &quot;,ShippingStreet)))
         <trackHistory>false</trackHistory>
         <type>Text</type>
         <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Name</fullName>
+        <encrypted>false</encrypted>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackHistory>false</trackHistory>
     </fields>
     <fields>
         <fullName>New_Release_Preference__c</fullName>
@@ -4628,7 +4832,7 @@ NPI_Type_2__c + Trim(Left( ShippingStreet,Find(&quot; &quot;,ShippingStreet)))
     </fields>
     <fields>
         <fullName>New_Web_Address_Added__c</fullName>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <label>New Web Address Added</label>
         <required>false</required>
@@ -4672,6 +4876,11 @@ Practice_Accounts__c  = &apos;Practice Account&apos;,
         <type>Checkbox</type>
     </fields>
     <fields>
+        <fullName>NumberOfEmployees</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
         <fullName>Number_of_Eligible_Locations__c</fullName>
         <defaultValue>0</defaultValue>
         <externalId>false</externalId>
@@ -4712,7 +4921,7 @@ Practice_Accounts__c  = &apos;Practice Account&apos;,
     </fields>
     <fields>
         <fullName>OfficeMate_Version__c</fullName>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <inlineHelpText>Most recent installed OfficeMate version number.</inlineHelpText>
         <label>OfficeMate Version</label>
@@ -4746,8 +4955,14 @@ SUBSTITUTE( SUBSTITUTE( SUBSTITUTE( SUBSTITUTE(Phone, &quot;(&quot;, &quot;&quot
         <type>Checkbox</type>
     </fields>
     <fields>
+        <fullName>OperatingHoursId</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
         <fullName>Ophthalmic_Business_Consultant__c</fullName>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <label>Ophthalmic Business Consultant</label>
         <length>128</length>
@@ -4759,7 +4974,7 @@ SUBSTITUTE( SUBSTITUTE( SUBSTITUTE( SUBSTITUTE(Phone, &quot;(&quot;, &quot;&quot
     </fields>
     <fields>
         <fullName>Ophthalmic_Consultant_Last_Contacted__c</fullName>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <inlineHelpText>When an Ophthalmic Business Consultant completes an activity, today’s date is populated</inlineHelpText>
         <label>Ophthalmic Consultant Last Contacted</label>
@@ -4779,7 +4994,7 @@ SUBSTITUTE( SUBSTITUTE( SUBSTITUTE( SUBSTITUTE(Phone, &quot;(&quot;, &quot;&quot
     </fields>
     <fields>
         <fullName>Optical_Department_Phone__c</fullName>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <label>Optical Department Phone</label>
         <required>false</required>
@@ -4823,7 +5038,7 @@ SUBSTITUTE( SUBSTITUTE( SUBSTITUTE( SUBSTITUTE(Phone, &quot;(&quot;, &quot;&quot
     </fields>
     <fields>
         <fullName>Optics_Contact_Lens_Consultant__c</fullName>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <label>Optics Contact Lens Consultant</label>
         <length>128</length>
@@ -4895,7 +5110,7 @@ HYPERLINK(&quot;http://www.vspcognos.com/cognos10.2/cgi-bin/cognos.cgi?b_action=
     <fields>
         <fullName>Optics_Key__c</fullName>
         <description>Account number with lab ID.</description>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <inlineHelpText>Account number with lab ID(s).</inlineHelpText>
         <label>Optics Key(s)</label>
@@ -4992,7 +5207,7 @@ HYPERLINK(&quot;http://www.vspcognos.com/cognos10.2/cgi-bin/cognos.cgi?b_action=
     </fields>
     <fields>
         <fullName>Optics_Wholesale__c</fullName>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <label>Optics Business Development Manager</label>
         <length>128</length>
@@ -5005,7 +5220,7 @@ HYPERLINK(&quot;http://www.vspcognos.com/cognos10.2/cgi-bin/cognos.cgi?b_action=
     <fields>
         <fullName>Other_Phone_Number__c</fullName>
         <description>Other Phone number on Account.</description>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <inlineHelpText>Other Phone number on Account.</inlineHelpText>
         <label>Other Phone Number</label>
@@ -5013,6 +5228,18 @@ HYPERLINK(&quot;http://www.vspcognos.com/cognos10.2/cgi-bin/cognos.cgi?b_action=
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <type>Phone</type>
+    </fields>
+    <fields>
+        <fullName>OwnerId</fullName>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Ownership</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
     </fields>
     <fields>
         <fullName>Ownership_Type__c</fullName>
@@ -5051,7 +5278,7 @@ HYPERLINK(&quot;http://www.vspcognos.com/cognos10.2/cgi-bin/cognos.cgi?b_action=
     <fields>
         <fullName>PSID__c</fullName>
         <description>Practice Solutions ID(s)</description>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <inlineHelpText>Eyefinity Practice Solutions ID(s).</inlineHelpText>
         <label>Eyefinity Practice Solutions Key(s)</label>
@@ -5061,6 +5288,12 @@ HYPERLINK(&quot;http://www.vspcognos.com/cognos10.2/cgi-bin/cognos.cgi?b_action=
         <trackHistory>false</trackHistory>
         <type>Text</type>
         <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ParentId</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Hierarchy</type>
     </fields>
     <fields>
         <fullName>Parent_Company__c</fullName>
@@ -5361,9 +5594,112 @@ HYPERLINK(&quot;http://www.vspcognos.com/cognos10.2/cgi-bin/cognos.cgi?b_action=
         </valueSet>
     </fields>
     <fields>
+        <fullName>PersonAssistantName</fullName>
+        <encrypted>false</encrypted>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>PersonAssistantPhone</fullName>
+        <encrypted>false</encrypted>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>PersonBirthdate</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>PersonDepartment</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>PersonDoNotCall</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>PersonEmail</fullName>
+        <encrypted>true</encrypted>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>PersonHasOptedOutOfEmail</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>PersonHasOptedOutOfFax</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>PersonHomePhone</fullName>
+        <encrypted>false</encrypted>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>PersonIndividualId</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>PersonLastCURequestDate</fullName>
+    </fields>
+    <fields>
+        <fullName>PersonLastCUUpdateDate</fullName>
+    </fields>
+    <fields>
+        <fullName>PersonLeadSource</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>PersonMailingAddress</fullName>
+        <encrypted>true</encrypted>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>PersonMobilePhone</fullName>
+        <encrypted>false</encrypted>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>PersonOtherAddress</fullName>
+        <encrypted>false</encrypted>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>PersonOtherPhone</fullName>
+        <encrypted>false</encrypted>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>PersonTitle</fullName>
+        <encrypted>false</encrypted>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>Phone</fullName>
+        <encrypted>false</encrypted>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
         <fullName>Physical_County_Code__c</fullName>
         <description>County Code</description>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <label>Physical County Code</label>
         <length>3</length>
@@ -5376,7 +5712,7 @@ HYPERLINK(&quot;http://www.vspcognos.com/cognos10.2/cgi-bin/cognos.cgi?b_action=
     <fields>
         <fullName>Physical_County__c</fullName>
         <description>Populated by Data Integration</description>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <label>Physical County</label>
         <length>128</length>
@@ -5388,7 +5724,7 @@ HYPERLINK(&quot;http://www.vspcognos.com/cognos10.2/cgi-bin/cognos.cgi?b_action=
     </fields>
     <fields>
         <fullName>Plexus_Key_s__c</fullName>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <inlineHelpText>SAP Number / Native ID(s).</inlineHelpText>
         <label>Plexus Key(s)</label>
@@ -5401,7 +5737,7 @@ HYPERLINK(&quot;http://www.vspcognos.com/cognos10.2/cgi-bin/cognos.cgi?b_action=
     </fields>
     <fields>
         <fullName>Policy_Id__c</fullName>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <label>Policy Id</label>
         <length>10</length>
@@ -5601,7 +5937,7 @@ Private_Equity_Parent_Company__c,
     <fields>
         <fullName>Premier_Exception_Reason__c</fullName>
         <description>Premier Exception Reason</description>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <inlineHelpText>Indicates exception reason the account is or is not eligible to participate in the Premier program.</inlineHelpText>
         <label>Premier Exception Reason</label>
@@ -5626,7 +5962,7 @@ Private_Equity_Parent_Company__c,
     </fields>
     <fields>
         <fullName>Premier_Reporting_Month__c</fullName>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <inlineHelpText>Premier totals calculated through this month.</inlineHelpText>
         <label>Premier Reporting Month</label>
@@ -5674,7 +6010,7 @@ Private_Equity_Parent_Company__c,
     </fields>
     <fields>
         <fullName>Previous_Contact_ID__c</fullName>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <label>Previous Contact ID</label>
         <length>18</length>
@@ -5686,7 +6022,7 @@ Private_Equity_Parent_Company__c,
     </fields>
     <fields>
         <fullName>Previous_IRS_Tax_ID__c</fullName>
-        <encryptionScheme>ProbabilisticEncryption</encryptionScheme>
+        <encrypted>true</encrypted>
         <externalId>false</externalId>
         <label>Previous IRS Tax ID</label>
         <length>9</length>
@@ -5707,7 +6043,7 @@ Private_Equity_Parent_Company__c,
     </fields>
     <fields>
         <fullName>Private_Equity_Parent_Company__c</fullName>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <inlineHelpText>Practices owned by a private equity group, but not CAT2 as of right now</inlineHelpText>
         <label>Private Equity Parent Company</label>
@@ -5826,7 +6162,7 @@ Private_Equity_Parent_Company__c,
     <fields>
         <fullName>Provider_Scheduling_URL__c</fullName>
         <description>Provider&apos;s Appointment Scheduling URL</description>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <label>Provider Scheduling URL</label>
         <required>false</required>
@@ -5842,6 +6178,12 @@ Private_Equity_Parent_Company__c,
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Rating</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
     </fields>
     <fields>
         <fullName>Restroom_Handicap_Access__c</fullName>
@@ -5864,7 +6206,7 @@ Private_Equity_Parent_Company__c,
     </fields>
     <fields>
         <fullName>Rewards_Category_Effective_Date__c</fullName>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <label>Rewards Category Effective Date</label>
         <required>false</required>
@@ -5874,7 +6216,7 @@ Private_Equity_Parent_Company__c,
     </fields>
     <fields>
         <fullName>Rewards_Category_End_Date__c</fullName>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <label>Rewards Category End Date</label>
         <required>false</required>
@@ -5974,7 +6316,7 @@ Private_Equity_Parent_Company__c,
     </fields>
     <fields>
         <fullName>Saturday_Business_Hours__c</fullName>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <label>Saturday Business Hours</label>
         <length>25</length>
@@ -6525,8 +6867,14 @@ Private_Equity_Parent_Company__c,
         <unique>false</unique>
     </fields>
     <fields>
+        <fullName>ShippingAddress</fullName>
+        <encrypted>false</encrypted>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
         <fullName>Shipping_Address_Validation_Status__c</fullName>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <label>Shipping Address Validation Status</label>
         <length>255</length>
@@ -6538,7 +6886,7 @@ Private_Equity_Parent_Company__c,
     </fields>
     <fields>
         <fullName>Shipping_Address_Validation_Timestamp__c</fullName>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <label>Shipping Address Validation Timestamp</label>
         <required>false</required>
@@ -6547,8 +6895,24 @@ Private_Equity_Parent_Company__c,
         <type>DateTime</type>
     </fields>
     <fields>
+        <fullName>Sic</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>SicDesc</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>Site</fullName>
+        <encrypted>false</encrypted>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
         <fullName>State__c</fullName>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <label>State</label>
         <length>128</length>
@@ -6648,7 +7012,7 @@ New = In process of becoming an Active account</inlineHelpText>
     </fields>
     <fields>
         <fullName>Store_Number__c</fullName>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <label>Store Number</label>
         <length>10</length>
@@ -6671,7 +7035,7 @@ New = In process of becoming an Active account</inlineHelpText>
     </fields>
     <fields>
         <fullName>Street__c</fullName>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <label>Street</label>
         <length>128</length>
@@ -6683,7 +7047,7 @@ New = In process of becoming an Active account</inlineHelpText>
     </fields>
     <fields>
         <fullName>Sunday_Business_Hours__c</fullName>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <label>Sunday Business Hours</label>
         <length>25</length>
@@ -7119,7 +7483,7 @@ New = In process of becoming an Active account</inlineHelpText>
     </fields>
     <fields>
         <fullName>Tax_ID_Last_4__c</fullName>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <label>Tax ID - Last 4</label>
         <length>4</length>
@@ -7132,7 +7496,7 @@ New = In process of becoming an Active account</inlineHelpText>
     <fields>
         <fullName>Tax_ID__c</fullName>
         <description>Account Tax ID.</description>
-        <encryptionScheme>CaseSensitiveDeterministicEncryption</encryptionScheme>
+        <encrypted>true</encrypted>
         <externalId>false</externalId>
         <inlineHelpText>Account Tax ID.</inlineHelpText>
         <label>Tax ID</label>
@@ -7144,8 +7508,18 @@ New = In process of becoming an Active account</inlineHelpText>
         <unique>false</unique>
     </fields>
     <fields>
+        <fullName>Test_SMOD_Date__c</fullName>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Test SMOD Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Date</type>
+    </fields>
+    <fields>
         <fullName>Thursday_Business_Hours__c</fullName>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <label>Thursday Business Hours</label>
         <length>25</length>
@@ -7556,8 +7930,13 @@ New = In process of becoming an Active account</inlineHelpText>
         </valueSet>
     </fields>
     <fields>
+        <fullName>TickerSymbol</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
         <fullName>Tier_Agreement_Type__c</fullName>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <label>Tier Agreement Type</label>
         <length>255</length>
@@ -7569,7 +7948,7 @@ New = In process of becoming an Active account</inlineHelpText>
     </fields>
     <fields>
         <fullName>Tier_Calculation_Group_Level_Batch__c</fullName>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <label>Tier Calculation Group Level Batch</label>
         <length>100</length>
@@ -7594,7 +7973,7 @@ New = In process of becoming an Active account</inlineHelpText>
     </fields>
     <fields>
         <fullName>Tier_Calculation_Record_ID__c</fullName>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <label>Tier Calculation Record ID</label>
         <length>18</length>
@@ -7663,7 +8042,7 @@ New = In process of becoming an Active account</inlineHelpText>
     </fields>
     <fields>
         <fullName>Tuesday_Business_Hours__c</fullName>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <label>Tuesday Business Hours</label>
         <length>25</length>
@@ -8074,6 +8453,12 @@ New = In process of becoming an Active account</inlineHelpText>
         </valueSet>
     </fields>
     <fields>
+        <fullName>Type</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
         <fullName>UNITY_Count_Rolling_Off__c</fullName>
         <externalId>false</externalId>
         <label>UNITY Count Rolling Off</label>
@@ -8185,7 +8570,7 @@ New = In process of becoming an Active account</inlineHelpText>
     </fields>
     <fields>
         <fullName>VC_EDS_NA__c</fullName>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <label>Vision Care Network Administrator</label>
         <length>128</length>
@@ -8198,7 +8583,7 @@ New = In process of becoming an Active account</inlineHelpText>
     <fields>
         <fullName>VC_Relationship_Manager__c</fullName>
         <defaultValue>&quot;PRMI0001&quot;</defaultValue>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <label>Vision Care Relationship Manager</label>
         <length>128</length>
@@ -8254,7 +8639,7 @@ New = In process of becoming an Active account</inlineHelpText>
     </fields>
     <fields>
         <fullName>VSP_GeoCode__c</fullName>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <label>VSP GeoCode</label>
         <length>10</length>
@@ -8278,7 +8663,7 @@ New = In process of becoming an Active account</inlineHelpText>
     <fields>
         <fullName>VSP_Key__c</fullName>
         <description>Vision Care Unique ID(s) for physical location.</description>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <inlineHelpText>Vision Care Unique ID(s) for physical location.</inlineHelpText>
         <label>Vision Care Key(s)</label>
@@ -8305,7 +8690,7 @@ New = In process of becoming an Active account</inlineHelpText>
     </fields>
     <fields>
         <fullName>VSP_Network_Participation__c</fullName>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <inlineHelpText>Each network supports specific VSP Plans and reimbursement schedule.</inlineHelpText>
         <label>VSP Network Participation</label>
@@ -8345,7 +8730,7 @@ New = In process of becoming an Active account</inlineHelpText>
     </fields>
     <fields>
         <fullName>Vision_Care_Effective_Date__c</fullName>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <label>Vision Care Effective Date</label>
         <required>false</required>
@@ -8355,7 +8740,7 @@ New = In process of becoming an Active account</inlineHelpText>
     </fields>
     <fields>
         <fullName>Vision_Care_End_Date__c</fullName>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <label>Vision Care End Date</label>
         <required>false</required>
@@ -8389,7 +8774,7 @@ New = In process of becoming an Active account</inlineHelpText>
     </fields>
     <fields>
         <fullName>Vision_Care_Identifying_City__c</fullName>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <label>Vision Care Identifying City</label>
         <length>40</length>
@@ -8401,7 +8786,7 @@ New = In process of becoming an Active account</inlineHelpText>
     </fields>
     <fields>
         <fullName>Vision_Care_Identifying_State__c</fullName>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <label>Vision Care Identifying State</label>
         <length>80</length>
@@ -8413,7 +8798,7 @@ New = In process of becoming an Active account</inlineHelpText>
     </fields>
     <fields>
         <fullName>Vision_Care_Identifying_Street__c</fullName>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <label>Vision Care Identifying Street</label>
         <length>128</length>
@@ -8425,7 +8810,7 @@ New = In process of becoming an Active account</inlineHelpText>
     </fields>
     <fields>
         <fullName>Vision_Care_Identifying_Zip_Code__c</fullName>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <label>Vision Care Identifying Zip Code</label>
         <length>10</length>
@@ -8497,7 +8882,7 @@ New = In process of becoming an Active account</inlineHelpText>
     </fields>
     <fields>
         <fullName>Vision_Care_Location_Key__c</fullName>
-        <encryptionScheme>CaseSensitiveDeterministicEncryption</encryptionScheme>
+        <encrypted>true</encrypted>
         <externalId>false</externalId>
         <label>Vision Care Location Key</label>
         <length>125</length>
@@ -8509,7 +8894,7 @@ New = In process of becoming an Active account</inlineHelpText>
     </fields>
     <fields>
         <fullName>Vision_Care_Location_Phone_Number__c</fullName>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <label>Vision Care Location Phone Number</label>
         <required>false</required>
@@ -8634,8 +9019,14 @@ New = In process of becoming an Active account</inlineHelpText>
         <type>Checkbox</type>
     </fields>
     <fields>
+        <fullName>Website</fullName>
+        <encrypted>false</encrypted>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
         <fullName>Wednesday_Business_Hours__c</fullName>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <label>Wednesday Business Hours</label>
         <length>25</length>
@@ -9069,7 +9460,7 @@ New = In process of becoming an Active account</inlineHelpText>
     </fields>
     <fields>
         <fullName>X60_Day_Past_Due_Balance_Status__c</fullName>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <inlineHelpText>Confidential information. Updates Daily. Call Finance business partner with questions.</inlineHelpText>
         <label>60 Day Past Due Balance Status</label>
@@ -9082,7 +9473,7 @@ New = In process of becoming an Active account</inlineHelpText>
     </fields>
     <fields>
         <fullName>Zipcode__c</fullName>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <label>Zipcode</label>
         <length>9</length>
@@ -9118,8 +9509,32 @@ New = In process of becoming an Active account</inlineHelpText>
         <type>Summary</type>
     </fields>
     <fields>
+        <fullName>qualtrics__NPS_Date__c</fullName>
+        <deprecated>false</deprecated>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>NPS Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>qualtrics__Net_Promoter_Score__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Net Promoter Score</label>
+        <precision>2</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
         <fullName>sfxId__c</fullName>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>true</externalId>
         <label>sfxId</label>
         <length>18</length>
@@ -9890,6 +10305,8 @@ New = In process of becoming an Active account</inlineHelpText>
             <roleAndSubordinates>Optics_Leadership</roleAndSubordinates>
         </sharedTo>
     </listViews>
+    <recordTypeTrackFeedHistory>false</recordTypeTrackFeedHistory>
+    <recordTypeTrackHistory>false</recordTypeTrackHistory>
     <recordTypes>
         <fullName>Account_Groups</fullName>
         <active>true</active>
@@ -17943,6 +18360,44 @@ New = In process of becoming an Active account</inlineHelpText>
             </values>
         </picklistValues>
     </recordTypes>
+    <searchLayouts>
+        <customTabListAdditionalFields>ACCOUNT.NAME</customTabListAdditionalFields>
+        <customTabListAdditionalFields>ACCOUNT.RECORDTYPE</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Tax_ID__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>ACCOUNT.ADDRESS2_STREET</customTabListAdditionalFields>
+        <customTabListAdditionalFields>ACCOUNT.ADDRESS2_CITY</customTabListAdditionalFields>
+        <customTabListAdditionalFields>ACCOUNT.ADDRESS2_STATE</customTabListAdditionalFields>
+        <customTabListAdditionalFields>ACCOUNT.ADDRESS2_ZIP</customTabListAdditionalFields>
+        <customTabListAdditionalFields>ACCOUNT.PHONE1</customTabListAdditionalFields>
+        <lookupDialogsAdditionalFields>ACCOUNT.NAME</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>ACCOUNT.RECORDTYPE</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Tax_ID__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>ACCOUNT.ADDRESS2_STREET</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>ACCOUNT.ADDRESS2_CITY</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>ACCOUNT.ADDRESS2_STATE</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>ACCOUNT.ADDRESS2_ZIP</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>ACCOUNT.PHONE1</lookupDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>ACCOUNT.NAME</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>ACCOUNT.RECORDTYPE</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>CORE.USERS.ALIAS</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>ACCOUNT.TYPE</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>ACCOUNT.PHONE1</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>Accounting_Department_Phone__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>Lab_Department_Phone__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>Optical_Department_Phone__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>Other_Phone_Number__c</lookupPhoneDialogsAdditionalFields>
+        <searchResultsAdditionalFields>ACCOUNT.NAME</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>ACCOUNT.RECORDTYPE</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Status__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Tax_ID__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>ACCOUNT.ADDRESS2_STREET</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>ACCOUNT.ADDRESS2_CITY</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>ACCOUNT.ADDRESS2_STATE</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>ACCOUNT.ADDRESS2_ZIP</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>ACCOUNT.PHONE1</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>VC__c</searchResultsAdditionalFields>
+    </searchLayouts>
+    <sharingModel>Private</sharingModel>
     <validationRules>
         <fullName>VSPR16_NPI_Type2_Check</fullName>
         <active>true</active>
@@ -18672,6 +19127,42 @@ $Profile.Name = &quot;VSP Technical User&quot;)</errorConditionFormula>
         <url>http://news.altavista.com/search?nc=0&amp;q={!Account_Name}</url>
     </webLinks>
     <webLinks>
+        <fullName>CLS4SF__Email_Pitch</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <hasMenubar>false</hasMenubar>
+        <hasScrollbars>true</hasScrollbars>
+        <hasToolbar>false</hasToolbar>
+        <height>600</height>
+        <isResizable>true</isResizable>
+        <linkType>page</linkType>
+        <masterLabel>(Deprecated)ClearSlide Email</masterLabel>
+        <openType>newWindow</openType>
+        <page>CLS4SF__EmailPitchAccountDetail</page>
+        <position>none</position>
+        <protected>false</protected>
+        <showsLocation>false</showsLocation>
+        <showsStatus>false</showsStatus>
+    </webLinks>
+    <webLinks>
+        <fullName>CLS4SF__Live_Pitch</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <hasMenubar>false</hasMenubar>
+        <hasScrollbars>true</hasScrollbars>
+        <hasToolbar>false</hasToolbar>
+        <height>600</height>
+        <isResizable>true</isResizable>
+        <linkType>page</linkType>
+        <masterLabel>(Deprecated)ClearSlide Meeting</masterLabel>
+        <openType>newWindow</openType>
+        <page>CLS4SF__LivePitchAccountDetail</page>
+        <position>none</position>
+        <protected>false</protected>
+        <showsLocation>false</showsLocation>
+        <showsStatus>false</showsStatus>
+    </webLinks>
+    <webLinks>
         <fullName>Change_Tax_ID</fullName>
         <availability>online</availability>
         <displayType>button</displayType>
@@ -18681,6 +19172,64 @@ $Profile.Name = &quot;VSP Technical User&quot;)</errorConditionFormula>
         <openType>sidebar</openType>
         <page>VSPR19_ChangeTaxID</page>
         <protected>false</protected>
+    </webLinks>
+    <webLinks>
+        <fullName>DialSource__DS_InstaQueue</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>DS InstaQueue</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <url>{!REQUIRESCRIPT(&quot;/soap/ajax/22.0/connection.js&quot;)}
+{!REQUIRESCRIPT(&quot;/soap/ajax/22.0/apex.js&quot;)}
+sforce.connection.sessionId = &quot;{!$Api.Session_ID}&quot;;
+var sid = &quot;{!JSENCODE($Api.Session_ID)}&quot;; 
+var loc = &quot;{!JSENCODE($Api.Partner_Server_URL_80)}&quot;; 
+var aid = &quot;{!JSENCODE($Organization.Id)}&quot;; 
+var uid = &quot;{!JSENCODE($User.Id)}&quot;;
+var phone = &quot;{!JSENCODE(Account.Phone)}&quot;;
+var name = &quot;{!JSENCODE(Account.Name)}&quot;;
+var oid = &quot;{!JSENCODE(Account.Id)}&quot;;
+
+var url = &apos;https://ws.dialsource.com:8000/addToQueue?aid=&apos;+aid+&apos;&amp;uid=&apos;+uid+&apos;&amp;object_id=&apos;+oid; 
+
+        
+var result = sforce.apex.execute(&quot;DialSource.addToQueue&quot;,&quot;httpPOSTrecord&quot;, 
+        {urlParams : url, phone : phone, name: name});</url>
+    </webLinks>
+    <webLinks>
+        <fullName>DialSource__DS_InstaQueue_List</fullName>
+        <availability>online</availability>
+        <displayType>massActionButton</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>DS InstaQueue List</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <requireRowSelection>true</requireRowSelection>
+        <url>{!REQUIRESCRIPT(&quot;/soap/ajax/22.0/connection.js&quot;)}
+{!REQUIRESCRIPT(&quot;/soap/ajax/22.0/apex.js&quot;)}
+var records = {!GETRECORDIDS($ObjectType.Account)}; 
+var aid = &quot;{!JSENCODE($Organization.Id)}&quot;; 
+var uid = &quot;{!JSENCODE($User.Id)}&quot;; 
+var phoneField = &quot;Phone&quot;; 
+var list = records.join(); 
+var type = &quot;Account&quot;; 
+var nameField = &quot;Name&quot;; 
+
+if (records[0] == null) { 
+alert(&quot;Please select at least one Account to submit.&quot;); 
+} 
+else{ 
+
+var result = sforce.apex.execute(&quot;DialSource.addToQueue&quot;,&quot;httpPOSTlist&quot;, 
+{phoneField : phoneField, nameField : nameField, recordIDs : list, objectType : type, uid : uid, aid : aid}); 
+//window.alert(&apos;Records successfully queued&apos;); 
+} 
+
+if(result !=&quot;&quot;){ 
+alert(&quot;Records Not Added to Queue: \n&quot; + result); 
+}</url>
     </webLinks>
     <webLinks>
         <fullName>Get_Practice_Report_v3</fullName>
@@ -19118,5 +19667,17 @@ srcUp(&quot;/apex/VSPR7_OrderSummary?optickey=&quot;+arrayStrings[0] + &quot;&am
         <showsLocation>true</showsLocation>
         <showsStatus>true</showsStatus>
         <url>http://maps.yahoo.com/py/maps.py?cn={!Account_BillingCountry}&amp;csz={!Account_BillingCity}+{!Account_BillingState}+{!Account_BillingPostalCode}+&amp;addr={!Account_BillingAddress}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>dsfs__Send_with_DocuSign</fullName>
+        <availability>online</availability>
+        <description>This button will initiate a DocuSign Envelope that is linked to the Account</description>
+        <displayType>button</displayType>
+        <height>600</height>
+        <linkType>page</linkType>
+        <masterLabel>Send with DocuSign</masterLabel>
+        <openType>noSidebar</openType>
+        <page>dsfs__CreateEnvelopeFromAccount</page>
+        <protected>false</protected>
     </webLinks>
 </CustomObject>

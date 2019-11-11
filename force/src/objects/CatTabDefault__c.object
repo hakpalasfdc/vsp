@@ -6,7 +6,7 @@
     <fields>
         <fullName>Category_Links__c</fullName>
         <description>URL to article that contains sidebar links for the Category</description>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <label>Category Links</label>
         <length>255</length>
@@ -18,7 +18,7 @@
     <fields>
         <fullName>Default_Article__c</fullName>
         <description>Article that will display when the Category Tab is selected</description>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <label>Default Article</label>
         <length>255</length>
@@ -30,7 +30,7 @@
     <fields>
         <fullName>Search_Category__c</fullName>
         <description>Name for data category to use as filter when performing a keyword search from the Default Article on the Quest Landing Page</description>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <label>Search Category</label>
         <length>30</length>

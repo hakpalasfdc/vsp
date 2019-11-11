@@ -1,5 +1,50 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>AddCampaign</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>ConvertLead</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CreateOpportunity</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <enableFeeds>false</enableFeeds>
+    <fields>
+        <fullName>CampaignId</fullName>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>City</fullName>
+    </fields>
     <fields>
         <fullName>Client_ID__c</fullName>
         <externalId>false</externalId>
@@ -10,6 +55,9 @@
         <unique>false</unique>
     </fields>
     <fields>
+        <fullName>CompanyOrAccount</fullName>
+    </fields>
+    <fields>
         <fullName>Consumer_ID__c</fullName>
         <externalId>false</externalId>
         <formula>Contact.Consumer_ID__c</formula>
@@ -17,6 +65,10 @@
         <required>false</required>
         <type>Text</type>
         <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ContactId</fullName>
+        <type>Lookup</type>
     </fields>
     <fields>
         <fullName>Contact_Account_Id__c</fullName>
@@ -39,6 +91,9 @@
         <unique>false</unique>
     </fields>
     <fields>
+        <fullName>Country</fullName>
+    </fields>
+    <fields>
         <fullName>Date_of_Birth__c</fullName>
         <externalId>false</externalId>
         <formula>Contact.Birthdate__c</formula>
@@ -47,12 +102,30 @@
         <type>Date</type>
     </fields>
     <fields>
+        <fullName>Description</fullName>
+    </fields>
+    <fields>
+        <fullName>DoNotCall</fullName>
+    </fields>
+    <fields>
         <fullName>Drop_Date__c</fullName>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <label>Drop Date</label>
         <required>false</required>
         <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Email</fullName>
+    </fields>
+    <fields>
+        <fullName>Fax</fullName>
+    </fields>
+    <fields>
+        <fullName>FirstName</fullName>
+    </fields>
+    <fields>
+        <fullName>FirstRespondedDate</fullName>
     </fields>
     <fields>
         <fullName>Gender__c</fullName>
@@ -64,6 +137,29 @@
         <unique>false</unique>
     </fields>
     <fields>
+        <fullName>HasOptedOutOfEmail</fullName>
+    </fields>
+    <fields>
+        <fullName>HasOptedOutOfFax</fullName>
+    </fields>
+    <fields>
+        <fullName>HasResponded</fullName>
+    </fields>
+    <fields>
+        <fullName>LastName</fullName>
+    </fields>
+    <fields>
+        <fullName>LeadId</fullName>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>LeadSource</fullName>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>MobilePhone</fullName>
+    </fields>
+    <fields>
         <fullName>Other_Email__c</fullName>
         <externalId>false</externalId>
         <formula>Contact.Other_Email__c</formula>
@@ -73,8 +169,31 @@
         <unique>false</unique>
     </fields>
     <fields>
+        <fullName>Phone</fullName>
+    </fields>
+    <fields>
+        <fullName>PostalCode</fullName>
+    </fields>
+    <fields>
+        <fullName>Salutation</fullName>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>State</fullName>
+    </fields>
+    <fields>
+        <fullName>Status</fullName>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Street</fullName>
+    </fields>
+    <fields>
+        <fullName>Title</fullName>
+    </fields>
+    <fields>
         <fullName>sfxId__c</fullName>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>true</externalId>
         <label>sfxId</label>
         <length>18</length>
@@ -82,6 +201,7 @@
         <type>Text</type>
         <unique>false</unique>
     </fields>
+    <sharingModel>ControlledByCampaign</sharingModel>
     <webLinks>
         <fullName>Create_Opportunity2</fullName>
         <availability>online</availability>

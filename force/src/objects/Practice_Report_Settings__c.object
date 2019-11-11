@@ -5,7 +5,7 @@
     <enableFeeds>false</enableFeeds>
     <fields>
         <fullName>Posting_Date_From__c</fullName>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <label>Posting Date (From)</label>
         <required>true</required>
@@ -14,7 +14,7 @@
     </fields>
     <fields>
         <fullName>Posting_Date_To__c</fullName>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <label>Posting Date (To)</label>
         <required>true</required>
@@ -23,7 +23,7 @@
     </fields>
     <fields>
         <fullName>Quarter__c</fullName>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <label>Quarter</label>
         <length>2</length>
@@ -34,7 +34,7 @@
     </fields>
     <fields>
         <fullName>Year__c</fullName>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <label>Year</label>
         <length>4</length>

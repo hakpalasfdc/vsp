@@ -5,27 +5,7 @@
         <type>Default</type>
     </actionOverrides>
     <actionOverrides>
-        <actionName>Accept</actionName>
-        <formFactor>Large</formFactor>
-        <type>Default</type>
-    </actionOverrides>
-    <actionOverrides>
-        <actionName>Accept</actionName>
-        <formFactor>Small</formFactor>
-        <type>Default</type>
-    </actionOverrides>
-    <actionOverrides>
         <actionName>CancelEdit</actionName>
-        <type>Default</type>
-    </actionOverrides>
-    <actionOverrides>
-        <actionName>CancelEdit</actionName>
-        <formFactor>Large</formFactor>
-        <type>Default</type>
-    </actionOverrides>
-    <actionOverrides>
-        <actionName>CancelEdit</actionName>
-        <formFactor>Small</formFactor>
         <type>Default</type>
     </actionOverrides>
     <actionOverrides>
@@ -33,27 +13,7 @@
         <type>Default</type>
     </actionOverrides>
     <actionOverrides>
-        <actionName>Clone</actionName>
-        <formFactor>Large</formFactor>
-        <type>Default</type>
-    </actionOverrides>
-    <actionOverrides>
-        <actionName>Clone</actionName>
-        <formFactor>Small</formFactor>
-        <type>Default</type>
-    </actionOverrides>
-    <actionOverrides>
         <actionName>Delete</actionName>
-        <type>Default</type>
-    </actionOverrides>
-    <actionOverrides>
-        <actionName>Delete</actionName>
-        <formFactor>Large</formFactor>
-        <type>Default</type>
-    </actionOverrides>
-    <actionOverrides>
-        <actionName>Delete</actionName>
-        <formFactor>Small</formFactor>
         <type>Default</type>
     </actionOverrides>
     <actionOverrides>
@@ -61,27 +21,7 @@
         <type>Default</type>
     </actionOverrides>
     <actionOverrides>
-        <actionName>Edit</actionName>
-        <formFactor>Large</formFactor>
-        <type>Default</type>
-    </actionOverrides>
-    <actionOverrides>
-        <actionName>Edit</actionName>
-        <formFactor>Small</formFactor>
-        <type>Default</type>
-    </actionOverrides>
-    <actionOverrides>
         <actionName>List</actionName>
-        <type>Default</type>
-    </actionOverrides>
-    <actionOverrides>
-        <actionName>List</actionName>
-        <formFactor>Large</formFactor>
-        <type>Default</type>
-    </actionOverrides>
-    <actionOverrides>
-        <actionName>List</actionName>
-        <formFactor>Small</formFactor>
         <type>Default</type>
     </actionOverrides>
     <actionOverrides>
@@ -89,27 +29,7 @@
         <type>Default</type>
     </actionOverrides>
     <actionOverrides>
-        <actionName>New</actionName>
-        <formFactor>Large</formFactor>
-        <type>Default</type>
-    </actionOverrides>
-    <actionOverrides>
-        <actionName>New</actionName>
-        <formFactor>Small</formFactor>
-        <type>Default</type>
-    </actionOverrides>
-    <actionOverrides>
         <actionName>SaveEdit</actionName>
-        <type>Default</type>
-    </actionOverrides>
-    <actionOverrides>
-        <actionName>SaveEdit</actionName>
-        <formFactor>Large</formFactor>
-        <type>Default</type>
-    </actionOverrides>
-    <actionOverrides>
-        <actionName>SaveEdit</actionName>
-        <formFactor>Small</formFactor>
         <type>Default</type>
     </actionOverrides>
     <actionOverrides>
@@ -117,27 +37,7 @@
         <type>Default</type>
     </actionOverrides>
     <actionOverrides>
-        <actionName>Tab</actionName>
-        <formFactor>Large</formFactor>
-        <type>Default</type>
-    </actionOverrides>
-    <actionOverrides>
-        <actionName>Tab</actionName>
-        <formFactor>Small</formFactor>
-        <type>Default</type>
-    </actionOverrides>
-    <actionOverrides>
         <actionName>View</actionName>
-        <type>Default</type>
-    </actionOverrides>
-    <actionOverrides>
-        <actionName>View</actionName>
-        <formFactor>Large</formFactor>
-        <type>Default</type>
-    </actionOverrides>
-    <actionOverrides>
-        <actionName>View</actionName>
-        <formFactor>Small</formFactor>
         <type>Default</type>
     </actionOverrides>
     <allowInChatterGroups>false</allowInChatterGroups>
@@ -146,10 +46,10 @@
     <description>TOOLKIT - An object that represents a specific instance of the product and all of the related components that make up the specific instance.</description>
     <enableActivities>false</enableActivities>
     <enableBulkApi>true</enableBulkApi>
+    <enableChangeDataCapture>false</enableChangeDataCapture>
     <enableEnhancedLookup>false</enableEnhancedLookup>
     <enableFeeds>true</enableFeeds>
     <enableHistory>false</enableHistory>
-    <enableLicensing>false</enableLicensing>
     <enableReports>true</enableReports>
     <enableSearch>true</enableSearch>
     <enableSharing>true</enableSharing>
@@ -169,7 +69,7 @@
     </fields>
     <fields>
         <fullName>Build_End_Date__c</fullName>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <label>Build End Date</label>
         <required>false</required>
@@ -179,7 +79,7 @@
     </fields>
     <fields>
         <fullName>Build_Start_Date__c</fullName>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <label>Build Start Date</label>
         <required>false</required>
@@ -213,7 +113,7 @@
     </fields>
     <fields>
         <fullName>Deploy_End_Date__c</fullName>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <label>Deploy End Date</label>
         <required>false</required>
@@ -223,7 +123,7 @@
     </fields>
     <fields>
         <fullName>Deploy_Start_Date__c</fullName>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <label>Deploy Start Date</label>
         <required>false</required>
@@ -233,7 +133,7 @@
     </fields>
     <fields>
         <fullName>Description__c</fullName>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <label>Description</label>
         <length>4000</length>
@@ -244,7 +144,7 @@
     </fields>
     <fields>
         <fullName>Design_End_Date__c</fullName>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <label>Design End Date</label>
         <required>false</required>
@@ -254,7 +154,7 @@
     </fields>
     <fields>
         <fullName>Design_Start_Date__c</fullName>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <label>Design Start Date</label>
         <required>false</required>
@@ -342,7 +242,7 @@
     </fields>
     <fields>
         <fullName>Plan_End_Date__c</fullName>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <label>Plan End Date</label>
         <required>false</required>
@@ -352,7 +252,7 @@
     </fields>
     <fields>
         <fullName>Plan_Start_Date__c</fullName>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <label>Plan Start Date</label>
         <required>false</required>
@@ -362,7 +262,7 @@
     </fields>
     <fields>
         <fullName>Release_Actual_End_Date__c</fullName>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <label>Release Actual End Date</label>
         <required>false</required>
@@ -372,7 +272,7 @@
     </fields>
     <fields>
         <fullName>Release_Planned_End_Date__c</fullName>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <label>Release Planned End Date</label>
         <required>false</required>
@@ -382,7 +282,7 @@
     </fields>
     <fields>
         <fullName>Release_Start_Date__c</fullName>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <label>Release Start Date</label>
         <required>false</required>
@@ -417,7 +317,7 @@
     <fields>
         <fullName>Status_Update__c</fullName>
         <description>Release status update</description>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <inlineHelpText>Release status update</inlineHelpText>
         <label>Comments</label>
@@ -461,7 +361,7 @@ Red: Milestone will be missed or has been missed</inlineHelpText>
     </fields>
     <fields>
         <fullName>Support_End_Date__c</fullName>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <label>Support End Date</label>
         <required>false</required>
@@ -471,7 +371,7 @@ Red: Milestone will be missed or has been missed</inlineHelpText>
     </fields>
     <fields>
         <fullName>Support_Start_Date__c</fullName>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <label>Support Start Date</label>
         <required>false</required>
@@ -481,7 +381,7 @@ Red: Milestone will be missed or has been missed</inlineHelpText>
     </fields>
     <fields>
         <fullName>Test_End_Date__c</fullName>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <label>Test End Date</label>
         <required>false</required>
@@ -491,7 +391,7 @@ Red: Milestone will be missed or has been missed</inlineHelpText>
     </fields>
     <fields>
         <fullName>Test_Start_Date__c</fullName>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <label>Test Start Date</label>
         <required>false</required>
@@ -611,7 +511,7 @@ Red: Milestone will be missed or has been missed</inlineHelpText>
     </fields>
     <fields>
         <fullName>UAT_End_Date__c</fullName>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <label>UAT End Date</label>
         <required>false</required>
@@ -621,7 +521,7 @@ Red: Milestone will be missed or has been missed</inlineHelpText>
     </fields>
     <fields>
         <fullName>UAT_Start_Date__c</fullName>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <label>UAT Start Date</label>
         <required>false</required>
@@ -647,7 +547,7 @@ Red: Milestone will be missed or has been missed</inlineHelpText>
         <label>All</label>
     </listViews>
     <nameField>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <label>Release Name</label>
         <trackFeedHistory>false</trackFeedHistory>
         <type>Text</type>

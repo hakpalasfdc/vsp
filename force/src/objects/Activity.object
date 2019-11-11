@@ -1,5 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>ComposeGmail</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>LogCall</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>MailMerge</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>RequestUpdate</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SendEmail</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>ViewAll</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <enableFeeds>false</enableFeeds>
     <fields>
         <fullName>Activities_I_Manage__c</fullName>
         <externalId>false</externalId>
@@ -26,8 +59,99 @@
         <unique>false</unique>
     </fields>
     <fields>
+        <fullName>CLS4SF__ClearSlide_Activity_Type__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>ClearSlide Activity Type</label>
+        <required>false</required>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>ClearSlide Email</fullName>
+                    <default>true</default>
+                    <label>ClearSlide Email</label>
+                </value>
+                <value>
+                    <fullName>ClearSlide Meeting</fullName>
+                    <default>false</default>
+                    <label>ClearSlide Meeting</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>CLS4SF__ClearSlide_Content_Link_Clicked__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>ClearSlide Content Link Clicked</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>CLS4SF__ClearSlide_Created__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>ClearSlide Created</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>CLS4SF__ClearSlide_Email_Opened__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>ClearSlide Email Opened</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>CLS4SF__ClearSlide_Engagement_Time_in_Minutes__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <formula>CLS4SF__ClearSlide_Engagement_Time_in_Seconds__c  / 60</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>ClearSlide Engagement Time (Minutes)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CLS4SF__ClearSlide_Engagement_Time_in_Seconds__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>ClearSlide Engagement Time in Seconds</label>
+        <precision>7</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CLS4SF__ClearSlide_Forecast_Category__c</fullName>
+        <deprecated>false</deprecated>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>ClearSlide Forecast Category</label>
+        <required>false</required>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>CLS4SF__ClearSlide_Opportunity_Stage__c</fullName>
+        <deprecated>false</deprecated>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>ClearSlide Opportunity Stage</label>
+        <length>100</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
         <fullName>Classification_Note__c</fullName>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <label>Classification Note</label>
         <length>128</length>
@@ -95,7 +219,7 @@
     <fields>
         <fullName>Comments__c</fullName>
         <description>Outcome of event.</description>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <label>Comments</label>
         <required>false</required>
@@ -112,15 +236,235 @@
     </fields>
     <fields>
         <fullName>DSRecordingURL__c</fullName>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <label>DSRecordingURL</label>
         <required>false</required>
         <type>Url</type>
     </fields>
     <fields>
+        <fullName>DialSource__Call_Campaign_DS__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The name of the Call Campaign the record was called from</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Call Campaign</label>
+        <length>140</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>DialSource__Call_Disposition_DS__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Name of the disposition clicked for this call</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Call Disposition</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>DialSource__Call_Ended_DS__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Time stamp indicating when the call ended</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Call Ended</label>
+        <required>false</required>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>DialSource__Call_ID_DS__c</fullName>
+        <deprecated>false</deprecated>
+        <description>External ID for the logged call used for troubleshooting purposes</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Call ID</label>
+        <length>140</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>DialSource__Call_Placed_DS__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Time stamp indicating when the call was initially placed</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Call Placed</label>
+        <required>false</required>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>DialSource__Call_Started_DS__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Time stamp of when the call was connected to the prospect</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Call Started</label>
+        <required>false</required>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>DialSource__Caller_ID_DS__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Caller ID that appeared to the prospect</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Caller ID</label>
+        <length>140</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>DialSource__DS_Get_Recording__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Link to the call recording</description>
+        <externalId>false</externalId>
+        <formula>if(DialSource__Recording_ID_DS__c != &quot;&quot;, HYPERLINK(&apos;/apex/DialSource__PlayRecording?id=&apos;+Id,&quot;Play Recording&quot;), &quot;&quot;)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>DS Get Recording</label>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>DialSource__Inbound_Agent_Wait_Time_secs__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Time the agents were waiting to receive the inbound call</description>
+        <externalId>false</externalId>
+        <label>Inbound Agent Wait Time (secs)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>DialSource__Inbound_DNIS_Name__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Name associated with the Inbound DNIS</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Inbound DNIS Name</label>
+        <length>140</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>DialSource__Inbound_DNIS__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The Inbound Number that was dialed by the prospect</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Inbound DNIS</label>
+        <length>25</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>DialSource__Inbound_Prospect_Wait_Time_secs__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Time in which the prospect was waiting for an agent to answer</description>
+        <externalId>false</externalId>
+        <label>Inbound Prospect Wait Time (secs)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>DialSource__Inbound_Queue__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Name of the Inbound Queue in which the Inbound DNIS is associated to</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Inbound Queue</label>
+        <length>140</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>DialSource__RTPQ_Group_ID__c</fullName>
+        <deprecated>false</deprecated>
+        <description>DialSource Agent Group ID used to track which RTPQ group the call was presented to</description>
+        <externalId>false</externalId>
+        <label>RTPQ Group ID</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>DialSource__RTPQ_Wait_Time__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Time in which the record sat in the queue before it was dialed by a rep</description>
+        <externalId>false</externalId>
+        <label>RTPQ Wait Time</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>DialSource__Recording_ID_DS__c</fullName>
+        <deprecated>false</deprecated>
+        <description>External DialSource ID used to track the call recording</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Recording ID</label>
+        <length>140</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>DialSource__Recycled_Until_DS__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Datetime the related record is Recycled Until</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Recycled Until</label>
+        <required>false</required>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>DialSource__Session_ID_DS__c</fullName>
+        <deprecated>false</deprecated>
+        <description>External DialSource ID used to reference the DS Session this call is related to</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Session ID</label>
+        <length>140</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>DialSource__Voicemail_DS__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Name of the Voicemail recording that was left to the prospect</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Voicemail</label>
+        <length>140</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
         <fullName>Event_Date_Finished__c</fullName>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <label>Event Date Finished</label>
         <required>false</required>
@@ -128,7 +472,7 @@
     </fields>
     <fields>
         <fullName>Event_Description__c</fullName>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <label>Event Description</label>
         <required>false</required>
@@ -195,6 +539,17 @@
         <label>Last Modified Date/Time</label>
         <required>false</required>
         <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>MPM4_BASE__Project_Task_ID__c</fullName>
+        <deprecated>false</deprecated>
+        <encrypted>false</encrypted>
+        <externalId>true</externalId>
+        <label>Project Task ID</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
     </fields>
     <fields>
         <fullName>Modified_By_Role__c</fullName>
@@ -275,8 +630,32 @@
         </valueSet>
     </fields>
     <fields>
+        <fullName>cnx__CTIInfo__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Additional CTI Information</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>CTI Info</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>cnx__UniqueId__c</fullName>
+        <caseSensitive>false</caseSensitive>
+        <deprecated>false</deprecated>
+        <encrypted>false</encrypted>
+        <externalId>true</externalId>
+        <label>UniqueId</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
         <fullName>sfxId__c</fullName>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>true</externalId>
         <label>sfxId</label>
         <length>18</length>
@@ -427,4 +806,12 @@
         </filters>
         <label>Today&apos;s Tasks</label>
     </listViews>
+    <searchLayouts>
+        <searchResultsAdditionalFields>TASK.SUBJECT</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>TASK.WHO_NAME</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>TASK.WHAT_NAME</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>TASK.DUE_DATE</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>CORE.USERS.ALIAS</searchResultsAdditionalFields>
+    </searchLayouts>
+    <sharingModel>ControlledByParent</sharingModel>
 </CustomObject>

@@ -5,27 +5,7 @@
         <type>Default</type>
     </actionOverrides>
     <actionOverrides>
-        <actionName>Accept</actionName>
-        <formFactor>Large</formFactor>
-        <type>Default</type>
-    </actionOverrides>
-    <actionOverrides>
-        <actionName>Accept</actionName>
-        <formFactor>Small</formFactor>
-        <type>Default</type>
-    </actionOverrides>
-    <actionOverrides>
         <actionName>CancelEdit</actionName>
-        <type>Default</type>
-    </actionOverrides>
-    <actionOverrides>
-        <actionName>CancelEdit</actionName>
-        <formFactor>Large</formFactor>
-        <type>Default</type>
-    </actionOverrides>
-    <actionOverrides>
-        <actionName>CancelEdit</actionName>
-        <formFactor>Small</formFactor>
         <type>Default</type>
     </actionOverrides>
     <actionOverrides>
@@ -33,27 +13,7 @@
         <type>Default</type>
     </actionOverrides>
     <actionOverrides>
-        <actionName>Clone</actionName>
-        <formFactor>Large</formFactor>
-        <type>Default</type>
-    </actionOverrides>
-    <actionOverrides>
-        <actionName>Clone</actionName>
-        <formFactor>Small</formFactor>
-        <type>Default</type>
-    </actionOverrides>
-    <actionOverrides>
         <actionName>Delete</actionName>
-        <type>Default</type>
-    </actionOverrides>
-    <actionOverrides>
-        <actionName>Delete</actionName>
-        <formFactor>Large</formFactor>
-        <type>Default</type>
-    </actionOverrides>
-    <actionOverrides>
-        <actionName>Delete</actionName>
-        <formFactor>Small</formFactor>
         <type>Default</type>
     </actionOverrides>
     <actionOverrides>
@@ -61,27 +21,7 @@
         <type>Default</type>
     </actionOverrides>
     <actionOverrides>
-        <actionName>Edit</actionName>
-        <formFactor>Large</formFactor>
-        <type>Default</type>
-    </actionOverrides>
-    <actionOverrides>
-        <actionName>Edit</actionName>
-        <formFactor>Small</formFactor>
-        <type>Default</type>
-    </actionOverrides>
-    <actionOverrides>
         <actionName>List</actionName>
-        <type>Default</type>
-    </actionOverrides>
-    <actionOverrides>
-        <actionName>List</actionName>
-        <formFactor>Large</formFactor>
-        <type>Default</type>
-    </actionOverrides>
-    <actionOverrides>
-        <actionName>List</actionName>
-        <formFactor>Small</formFactor>
         <type>Default</type>
     </actionOverrides>
     <actionOverrides>
@@ -89,27 +29,7 @@
         <type>Default</type>
     </actionOverrides>
     <actionOverrides>
-        <actionName>New</actionName>
-        <formFactor>Large</formFactor>
-        <type>Default</type>
-    </actionOverrides>
-    <actionOverrides>
-        <actionName>New</actionName>
-        <formFactor>Small</formFactor>
-        <type>Default</type>
-    </actionOverrides>
-    <actionOverrides>
         <actionName>SaveEdit</actionName>
-        <type>Default</type>
-    </actionOverrides>
-    <actionOverrides>
-        <actionName>SaveEdit</actionName>
-        <formFactor>Large</formFactor>
-        <type>Default</type>
-    </actionOverrides>
-    <actionOverrides>
-        <actionName>SaveEdit</actionName>
-        <formFactor>Small</formFactor>
         <type>Default</type>
     </actionOverrides>
     <actionOverrides>
@@ -117,27 +37,7 @@
         <type>Default</type>
     </actionOverrides>
     <actionOverrides>
-        <actionName>Tab</actionName>
-        <formFactor>Large</formFactor>
-        <type>Default</type>
-    </actionOverrides>
-    <actionOverrides>
-        <actionName>Tab</actionName>
-        <formFactor>Small</formFactor>
-        <type>Default</type>
-    </actionOverrides>
-    <actionOverrides>
         <actionName>View</actionName>
-        <type>Default</type>
-    </actionOverrides>
-    <actionOverrides>
-        <actionName>View</actionName>
-        <formFactor>Large</formFactor>
-        <type>Default</type>
-    </actionOverrides>
-    <actionOverrides>
-        <actionName>View</actionName>
-        <formFactor>Small</formFactor>
         <type>Default</type>
     </actionOverrides>
     <allowInChatterGroups>false</allowInChatterGroups>
@@ -146,9 +46,9 @@
     <description>Quality Assurance Reviews of Providers</description>
     <enableActivities>true</enableActivities>
     <enableBulkApi>true</enableBulkApi>
+    <enableChangeDataCapture>false</enableChangeDataCapture>
     <enableFeeds>true</enableFeeds>
     <enableHistory>true</enableHistory>
-    <enableLicensing>false</enableLicensing>
     <enableReports>true</enableReports>
     <enableSearch>true</enableSearch>
     <enableSharing>true</enableSharing>
@@ -156,7 +56,7 @@
     <externalSharingModel>ReadWrite</externalSharingModel>
     <fields>
         <fullName>Audit_Email__c</fullName>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <label>Audit Email</label>
         <length>100</length>
@@ -219,7 +119,7 @@
     </fields>
     <fields>
         <fullName>Comments__c</fullName>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <label>Comments</label>
         <length>131072</length>
@@ -283,7 +183,7 @@
     </fields>
     <fields>
         <fullName>DocuSign_Completion_Date__c</fullName>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <label>DocuSign Completion Date</label>
         <required>false</required>
@@ -294,7 +194,7 @@
     </fields>
     <fields>
         <fullName>Exam_Restitution_Amount_Date__c</fullName>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <label>Exam Restitution Amt Received/Paid/Sent</label>
         <required>false</required>
@@ -402,7 +302,7 @@
     </fields>
     <fields>
         <fullName>Grade_Date__c</fullName>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <label>Grade Date</label>
         <required>false</required>
@@ -451,7 +351,7 @@
     </fields>
     <fields>
         <fullName>Original_DocuSign_Sent_Date__c</fullName>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <label>Original DocuSign Sent Date</label>
         <required>false</required>
@@ -474,7 +374,7 @@
     </fields>
     <fields>
         <fullName>Provider_Formal_Name__c</fullName>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <label>Provider Formal Name</label>
         <length>100</length>
@@ -653,7 +553,7 @@
     </fields>
     <fields>
         <fullName>QA_Patient_Claim_Number_10__c</fullName>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <label>QA Patient Authorization Number 10</label>
         <length>25</length>
@@ -666,7 +566,7 @@
     </fields>
     <fields>
         <fullName>QA_Patient_Claim_Number_1__c</fullName>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <label>QA Patient Authorization Number 1</label>
         <length>25</length>
@@ -679,7 +579,7 @@
     </fields>
     <fields>
         <fullName>QA_Patient_Claim_Number_2__c</fullName>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <label>QA Patient Authorization Number 2</label>
         <length>25</length>
@@ -692,7 +592,7 @@
     </fields>
     <fields>
         <fullName>QA_Patient_Claim_Number_3__c</fullName>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <label>QA Patient Authorization Number 3</label>
         <length>25</length>
@@ -705,7 +605,7 @@
     </fields>
     <fields>
         <fullName>QA_Patient_Claim_Number_4__c</fullName>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <label>QA Patient Authorization Number 4</label>
         <length>25</length>
@@ -718,7 +618,7 @@
     </fields>
     <fields>
         <fullName>QA_Patient_Claim_Number_5__c</fullName>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <label>QA Patient Authorization Number 5</label>
         <length>25</length>
@@ -731,7 +631,7 @@
     </fields>
     <fields>
         <fullName>QA_Patient_Claim_Number_6__c</fullName>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <label>QA Patient Authorization Number 6</label>
         <length>25</length>
@@ -744,7 +644,7 @@
     </fields>
     <fields>
         <fullName>QA_Patient_Claim_Number_7__c</fullName>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <label>QA Patient Authorization Number 7</label>
         <length>25</length>
@@ -757,7 +657,7 @@
     </fields>
     <fields>
         <fullName>QA_Patient_Claim_Number_8__c</fullName>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <label>QA Patient Authorization Number 8</label>
         <length>25</length>
@@ -770,7 +670,7 @@
     </fields>
     <fields>
         <fullName>QA_Patient_Claim_Number_9__c</fullName>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <label>QA Patient Authorization Number 9</label>
         <length>25</length>
@@ -783,7 +683,7 @@
     </fields>
     <fields>
         <fullName>QA_Patient_Date_of_Service_10__c</fullName>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <label>QA Patient Date of Service 10</label>
         <required>false</required>
@@ -794,7 +694,7 @@
     </fields>
     <fields>
         <fullName>QA_Patient_Date_of_Service_1__c</fullName>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <label>QA Patient Date of Service 1</label>
         <required>false</required>
@@ -805,7 +705,7 @@
     </fields>
     <fields>
         <fullName>QA_Patient_Date_of_Service_2__c</fullName>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <label>QA Patient Date of Service 2</label>
         <required>false</required>
@@ -816,7 +716,7 @@
     </fields>
     <fields>
         <fullName>QA_Patient_Date_of_Service_3__c</fullName>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <label>QA Patient Date of Service 3</label>
         <required>false</required>
@@ -827,7 +727,7 @@
     </fields>
     <fields>
         <fullName>QA_Patient_Date_of_Service_4__c</fullName>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <label>QA Patient Date of Service 4</label>
         <required>false</required>
@@ -838,7 +738,7 @@
     </fields>
     <fields>
         <fullName>QA_Patient_Date_of_Service_5__c</fullName>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <label>QA Patient Date of Service 5</label>
         <required>false</required>
@@ -849,7 +749,7 @@
     </fields>
     <fields>
         <fullName>QA_Patient_Date_of_Service_6__c</fullName>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <label>QA Patient Date of Service 6</label>
         <required>false</required>
@@ -860,7 +760,7 @@
     </fields>
     <fields>
         <fullName>QA_Patient_Date_of_Service_7__c</fullName>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <label>QA Patient Date of Service 7</label>
         <required>false</required>
@@ -871,7 +771,7 @@
     </fields>
     <fields>
         <fullName>QA_Patient_Date_of_Service_8__c</fullName>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <label>QA Patient Date of Service 8</label>
         <required>false</required>
@@ -882,7 +782,7 @@
     </fields>
     <fields>
         <fullName>QA_Patient_Date_of_Service_9__c</fullName>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <label>QA Patient Date of Service 9</label>
         <required>false</required>
@@ -893,7 +793,7 @@
     </fields>
     <fields>
         <fullName>QA_Patient_Name_10__c</fullName>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <label>QA Patient Name 10</label>
         <length>255</length>
@@ -906,7 +806,7 @@
     </fields>
     <fields>
         <fullName>QA_Patient_Name_1__c</fullName>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <label>QA Patient Name 1</label>
         <length>255</length>
@@ -919,7 +819,7 @@
     </fields>
     <fields>
         <fullName>QA_Patient_Name_2__c</fullName>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <label>QA Patient Name 2</label>
         <length>255</length>
@@ -932,7 +832,7 @@
     </fields>
     <fields>
         <fullName>QA_Patient_Name_3__c</fullName>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <label>QA Patient Name 3</label>
         <length>255</length>
@@ -945,7 +845,7 @@
     </fields>
     <fields>
         <fullName>QA_Patient_Name_4__c</fullName>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <label>QA Patient Name 4</label>
         <length>255</length>
@@ -958,7 +858,7 @@
     </fields>
     <fields>
         <fullName>QA_Patient_Name_5__c</fullName>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <label>QA Patient Name 5</label>
         <length>255</length>
@@ -971,7 +871,7 @@
     </fields>
     <fields>
         <fullName>QA_Patient_Name_6__c</fullName>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <label>QA Patient Name 6</label>
         <length>255</length>
@@ -984,7 +884,7 @@
     </fields>
     <fields>
         <fullName>QA_Patient_Name_7__c</fullName>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <label>QA Patient Name 7</label>
         <length>255</length>
@@ -997,7 +897,7 @@
     </fields>
     <fields>
         <fullName>QA_Patient_Name_8__c</fullName>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <label>QA Patient Name 8</label>
         <length>255</length>
@@ -1010,7 +910,7 @@
     </fields>
     <fields>
         <fullName>QA_Patient_Name_9__c</fullName>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <label>QA Patient Name 9</label>
         <length>255</length>
@@ -1126,7 +1026,7 @@
     </fields>
     <fields>
         <fullName>Re_Audit_Amount_Date__c</fullName>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <label>Re-Audit Amt Received/Paid/Sent</label>
         <required>false</required>
@@ -1163,7 +1063,7 @@
     </fields>
     <fields>
         <fullName>Result_Letter_Date__c</fullName>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <label>Result Letter Date</label>
         <required>false</required>
@@ -1174,7 +1074,7 @@
     </fields>
     <fields>
         <fullName>Review_Date_Scheduled__c</fullName>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <label>Review Date Scheduled</label>
         <required>false</required>
@@ -1221,7 +1121,7 @@
     </fields>
     <fields>
         <fullName>Review_Received_Date__c</fullName>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <label>Review/Received Date</label>
         <required>false</required>
@@ -1294,7 +1194,7 @@
     </fields>
     <fields>
         <fullName>Special_Handling_Comments__c</fullName>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <label>Special Handling Comments</label>
         <required>false</required>
@@ -1359,7 +1259,7 @@
     </fields>
     <fields>
         <fullName>Vision_Care_Location_Key__c</fullName>
-        <encryptionScheme>CaseSensitiveDeterministicEncryption</encryptionScheme>
+        <encrypted>true</encrypted>
         <externalId>false</externalId>
         <label>Vision Care Location Key</label>
         <length>100</length>
@@ -1372,7 +1272,7 @@
     </fields>
     <fields>
         <fullName>sfxId__c</fullName>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>true</externalId>
         <label>sfxId</label>
         <length>18</length>

@@ -1,5 +1,77 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>AddToCampaign</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CallHighlightAction</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>ChangeStatus</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Convert</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>EmailHighlightAction</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>FindDup</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>ListClean</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SmsHighlightAction</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
     <businessProcesses>
         <fullName>VSP Leads Process</fullName>
         <isActive>true</isActive>
@@ -36,6 +108,15 @@
             <default>false</default>
         </values>
     </businessProcesses>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <enableFeeds>true</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <fields>
+        <fullName>Address</fullName>
+        <encrypted>false</encrypted>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
     <fields>
         <fullName>Altair_Marketing_Communications__c</fullName>
         <defaultValue>false</defaultValue>
@@ -57,7 +138,7 @@
     <fields>
         <fullName>Altair_Score__c</fullName>
         <description>The score indicates interaction and profile strength for Altair.</description>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <inlineHelpText>This score indicates interaction and profile strength. Profile strength ranges from A-D with A being the highest. The interaction score ranges from 1-4 with 1 being the highest.</inlineHelpText>
         <label>Altair Score</label>
@@ -78,8 +159,13 @@
         <type>Checkbox</type>
     </fields>
     <fields>
+        <fullName>AnnualRevenue</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
         <fullName>CSR_Sales_Agent_Name__c</fullName>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <label>CSR/Sales Agent Name</label>
         <length>255</length>
@@ -91,13 +177,17 @@
     </fields>
     <fields>
         <fullName>Call_Back_Date__c</fullName>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <label>Call Back Date</label>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>CampaignId</fullName>
+        <type>Lookup</type>
     </fields>
     <fields>
         <fullName>Campaign_Ineligibility__c</fullName>
@@ -140,8 +230,14 @@
         </valueSet>
     </fields>
     <fields>
+        <fullName>Company</fullName>
+        <encrypted>false</encrypted>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
         <fullName>Consumer_ID__c</fullName>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <label>Consumer ID</label>
         <length>15</length>
@@ -211,13 +307,99 @@
     </fields>
     <fields>
         <fullName>Date_of_Birth__c</fullName>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <label>Date of Birth</label>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Description</fullName>
+        <encrypted>false</encrypted>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>DialSource__DS_Owner_ID__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The record owner&apos;s Salesforce ID. Used in Campaign source reports to distribute the records using the Record Owner Distribution feature</description>
+        <externalId>false</externalId>
+        <formula>OwnerId</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>DS Owner ID</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>DialSource__Datetime_of_Last_Disposition_DS__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Time stamp of when the last Disposition was clicked</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Datetime of Last Disposition</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>DialSource__Last_Call_Campaign_Name__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Name of the Call Campaign the record was last called from</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Last Call Campaign Name</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>DialSource__Last_Disposition_DS__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Name of the last Disposition clicked</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Last Disposition</label>
+        <length>140</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>DialSource__Next_Call_DS__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Datetime field used to set the next call datetime for reference in automation or Reports/List Views</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Next Call</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>DialSource__Total_Call_Count_DS__c</fullName>
+        <defaultValue>0</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Total number of calls made on this record</description>
+        <externalId>false</externalId>
+        <label>Total Call Count</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
     </fields>
     <fields>
         <fullName>Disposition_of_Call__c</fullName>
@@ -270,8 +452,13 @@
         </valueSet>
     </fields>
     <fields>
+        <fullName>DoNotCall</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
         <fullName>Eloqua_Contact_ID__c</fullName>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <label>Eloqua Contact ID</label>
         <length>255</length>
@@ -294,7 +481,7 @@
     </fields>
     <fields>
         <fullName>Eloqua_Lead_Score__c</fullName>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <inlineHelpText>This score indicates interaction and profile strength. Profile strength ranges from A-D with A being the highest. The interaction score ranges from 1-4 with 1 being the highest.</inlineHelpText>
         <label>Eloqua Score</label>
@@ -304,6 +491,12 @@
         <trackHistory>false</trackHistory>
         <type>Text</type>
         <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Email</fullName>
+        <encrypted>false</encrypted>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
     </fields>
     <fields>
         <fullName>Eyefinity_Marketing_Communications__c</fullName>
@@ -326,7 +519,7 @@
     <fields>
         <fullName>Eyefinity_Score__c</fullName>
         <description>The score indicates interaction and profile strength for Eyefinity.</description>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <inlineHelpText>This score indicates interaction and profile strength. Profile strength ranges from A-D with A being the highest. The interaction score ranges from 1-4 with 1 being the highest.</inlineHelpText>
         <label>Eyefinity Score</label>
@@ -345,6 +538,12 @@
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Fax</fullName>
+        <encrypted>false</encrypted>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
     </fields>
     <fields>
         <fullName>From_Lead_Indicator__c</fullName>
@@ -381,6 +580,16 @@
         </valueSet>
     </fields>
     <fields>
+        <fullName>HasOptedOutOfEmail</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>HasOptedOutOfFax</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
         <fullName>IP_Behavioral_Score__c</fullName>
         <externalId>false</externalId>
         <formula>(LPUV_Score_1__c*0.084)+(LPUV_Score_2__c*0.109)+(LPUV_Score_3__c*0.05)+(LPUV_Score_4__c*0.0153)+(LPUV_Score_5__c*0.148)</formula>
@@ -395,13 +604,30 @@
     </fields>
     <fields>
         <fullName>IP_Purchase_Date__c</fullName>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <label>IP Purchase Date</label>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>IndividualId</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Industry</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Jigsaw</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
     </fields>
     <fields>
         <fullName>LPUV_Score_1__c</fullName>
@@ -503,8 +729,17 @@
         <unique>false</unique>
     </fields>
     <fields>
+        <fullName>LastTransferDate</fullName>
+    </fields>
+    <fields>
+        <fullName>LeadSource</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
         <fullName>Lead_Capture_Date__c</fullName>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <label>Lead Capture Date</label>
         <required>false</required>
@@ -514,7 +749,7 @@
     </fields>
     <fields>
         <fullName>Lead_Source_Details__c</fullName>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <label>Lead Source Details</label>
         <length>255</length>
@@ -605,7 +840,7 @@
     </fields>
     <fields>
         <fullName>Likely_IP_Start_Date__c</fullName>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <label>Likely IP Start Date</label>
         <required>false</required>
@@ -634,7 +869,7 @@
     <fields>
         <fullName>Marchon_Score__c</fullName>
         <description>The score indicates interaction and profile strength for Marchon.</description>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <inlineHelpText>This score indicates interaction and profile strength. Profile strength ranges from A-D with A being the highest. The interaction score ranges from 1-4 with 1 being the highest.</inlineHelpText>
         <label>Marchon Score</label>
@@ -655,6 +890,18 @@
         <type>Checkbox</type>
     </fields>
     <fields>
+        <fullName>MobilePhone</fullName>
+        <encrypted>false</encrypted>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>Name</fullName>
+        <encrypted>false</encrypted>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
         <fullName>Name__c</fullName>
         <externalId>false</externalId>
         <formula>HYPERLINK(  &quot;/&quot; +  Id   , FirstName + &apos; &apos; +  LastName )</formula>
@@ -663,6 +910,11 @@
         <trackHistory>false</trackHistory>
         <type>Text</type>
         <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>NumberOfEmployees</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
     </fields>
     <fields>
         <fullName>Optics_Marketing_Communications__c</fullName>
@@ -685,7 +937,7 @@
     <fields>
         <fullName>Optics_Score__c</fullName>
         <description>The score indicates interaction and profile strength for Optics.</description>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <inlineHelpText>This score indicates interaction and profile strength. Profile strength ranges from A-D with A being the highest. The interaction score ranges from 1-4 with 1 being the highest.</inlineHelpText>
         <label>Optics Score</label>
@@ -706,8 +958,14 @@
         <type>Checkbox</type>
     </fields>
     <fields>
+        <fullName>OwnerId</fullName>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
         <fullName>Persona__c</fullName>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <label>Persona</label>
         <length>50</length>
@@ -716,6 +974,12 @@
         <trackHistory>false</trackHistory>
         <type>Text</type>
         <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Phone</fullName>
+        <encrypted>false</encrypted>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
     </fields>
     <fields>
         <fullName>Plans_of_Interest__c</fullName>
@@ -766,7 +1030,7 @@
     </fields>
     <fields>
         <fullName>Purchase_Channel__c</fullName>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <label>Purchase Channel</label>
         <length>50</length>
@@ -775,6 +1039,12 @@
         <trackHistory>false</trackHistory>
         <type>Text</type>
         <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Rating</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
     </fields>
     <fields>
         <fullName>Reason_for_IP__c</fullName>
@@ -832,8 +1102,52 @@
         </valueSet>
     </fields>
     <fields>
+        <fullName>SFGA__CorrelationID__c</fullName>
+        <defaultValue>&quot;none&quot;</defaultValue>
+        <deprecated>false</deprecated>
+        <description>The Correlation ID Field is used by Salesforce for Google AdWords for automatic correlation of web information with new leads created through a standard web-to-lead form</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>CorrelationID</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SFGA__Correlation_Data__c</fullName>
+        <defaultValue>&quot;none&quot;</defaultValue>
+        <deprecated>false</deprecated>
+        <description>The Correlation Data field is designed for use by Salesforce for Google AdWords to store all relevant lead tracking information about a web generated lead</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Correlation Data</label>
+        <length>32000</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>SFGA__Web_Source__c</fullName>
+        <defaultValue>&quot;none&quot;</defaultValue>
+        <deprecated>false</deprecated>
+        <description>This field is designed for future use by Salesforce for Google AdWords as an alternative to the Lead Source field for web generated leads.</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Web Source</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
         <fullName>Source_of_Phone_Call__c</fullName>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <label>Source of Phone Call</label>
         <length>255</length>
@@ -844,8 +1158,20 @@
         <unique>false</unique>
     </fields>
     <fields>
+        <fullName>Status</fullName>
+        <inlineHelpText>Open - Newly created Lead.
+Working - Lead is being worked to drive to conversion.
+Nurture - Returned to Marketing.
+Incomplete - Missing information.
+Closed - Lead does not meet conversion criteria.
+Qualified - Lead is converted.</inlineHelpText>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
         <fullName>Subscriber_Status__c</fullName>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <label>Subscriber Status</label>
         <length>64</length>
@@ -856,8 +1182,14 @@
         <unique>false</unique>
     </fields>
     <fields>
+        <fullName>Title</fullName>
+        <encrypted>false</encrypted>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
         <fullName>UTM_Campaign_Content__c</fullName>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <label>UTM Campaign Content</label>
         <length>100</length>
@@ -869,7 +1201,7 @@
     </fields>
     <fields>
         <fullName>UTM_Campaign_Medium__c</fullName>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <label>UTM Campaign Medium</label>
         <length>50</length>
@@ -881,7 +1213,7 @@
     </fields>
     <fields>
         <fullName>UTM_Campaign_Name__c</fullName>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <label>UTM Campaign Name</label>
         <length>100</length>
@@ -893,7 +1225,7 @@
     </fields>
     <fields>
         <fullName>UTM_Campaign_Source__c</fullName>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <label>UTM Campaign Source</label>
         <length>50</length>
@@ -905,7 +1237,7 @@
     </fields>
     <fields>
         <fullName>UTM_Campaign_Term__c</fullName>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <label>UTM Campaign Term</label>
         <length>50</length>
@@ -954,7 +1286,7 @@
     <fields>
         <fullName>Vision_Care_Score__c</fullName>
         <description>The score indicates interaction and profile strength for Vision Care.</description>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <inlineHelpText>This score indicates interaction and profile strength. Profile strength ranges from A-D with A being the highest. The interaction score ranges from 1-4 with 1 being the highest.</inlineHelpText>
         <label>Vision Care Score</label>
@@ -973,6 +1305,34 @@
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Website</fullName>
+        <encrypted>false</encrypted>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>qualtrics__Last_Survey_Invitation__c</fullName>
+        <deprecated>false</deprecated>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Last Survey Invitation</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>qualtrics__Last_Survey_Response__c</fullName>
+        <deprecated>false</deprecated>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Last Survey Response</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Date</type>
     </fields>
     <listViews>
         <fullName>All_Leads</fullName>
@@ -1088,6 +1448,8 @@
         </filters>
         <label>Today&apos;s Leads</label>
     </listViews>
+    <recordTypeTrackFeedHistory>false</recordTypeTrackFeedHistory>
+    <recordTypeTrackHistory>false</recordTypeTrackHistory>
     <recordTypes>
         <fullName>D2C_Lead</fullName>
         <active>true</active>
@@ -1910,6 +2272,26 @@
             </values>
         </picklistValues>
     </recordTypes>
+    <searchLayouts>
+        <customTabListAdditionalFields>FULL_NAME</customTabListAdditionalFields>
+        <customTabListAdditionalFields>LEAD.COMPANY</customTabListAdditionalFields>
+        <customTabListAdditionalFields>LEAD.PHONE</customTabListAdditionalFields>
+        <lookupDialogsAdditionalFields>FULL_NAME</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>LEAD.COMPANY</lookupDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>FULL_NAME</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>LEAD.COMPANY</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>LEAD.PHONE</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>LEAD.MOBILE_PHONE</lookupPhoneDialogsAdditionalFields>
+        <searchResultsAdditionalFields>FULL_NAME</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>LEAD.TITLE</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>LEAD.COMPANY</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>LEAD.PHONE</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>LEAD.MOBILE_PHONE</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>LEAD.EMAIL</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>LEAD.STATUS</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>CORE.USERS.ALIAS</searchResultsAdditionalFields>
+    </searchLayouts>
+    <sharingModel>ReadWrite</sharingModel>
     <validationRules>
         <fullName>VSPR2_Donot_allow_Company_in_D2C_Leads</fullName>
         <active>true</active>
@@ -1935,6 +2317,110 @@
         <showsLocation>true</showsLocation>
         <showsStatus>true</showsStatus>
         <url>http://news.altavista.com/search?nc=0&amp;q={!Lead_Company}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>CLS4SF__Email_Pitch</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <hasMenubar>false</hasMenubar>
+        <hasScrollbars>true</hasScrollbars>
+        <hasToolbar>false</hasToolbar>
+        <height>600</height>
+        <isResizable>true</isResizable>
+        <linkType>page</linkType>
+        <masterLabel>(Deprecated)ClearSlide Email</masterLabel>
+        <openType>newWindow</openType>
+        <page>CLS4SF__EmailPitchLeadLoader</page>
+        <position>none</position>
+        <protected>false</protected>
+        <showsLocation>false</showsLocation>
+        <showsStatus>false</showsStatus>
+    </webLinks>
+    <webLinks>
+        <fullName>CLS4SF__Email_Pitch_List</fullName>
+        <availability>online</availability>
+        <displayType>massActionButton</displayType>
+        <linkType>page</linkType>
+        <masterLabel>Compose ClearSlide Email</masterLabel>
+        <openType>replace</openType>
+        <page>CLS4SF__EmailPitchLeadList</page>
+        <protected>false</protected>
+        <requireRowSelection>true</requireRowSelection>
+    </webLinks>
+    <webLinks>
+        <fullName>CLS4SF__Live_Pitch</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <hasMenubar>false</hasMenubar>
+        <hasScrollbars>true</hasScrollbars>
+        <hasToolbar>false</hasToolbar>
+        <height>600</height>
+        <isResizable>true</isResizable>
+        <linkType>page</linkType>
+        <masterLabel>(Deprecated)ClearSlide Meeting</masterLabel>
+        <openType>newWindow</openType>
+        <page>CLS4SF__LivePitchLeadLoader</page>
+        <position>none</position>
+        <protected>false</protected>
+        <showsLocation>false</showsLocation>
+        <showsStatus>false</showsStatus>
+    </webLinks>
+    <webLinks>
+        <fullName>DialSource__DS_InstaQueue</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>DS InstaQueue</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <url>{!REQUIRESCRIPT(&quot;/soap/ajax/22.0/connection.js&quot;)}
+{!REQUIRESCRIPT(&quot;/soap/ajax/22.0/apex.js&quot;)}
+sforce.connection.sessionId = &quot;{!$Api.Session_ID}&quot;;
+var sid = &quot;{!JSENCODE($Api.Session_ID)}&quot;; 
+var loc = &quot;{!JSENCODE($Api.Partner_Server_URL_80)}&quot;; 
+var aid = &quot;{!JSENCODE($Organization.Id)}&quot;; 
+var uid = &quot;{!JSENCODE($User.Id)}&quot;;
+var phone = &quot;{!JSENCODE(Lead.Phone)}&quot;;
+var name = &quot;{!JSENCODE(Lead.FirstName)}&quot;+ &quot; &quot; + &quot;{!JSENCODE(Lead.LastName)}&quot;;
+var oid = &quot;{!JSENCODE(Lead.Id)}&quot;;
+       
+var url = &apos;https://ws.dialsource.com:8000/addToQueue?aid=&apos;+aid+&apos;&amp;uid=&apos;+uid+&apos;&amp;object_id=&apos;+oid; 
+      
+var result = sforce.apex.execute(&quot;DialSource.addToQueue&quot;,&quot;httpPOSTrecord&quot;, 
+        {urlParams : url, phone : phone, name: name});</url>
+    </webLinks>
+    <webLinks>
+        <fullName>DialSource__DS_InstaQueue_List</fullName>
+        <availability>online</availability>
+        <displayType>massActionButton</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>DS InstaQueue List</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <requireRowSelection>true</requireRowSelection>
+        <url>{!REQUIRESCRIPT(&quot;/soap/ajax/22.0/connection.js&quot;)}
+{!REQUIRESCRIPT(&quot;/soap/ajax/22.0/apex.js&quot;)}
+var records = {!GETRECORDIDS($ObjectType.Lead)}; 
+var aid = &quot;{!JSENCODE($Organization.Id)}&quot;; 
+var uid = &quot;{!JSENCODE($User.Id)}&quot;; 
+var phoneField = &quot;Phone&quot;; 
+var list = records.join(); 
+var type = &quot;Lead&quot;; 
+var nameField = &quot;Name&quot;; 
+
+if (records[0] == null) { 
+alert(&quot;Please select at least one Account to submit.&quot;); 
+} 
+else{ 
+
+var result = sforce.apex.execute(&quot;DialSource.addToQueue&quot;,&quot;httpPOSTlist&quot;, 
+{phoneField : phoneField, nameField : nameField, recordIDs : list, objectType : type, uid : uid, aid : aid}); 
+window.alert(&apos;Records successfully queued&apos;); 
+} 
+
+if(result !=&quot;&quot;){ 
+alert(&quot;Records Not Added to Queue: \n&quot; + result); 
+}</url>
     </webLinks>
     <webLinks>
         <fullName>EmailUnsubscribe</fullName>
@@ -2087,5 +2573,29 @@
         <showsLocation>true</showsLocation>
         <showsStatus>true</showsStatus>
         <url>http://maps.yahoo.com/py/maps.py?cn={!Lead_Country}&amp;csz={!Lead_City}+{!Lead_State}+{!Lead_PostalCode}+&amp;addr={!Lead_Address}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>dsfs__Send_with_DocuSign</fullName>
+        <availability>online</availability>
+        <description>This button will initiate a DocuSign Envelope that is linked to the Lead</description>
+        <displayType>button</displayType>
+        <height>600</height>
+        <linkType>page</linkType>
+        <masterLabel>Send with DocuSign</masterLabel>
+        <openType>noSidebar</openType>
+        <page>dsfs__CreateEnvelopeFromLead</page>
+        <protected>false</protected>
+    </webLinks>
+    <webLinks>
+        <fullName>qualtrics__Send_Qualtrics_Survey</fullName>
+        <availability>online</availability>
+        <displayType>massActionButton</displayType>
+        <height>600</height>
+        <linkType>page</linkType>
+        <masterLabel>Send Qualtrics Survey</masterLabel>
+        <openType>sidebar</openType>
+        <page>qualtrics__LeadListSendSurvey</page>
+        <protected>false</protected>
+        <requireRowSelection>true</requireRowSelection>
     </webLinks>
 </CustomObject>

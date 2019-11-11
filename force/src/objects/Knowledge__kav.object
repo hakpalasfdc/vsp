@@ -25,7 +25,7 @@
     <enableHistory>true</enableHistory>
     <fields>
         <fullName>Additional_Benefits__c</fullName>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <label>Additional Benefits</label>
         <length>32768</length>
@@ -35,7 +35,7 @@
     </fields>
     <fields>
         <fullName>Additional_Details__c</fullName>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <label>Additional Details</label>
         <length>32768</length>
@@ -45,7 +45,7 @@
     </fields>
     <fields>
         <fullName>Additional_Information__c</fullName>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <label>Additional Information</label>
         <length>131072</length>
@@ -56,7 +56,7 @@
     <fields>
         <fullName>Adjustment_Steps__c</fullName>
         <description>Restrict visibility by Profile - visible to all users across the company EXCEPT Processors, CSR&apos;s, Hybrid CSR&apos;s</description>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <label>Adjustment Steps</label>
         <length>32768</length>
@@ -66,7 +66,7 @@
     </fields>
     <fields>
         <fullName>Article_Details__c</fullName>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <label>Article Details</label>
         <length>41000</length>
@@ -88,7 +88,7 @@
     </fields>
     <fields>
         <fullName>Benefit_Effective_Data__c</fullName>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <inlineHelpText>Date that enrolled benifits become effective</inlineHelpText>
         <label>Benefit Effective Date</label>
@@ -98,7 +98,7 @@
     </fields>
     <fields>
         <fullName>Benefit__c</fullName>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <inlineHelpText>Client-specific benefits</inlineHelpText>
         <label>Benefit</label>
@@ -143,7 +143,7 @@
     </fields>
     <fields>
         <fullName>Change_Cancel__c</fullName>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <label>Change/Cancel</label>
         <length>32768</length>
@@ -153,7 +153,7 @@
     </fields>
     <fields>
         <fullName>Chat_Answer__c</fullName>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <label>Chat Answer</label>
         <length>32768</length>
@@ -163,7 +163,7 @@
     </fields>
     <fields>
         <fullName>Client_exceptions__c</fullName>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <inlineHelpText>Use the smartLink editor to insert a link to a specific client exceptions article.
 Be sure to set Target as Iframe (main Topic).</inlineHelpText>
@@ -175,7 +175,7 @@ Be sure to set Target as Iframe (main Topic).</inlineHelpText>
     </fields>
     <fields>
         <fullName>Confirmation__c</fullName>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <label>Confirmation</label>
         <length>32768</length>
@@ -185,7 +185,7 @@ Be sure to set Target as Iframe (main Topic).</inlineHelpText>
     </fields>
     <fields>
         <fullName>Contacts__c</fullName>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <label>Contacts</label>
         <length>32768</length>
@@ -195,7 +195,7 @@ Be sure to set Target as Iframe (main Topic).</inlineHelpText>
     </fields>
     <fields>
         <fullName>Details__c</fullName>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <label>Details</label>
         <length>32768</length>
@@ -205,7 +205,7 @@ Be sure to set Target as Iframe (main Topic).</inlineHelpText>
     </fields>
     <fields>
         <fullName>Doctor_Network__c</fullName>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <label>Doctor Network</label>
         <length>32768</length>
@@ -215,7 +215,7 @@ Be sure to set Target as Iframe (main Topic).</inlineHelpText>
     </fields>
     <fields>
         <fullName>Eligibility__c</fullName>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <inlineHelpText>client requirements for eligibility</inlineHelpText>
         <label>Eligibility</label>
@@ -226,7 +226,7 @@ Be sure to set Target as Iframe (main Topic).</inlineHelpText>
     </fields>
     <fields>
         <fullName>Enrollment_End_Date__c</fullName>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <inlineHelpText>Date that open enrollments closes for members</inlineHelpText>
         <label>Enrollment End Date</label>
@@ -236,7 +236,7 @@ Be sure to set Target as Iframe (main Topic).</inlineHelpText>
     </fields>
     <fields>
         <fullName>Enrollment_Start_Date__c</fullName>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <inlineHelpText>Date that enrollment opens up for members</inlineHelpText>
         <label>Enrollment Start Date</label>
@@ -246,7 +246,7 @@ Be sure to set Target as Iframe (main Topic).</inlineHelpText>
     </fields>
     <fields>
         <fullName>Exam__c</fullName>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <label>Exam</label>
         <length>32768</length>
@@ -256,7 +256,7 @@ Be sure to set Target as Iframe (main Topic).</inlineHelpText>
     </fields>
     <fields>
         <fullName>Examples__c</fullName>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <label>Examples</label>
         <length>32768</length>
@@ -274,7 +274,7 @@ Be sure to set Target as Iframe (main Topic).</inlineHelpText>
     </fields>
     <fields>
         <fullName>Frame__c</fullName>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <label>Frame</label>
         <length>32768</length>
@@ -284,7 +284,7 @@ Be sure to set Target as Iframe (main Topic).</inlineHelpText>
     </fields>
     <fields>
         <fullName>General_Description__c</fullName>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <label>General Description</label>
         <length>32768</length>
@@ -294,7 +294,7 @@ Be sure to set Target as Iframe (main Topic).</inlineHelpText>
     </fields>
     <fields>
         <fullName>How_To_Enroll__c</fullName>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <label>How To Enroll</label>
         <length>32768</length>
@@ -304,7 +304,7 @@ Be sure to set Target as Iframe (main Topic).</inlineHelpText>
     </fields>
     <fields>
         <fullName>Information__c</fullName>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <label>Information</label>
         <length>131072</length>
@@ -314,7 +314,7 @@ Be sure to set Target as Iframe (main Topic).</inlineHelpText>
     </fields>
     <fields>
         <fullName>Keyword__c</fullName>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <label>Keyword</label>
         <length>5000</length>
@@ -324,7 +324,7 @@ Be sure to set Target as Iframe (main Topic).</inlineHelpText>
     </fields>
     <fields>
         <fullName>Keywords__c</fullName>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <label>Keywords</label>
         <length>32768</length>
@@ -334,7 +334,7 @@ Be sure to set Target as Iframe (main Topic).</inlineHelpText>
     </fields>
     <fields>
         <fullName>Lab__c</fullName>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <label>Lab</label>
         <length>32768</length>
@@ -344,7 +344,7 @@ Be sure to set Target as Iframe (main Topic).</inlineHelpText>
     </fields>
     <fields>
         <fullName>Lens_Enhancements__c</fullName>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <label>Lens Enhancements</label>
         <length>32768</length>
@@ -354,7 +354,7 @@ Be sure to set Target as Iframe (main Topic).</inlineHelpText>
     </fields>
     <fields>
         <fullName>Lens__c</fullName>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <label>Lens</label>
         <length>32768</length>
@@ -364,7 +364,7 @@ Be sure to set Target as Iframe (main Topic).</inlineHelpText>
     </fields>
     <fields>
         <fullName>Links__c</fullName>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <label>Links</label>
         <length>32768</length>
@@ -374,7 +374,7 @@ Be sure to set Target as Iframe (main Topic).</inlineHelpText>
     </fields>
     <fields>
         <fullName>Premiums_and_Billing__c</fullName>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <label>Premiums and Billing</label>
         <length>32768</length>
@@ -384,7 +384,7 @@ Be sure to set Target as Iframe (main Topic).</inlineHelpText>
     </fields>
     <fields>
         <fullName>Procedure__c</fullName>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <label>Procedure</label>
         <length>131072</length>
@@ -395,7 +395,7 @@ Be sure to set Target as Iframe (main Topic).</inlineHelpText>
     <fields>
         <fullName>Processing_Steps__c</fullName>
         <description>Restrict visibility by Profile - visible to all users across the company EXCEPT CSR&apos;s</description>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <label>Processing Steps</label>
         <length>32768</length>
@@ -1753,7 +1753,7 @@ Be sure to set Target as Iframe (main Topic).</inlineHelpText>
     </fields>
     <fields>
         <fullName>Review_Date__c</fullName>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <label>Review Date</label>
         <required>false</required>
@@ -1763,7 +1763,7 @@ Be sure to set Target as Iframe (main Topic).</inlineHelpText>
     <fields>
         <fullName>Support_Queue_Steps__c</fullName>
         <description>Restrict visibility by Profile - visible to all users across the company EXCEPT Processors, CSR&apos;s, Hybrid CSR&apos;s and CART</description>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <label>SQ/QQ Steps</label>
         <length>32768</length>
@@ -1773,7 +1773,7 @@ Be sure to set Target as Iframe (main Topic).</inlineHelpText>
     </fields>
     <fields>
         <fullName>Topic_Links__c</fullName>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <label>Topic Links</label>
         <length>32768</length>
@@ -1791,7 +1791,7 @@ Be sure to set Target as Iframe (main Topic).</inlineHelpText>
     </fields>
     <fields>
         <fullName>Version_Comments__c</fullName>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <label>Version Comments</label>
         <length>32768</length>

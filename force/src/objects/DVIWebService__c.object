@@ -5,7 +5,7 @@
     <enableFeeds>false</enableFeeds>
     <fields>
         <fullName>DVI_Token_Header__c</fullName>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <label>DVI Token Header</label>
         <length>255</length>
@@ -16,7 +16,7 @@
     </fields>
     <fields>
         <fullName>DVI_Web_Service_Version__c</fullName>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <label>DVI Web Service Version</label>
         <length>255</length>
@@ -27,7 +27,7 @@
     </fields>
     <fields>
         <fullName>DVI_Web_Service__c</fullName>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <label>DVI Web Service</label>
         <length>255</length>
@@ -38,7 +38,7 @@
     </fields>
     <fields>
         <fullName>EndPoint_Production__c</fullName>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <label>EndPoint Production</label>
         <length>255</length>
@@ -49,7 +49,7 @@
     </fields>
     <fields>
         <fullName>EndPoint_Sandbox__c</fullName>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <label>EndPoint Sandbox</label>
         <length>255</length>
@@ -60,7 +60,7 @@
     </fields>
     <fields>
         <fullName>Fee_Token_Header_Production__c</fullName>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <label>Fee Token Header Production</label>
         <length>255</length>
@@ -71,7 +71,7 @@
     </fields>
     <fields>
         <fullName>Fee_Token_Header_Sandbox__c</fullName>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <label>Fee Token Header Sandbox</label>
         <length>255</length>
@@ -82,7 +82,7 @@
     </fields>
     <fields>
         <fullName>Prod_Org_ID__c</fullName>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <label>Prod Org ID</label>
         <length>255</length>
@@ -93,7 +93,7 @@
     </fields>
     <fields>
         <fullName>Redo_Code__c</fullName>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <label>Redo Code</label>
         <length>255</length>

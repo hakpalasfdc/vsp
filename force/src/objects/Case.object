@@ -1,5 +1,61 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>ChangeStatus</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CloneAsChild</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CloseCase</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>MassClose</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>NewCase</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
     <businessProcesses>
         <fullName>VSP Global</fullName>
         <isActive>true</isActive>
@@ -24,6 +80,7 @@
             <default>false</default>
         </values>
     </businessProcesses>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
     <compactLayouts>
         <fullName>Case_Publisher_Layout</fullName>
         <fields>Subject</fields>
@@ -38,6 +95,15 @@
         <fields>Classification__c</fields>
         <label>Case Publisher Layout</label>
     </compactLayouts>
+    <enableFeeds>true</enableFeeds>
+    <externalSharingModel>Private</externalSharingModel>
+    <fields>
+        <fullName>AccountId</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
     <fields>
         <fullName>Alert_Account_Client_ID__c</fullName>
         <description>This is for reference of Account Client ID for Alert Component Population Apex Class and trigger.</description>
@@ -104,6 +170,13 @@
         <type>Currency</type>
     </fields>
     <fields>
+        <fullName>AssetId</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
         <fullName>Attachment__c</fullName>
         <defaultValue>false</defaultValue>
         <externalId>false</externalId>
@@ -127,7 +200,7 @@
     <fields>
         <fullName>Auto_Close_Start_Date_Time__c</fullName>
         <description>The date/time a case was assigned to a queue with an automatic closure rule.</description>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <label>Auto-Close Start Date/Time</label>
         <required>false</required>
@@ -138,7 +211,7 @@
     </fields>
     <fields>
         <fullName>Brand_Name__c</fullName>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <label>Brand Name</label>
         <length>50</length>
@@ -148,6 +221,13 @@
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>BusinessHoursId</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
     </fields>
     <fields>
         <fullName>CD_Category__c</fullName>
@@ -1451,7 +1531,7 @@ CASE( MOD( DATEVALUE(ClosedDate) - DATEVALUE(CreatedDate), 7),6,2,1),999)
     </fields>
     <fields>
         <fullName>Callback_Phone__c</fullName>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <label>Callback Phone</label>
         <required>false</required>
@@ -1492,7 +1572,7 @@ CASE( MOD( DATEVALUE(ClosedDate) - DATEVALUE(CreatedDate), 7),6,2,1),999)
     </fields>
     <fields>
         <fullName>Caller_Entered_Phone_Number__c</fullName>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <label>Caller Entered Phone Number</label>
         <length>50</length>
@@ -1505,7 +1585,7 @@ CASE( MOD( DATEVALUE(ClosedDate) - DATEVALUE(CreatedDate), 7),6,2,1),999)
     </fields>
     <fields>
         <fullName>Caller_Intent__c</fullName>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <label>Caller Intent</label>
         <length>200</length>
@@ -1518,7 +1598,7 @@ CASE( MOD( DATEVALUE(ClosedDate) - DATEVALUE(CreatedDate), 7),6,2,1),999)
     </fields>
     <fields>
         <fullName>Caller_Name__c</fullName>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <label>Caller Name</label>
         <length>50</length>
@@ -1929,7 +2009,7 @@ CASE( MOD( DATEVALUE(ClosedDate) - DATEVALUE(CreatedDate), 7),6,2,1),999)
     </fields>
     <fields>
         <fullName>Client_Id__c</fullName>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <inlineHelpText>Main client Id field. All other collection fields will pipe to this field. All logic will be based upon this field for client Id.</inlineHelpText>
         <label>Client Id</label>
@@ -1940,6 +2020,15 @@ CASE( MOD( DATEVALUE(ClosedDate) - DATEVALUE(CreatedDate), 7),6,2,1),999)
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ClosedDate</fullName>
+        <trackTrending>false</trackTrending>
+    </fields>
+    <fields>
+        <fullName>Comments</fullName>
+        <inlineHelpText>Used to make notes about the Case. These will be displayed in the Case Comments section with a date/time stamp.</inlineHelpText>
+        <trackTrending>false</trackTrending>
     </fields>
     <fields>
         <fullName>Complaint__c</fullName>
@@ -1954,7 +2043,7 @@ CASE( MOD( DATEVALUE(ClosedDate) - DATEVALUE(CreatedDate), 7),6,2,1),999)
     </fields>
     <fields>
         <fullName>Consumer_ID__c</fullName>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <inlineHelpText>Main consumer Id field. All other collection fields will pipe to this field. All logic will be based upon this field for consumer Id.</inlineHelpText>
         <label>Consumer ID</label>
@@ -1965,6 +2054,29 @@ CASE( MOD( DATEVALUE(ClosedDate) - DATEVALUE(CreatedDate), 7),6,2,1),999)
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ContactEmail</fullName>
+        <trackTrending>false</trackTrending>
+    </fields>
+    <fields>
+        <fullName>ContactFax</fullName>
+        <trackTrending>false</trackTrending>
+    </fields>
+    <fields>
+        <fullName>ContactId</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>ContactMobile</fullName>
+        <trackTrending>false</trackTrending>
+    </fields>
+    <fields>
+        <fullName>ContactPhone</fullName>
+        <trackTrending>false</trackTrending>
     </fields>
     <fields>
         <fullName>Contact_ClientID__c</fullName>
@@ -2017,7 +2129,7 @@ CASE( MOD( DATEVALUE(ClosedDate) - DATEVALUE(CreatedDate), 7),6,2,1),999)
     </fields>
     <fields>
         <fullName>Date_Time_Accepted__c</fullName>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <label>Date/Time Accepted</label>
         <required>false</required>
@@ -2028,7 +2140,7 @@ CASE( MOD( DATEVALUE(ClosedDate) - DATEVALUE(CreatedDate), 7),6,2,1),999)
     </fields>
     <fields>
         <fullName>Date_Time_First_Email_Response__c</fullName>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <label>Date/Time First Email Response</label>
         <required>false</required>
@@ -2038,8 +2150,87 @@ CASE( MOD( DATEVALUE(ClosedDate) - DATEVALUE(CreatedDate), 7),6,2,1),999)
         <type>DateTime</type>
     </fields>
     <fields>
+        <fullName>Description</fullName>
+        <encrypted>true</encrypted>
+        <inlineHelpText>A brief description of why the case is being created. Generally, the first words out of the Customer&apos;s mouth.</inlineHelpText>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+    </fields>
+    <fields>
+        <fullName>DialSource__Datetime_of_Last_Disposition_DS__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Time stamp of when the last Disposition was clicked</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Datetime of Last Disposition</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>DialSource__Last_Call_Campaign_Name__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Name of the Call Campaign the record was last called from</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Last Call Campaign Name</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>DialSource__Last_Disposition_DS__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Name of the last Disposition clicked</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Last Disposition</label>
+        <length>140</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>DialSource__Next_Call_DS__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Datetime field used to set the next call datetime for reference in automation or Reports/List Views</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Next Call</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>DialSource__Total_Call_Count_DS__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Total number of calls made on this record</description>
+        <externalId>false</externalId>
+        <label>Total Call Count</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
         <fullName>DivisionId__c</fullName>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <label>DivisionId</label>
         <length>20</length>
@@ -2087,7 +2278,7 @@ CASE( MOD( DATEVALUE(ClosedDate) - DATEVALUE(CreatedDate), 7),6,2,1),999)
     </fields>
     <fields>
         <fullName>Email_Last_Received__c</fullName>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <label>Email Last Received</label>
         <required>false</required>
@@ -2098,7 +2289,7 @@ CASE( MOD( DATEVALUE(ClosedDate) - DATEVALUE(CreatedDate), 7),6,2,1),999)
     </fields>
     <fields>
         <fullName>Email_Last_Sent__c</fullName>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <label>Email Last Sent</label>
         <required>false</required>
@@ -2106,6 +2297,13 @@ CASE( MOD( DATEVALUE(ClosedDate) - DATEVALUE(CreatedDate), 7),6,2,1),999)
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>EntitlementId</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
     </fields>
     <fields>
         <fullName>Escalation__c</fullName>
@@ -2146,7 +2344,7 @@ IMAGE(&apos;/servlet/servlet.FileDownload?file=015U0000005RbT3&apos;,&quot;&quot
     </fields>
     <fields>
         <fullName>Frame_Color__c</fullName>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <label>Frame Color</label>
         <length>50</length>
@@ -2159,7 +2357,7 @@ IMAGE(&apos;/servlet/servlet.FileDownload?file=015U0000005RbT3&apos;,&quot;&quot
     </fields>
     <fields>
         <fullName>Frame_Model__c</fullName>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <label>Frame Model</label>
         <length>50</length>
@@ -2172,7 +2370,7 @@ IMAGE(&apos;/servlet/servlet.FileDownload?file=015U0000005RbT3&apos;,&quot;&quot
     </fields>
     <fields>
         <fullName>Frame_Size__c</fullName>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <label>Frame Size</label>
         <length>50</length>
@@ -2185,7 +2383,7 @@ IMAGE(&apos;/servlet/servlet.FileDownload?file=015U0000005RbT3&apos;,&quot;&quot
     </fields>
     <fields>
         <fullName>IVR_ANI__c</fullName>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <inlineHelpText>IVR supplied ANI</inlineHelpText>
         <label>IVR ANI</label>
@@ -2199,7 +2397,7 @@ IMAGE(&apos;/servlet/servlet.FileDownload?file=015U0000005RbT3&apos;,&quot;&quot
     </fields>
     <fields>
         <fullName>IVR_Call_Type__c</fullName>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <inlineHelpText>Call Type supplied by the CTI/IVR</inlineHelpText>
         <label>IVR Call Type</label>
@@ -2213,7 +2411,7 @@ IMAGE(&apos;/servlet/servlet.FileDownload?file=015U0000005RbT3&apos;,&quot;&quot
     </fields>
     <fields>
         <fullName>IVR_Caller_Intent__c</fullName>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <label>IVR Caller Intent</label>
         <length>255</length>
@@ -2226,7 +2424,7 @@ IMAGE(&apos;/servlet/servlet.FileDownload?file=015U0000005RbT3&apos;,&quot;&quot
     </fields>
     <fields>
         <fullName>IVR_Client_ID__c</fullName>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <inlineHelpText>IVR supplied client Id.</inlineHelpText>
         <label>IVR Client ID</label>
@@ -2240,7 +2438,7 @@ IMAGE(&apos;/servlet/servlet.FileDownload?file=015U0000005RbT3&apos;,&quot;&quot
     </fields>
     <fields>
         <fullName>IVR_Consumer_ID__c</fullName>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <inlineHelpText>IVR supplied consumer Id.</inlineHelpText>
         <label>IVR Consumer ID</label>
@@ -2254,7 +2452,7 @@ IMAGE(&apos;/servlet/servlet.FileDownload?file=015U0000005RbT3&apos;,&quot;&quot
     </fields>
     <fields>
         <fullName>IVR_Contact_ID__c</fullName>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <inlineHelpText>Used to store the unique Contact ID written from IVR to the comm service and passed to Salesforce to use to pop CC Portal.</inlineHelpText>
         <label>IVR Contact ID</label>
@@ -2268,7 +2466,7 @@ IMAGE(&apos;/servlet/servlet.FileDownload?file=015U0000005RbT3&apos;,&quot;&quot
     </fields>
     <fields>
         <fullName>IVR_DNIS__c</fullName>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <label>IVR DNIS</label>
         <length>255</length>
@@ -2301,7 +2499,7 @@ IMAGE(&apos;/servlet/servlet.FileDownload?file=015U0000005RbT3&apos;,&quot;&quot
     </fields>
     <fields>
         <fullName>Invoice__c</fullName>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <label>Invoice #</label>
         <length>15</length>
@@ -2311,6 +2509,36 @@ IMAGE(&apos;/servlet/servlet.FileDownload?file=015U0000005RbT3&apos;,&quot;&quot
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>IsClosedOnCreate</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+    </fields>
+    <fields>
+        <fullName>IsEscalated</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+    </fields>
+    <fields>
+        <fullName>IsSelfServiceClosed</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+    </fields>
+    <fields>
+        <fullName>IsStopped</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+    </fields>
+    <fields>
+        <fullName>IsVisibleInSelfService</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
     </fields>
     <fields>
         <fullName>Line_of_Business__c</fullName>
@@ -2371,7 +2599,7 @@ IMAGE(&apos;/servlet/servlet.FileDownload?file=015U0000005RbT3&apos;,&quot;&quot
     <fields>
         <fullName>Manager_Email__c</fullName>
         <description>Case Owner&apos;s Manager Email</description>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <inlineHelpText>Case Owner&apos;s Manager Email</inlineHelpText>
         <label>Manager Email</label>
@@ -2385,7 +2613,7 @@ IMAGE(&apos;/servlet/servlet.FileDownload?file=015U0000005RbT3&apos;,&quot;&quot
     <fields>
         <fullName>Manager__c</fullName>
         <description>Case Owner&apos;s Manager Full Name</description>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <inlineHelpText>Case Owner&apos;s Manager Full Name</inlineHelpText>
         <label>Manager</label>
@@ -2435,9 +2663,17 @@ IMAGE(&apos;/servlet/servlet.FileDownload?file=015U0000005RbT3&apos;,&quot;&quot
         <type>Lookup</type>
     </fields>
     <fields>
+        <fullName>MilestoneStatus</fullName>
+        <trackTrending>false</trackTrending>
+    </fields>
+    <fields>
+        <fullName>MilestoneStatusIcon</fullName>
+        <trackTrending>false</trackTrending>
+    </fields>
+    <fields>
         <fullName>Milestone_Start_Time__c</fullName>
         <defaultValue>NOW()</defaultValue>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <label>Milestone Start Time</label>
         <required>false</required>
@@ -2458,7 +2694,7 @@ IMAGE(&apos;/servlet/servlet.FileDownload?file=015U0000005RbT3&apos;,&quot;&quot
     </fields>
     <fields>
         <fullName>Notes__c</fullName>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <inlineHelpText>Quick-reference notes pertaining to the Case.</inlineHelpText>
         <label>Notes</label>
@@ -2471,7 +2707,7 @@ IMAGE(&apos;/servlet/servlet.FileDownload?file=015U0000005RbT3&apos;,&quot;&quot
     </fields>
     <fields>
         <fullName>Number_of_Loose_Contact_Lenses__c</fullName>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <label>Number of Loose Contact Lenses</label>
         <length>50</length>
@@ -2484,7 +2720,7 @@ IMAGE(&apos;/servlet/servlet.FileDownload?file=015U0000005RbT3&apos;,&quot;&quot
     </fields>
     <fields>
         <fullName>Order_Number__c</fullName>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <inlineHelpText>Enter Order Number associated with this case, if no order number enter N/A</inlineHelpText>
         <label>Order Number</label>
@@ -2495,6 +2731,14 @@ IMAGE(&apos;/servlet/servlet.FileDownload?file=015U0000005RbT3&apos;,&quot;&quot
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Origin</fullName>
+        <inlineHelpText>The communication source of the Case, such as Phone Call or Email. When creating a GAAT Case, select &quot;Email&quot;.</inlineHelpText>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
     </fields>
     <fields>
         <fullName>Original_Email__c</fullName>
@@ -2521,7 +2765,7 @@ IMAGE(&apos;/servlet/servlet.FileDownload?file=015U0000005RbT3&apos;,&quot;&quot
     </fields>
     <fields>
         <fullName>Other_Case_Detail__c</fullName>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <label>Other Case Detail</label>
         <required>false</required>
@@ -2532,7 +2776,7 @@ IMAGE(&apos;/servlet/servlet.FileDownload?file=015U0000005RbT3&apos;,&quot;&quot
     </fields>
     <fields>
         <fullName>Other_Reason_Detail__c</fullName>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <label>Other Reason Detail</label>
         <required>false</required>
@@ -2544,7 +2788,7 @@ IMAGE(&apos;/servlet/servlet.FileDownload?file=015U0000005RbT3&apos;,&quot;&quot
     <fields>
         <fullName>Other_Reason_for_REW_or_Cancellation__c</fullName>
         <description>When Other is selected from the Reason for REW or Cancellation drop down field.</description>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <inlineHelpText>Enter a description when the reason is not listed in the drop down</inlineHelpText>
         <label>Other Reason for REW or Cancellation</label>
@@ -2558,7 +2802,7 @@ IMAGE(&apos;/servlet/servlet.FileDownload?file=015U0000005RbT3&apos;,&quot;&quot
     </fields>
     <fields>
         <fullName>Other_Resolution_Detail__c</fullName>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <label>Other Resolution Detail</label>
         <length>255</length>
@@ -2572,7 +2816,7 @@ IMAGE(&apos;/servlet/servlet.FileDownload?file=015U0000005RbT3&apos;,&quot;&quot
     <fields>
         <fullName>Other_Topic_Detail__c</fullName>
         <description>When &quot;Other&quot; Topic is selected, provide details in this field.</description>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <inlineHelpText>When &quot;Other&quot; Topic is selected, provide details in this field.</inlineHelpText>
         <label>Other Topic Detail</label>
@@ -2585,6 +2829,14 @@ IMAGE(&apos;/servlet/servlet.FileDownload?file=015U0000005RbT3&apos;,&quot;&quot
         <unique>false</unique>
     </fields>
     <fields>
+        <fullName>OwnerId</fullName>
+        <inlineHelpText>Field can only be changed by the current Case Owner or a Manager.</inlineHelpText>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
         <fullName>Owner_Changed__c</fullName>
         <defaultValue>false</defaultValue>
         <externalId>false</externalId>
@@ -2593,6 +2845,13 @@ IMAGE(&apos;/servlet/servlet.FileDownload?file=015U0000005RbT3&apos;,&quot;&quot
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>ParentId</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
     </fields>
     <fields>
         <fullName>PersonAccount__c</fullName>
@@ -2619,7 +2878,7 @@ IMAGE(&apos;/servlet/servlet.FileDownload?file=015U0000005RbT3&apos;,&quot;&quot
     </fields>
     <fields>
         <fullName>PrimaryMemberConsumerId__c</fullName>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <label>PrimaryMemberConsumerId</label>
         <length>15</length>
@@ -2629,6 +2888,20 @@ IMAGE(&apos;/servlet/servlet.FileDownload?file=015U0000005RbT3&apos;,&quot;&quot
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Priority</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>ProductId</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
     </fields>
     <fields>
         <fullName>Product_Information__c</fullName>
@@ -3175,6 +3448,13 @@ IMAGE(&apos;/servlet/servlet.FileDownload?file=015U0000005RbT3&apos;,&quot;&quot
         <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Reason</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
     </fields>
     <fields>
         <fullName>Reason_Details__c</fullName>
@@ -5944,7 +6224,7 @@ IMAGE(&apos;/servlet/servlet.FileDownload?file=015U0000005RbT3&apos;,&quot;&quot
     </fields>
     <fields>
         <fullName>Relation_to_Member__c</fullName>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <label>Pre-Chat Relation to Member</label>
         <length>80</length>
@@ -5969,7 +6249,7 @@ IMAGE(&apos;/servlet/servlet.FileDownload?file=015U0000005RbT3&apos;,&quot;&quot
     </fields>
     <fields>
         <fullName>Resolution__c</fullName>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <label>Resolution</label>
         <required>false</required>
@@ -6064,7 +6344,7 @@ IF(INCLUDES(Reason_for_Contact__c, &quot;Other&quot; ),&quot;Answered questions 
     <fields>
         <fullName>Resolution_of_Contact_Text__c</fullName>
         <description>Concatenates the Resolution of Contact values from formula fields</description>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <label>Resolution of Contact Text</label>
         <length>32768</length>
@@ -6465,7 +6745,7 @@ IF(INCLUDES(Reason_for_Contact__c, &quot;Other&quot; ),&quot;Answered questions 
     </fields>
     <fields>
         <fullName>Right_Eye_and_Left_Eye_Quantity__c</fullName>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <label>Right Eye and Left Eye Quantity</label>
         <length>50</length>
@@ -6535,7 +6815,7 @@ IF(INCLUDES(Reason_for_Contact__c, &quot;Other&quot; ),&quot;Answered questions 
     </fields>
     <fields>
         <fullName>SQ_Rep_Name__c</fullName>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <label>SQ Rep Name</label>
         <length>50</length>
@@ -6583,6 +6863,34 @@ IF(INCLUDES(Reason_for_Contact__c, &quot;Other&quot; ),&quot;Answered questions 
         </valueSet>
     </fields>
     <fields>
+        <fullName>SlaExitDate</fullName>
+        <trackTrending>false</trackTrending>
+    </fields>
+    <fields>
+        <fullName>SlaStartDate</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+    </fields>
+    <fields>
+        <fullName>SourceId</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Status</fullName>
+        <inlineHelpText>&quot;New: Case is newly entered and has not been worked 
+In Progress: Case is being worked 
+On Hold: Case is stalled, pending internal information or action 
+Waiting on Customer: Case is stalled, pending customer information or action&quot;</inlineHelpText>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
         <fullName>Status_Image__c</fullName>
         <externalId>false</externalId>
         <formula>IF(Status_Number__c = 1, IMAGE(&quot;/resource/CaseSLAGreen&quot;,&quot;Good&quot;, 16,16), 
@@ -6611,6 +6919,34 @@ IF(INCLUDES(Reason_for_Contact__c, &quot;Other&quot; ),&quot;Answered questions 
         <unique>false</unique>
     </fields>
     <fields>
+        <fullName>StopStartDate</fullName>
+        <trackTrending>false</trackTrending>
+    </fields>
+    <fields>
+        <fullName>Subject</fullName>
+        <encrypted>false</encrypted>
+        <inlineHelpText>A high-level summary of what the Case is about.</inlineHelpText>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+    </fields>
+    <fields>
+        <fullName>SuppliedCompany</fullName>
+        <trackTrending>false</trackTrending>
+    </fields>
+    <fields>
+        <fullName>SuppliedEmail</fullName>
+        <trackTrending>false</trackTrending>
+    </fields>
+    <fields>
+        <fullName>SuppliedName</fullName>
+        <trackTrending>false</trackTrending>
+    </fields>
+    <fields>
+        <fullName>SuppliedPhone</fullName>
+        <trackTrending>false</trackTrending>
+    </fields>
+    <fields>
         <fullName>Survey_Sent__c</fullName>
         <defaultValue>false</defaultValue>
         <description>Indicates whether a survey was sent on this Case.</description>
@@ -6623,7 +6959,7 @@ IF(INCLUDES(Reason_for_Contact__c, &quot;Other&quot; ),&quot;Answered questions 
     </fields>
     <fields>
         <fullName>System_Time_Stamp__c</fullName>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <label>System Time Stamp</label>
         <length>255</length>
@@ -6665,7 +7001,7 @@ IF(INCLUDES(Reason_for_Contact__c, &quot;Other&quot; ),&quot;Answered questions 
     </fields>
     <fields>
         <fullName>Tray_or_RX__c</fullName>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <label>Tray or RX #</label>
         <length>15</length>
@@ -6677,9 +7013,16 @@ IF(INCLUDES(Reason_for_Contact__c, &quot;Other&quot; ),&quot;Answered questions 
         <unique>false</unique>
     </fields>
     <fields>
+        <fullName>Type</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+    </fields>
+    <fields>
         <fullName>Undeliverable_Queue_Start_Date_Time__c</fullName>
         <description>Date/Time in which case enters CC Undeliverable Queue</description>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <label>Undeliverable Queue Start Date/Time</label>
         <required>false</required>
@@ -6690,7 +7033,7 @@ IF(INCLUDES(Reason_for_Contact__c, &quot;Other&quot; ),&quot;Answered questions 
     </fields>
     <fields>
         <fullName>User_Role__c</fullName>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <label>User Role</label>
         <length>125</length>
@@ -6807,7 +7150,7 @@ IF(INCLUDES(Reason_for_Contact__c, &quot;Other&quot; ),&quot;Answered questions 
     <fields>
         <fullName>asofdate__c</fullName>
         <defaultValue>Today()</defaultValue>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <label>asofdate</label>
         <required>false</required>
@@ -6818,7 +7161,7 @@ IF(INCLUDES(Reason_for_Contact__c, &quot;Other&quot; ),&quot;Answered questions 
     </fields>
     <fields>
         <fullName>of_Closed_Unmarked_Not_Expired_Boxes__c</fullName>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <label># of Closed, Unmarked, Not Expired Boxes</label>
         <length>50</length>
@@ -6831,7 +7174,7 @@ IF(INCLUDES(Reason_for_Contact__c, &quot;Other&quot; ),&quot;Answered questions 
     </fields>
     <fields>
         <fullName>sfxId__c</fullName>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>true</externalId>
         <label>sfxId</label>
         <length>18</length>
@@ -8612,6 +8955,8 @@ IF(INCLUDES(Reason_for_Contact__c, &quot;Other&quot; ),&quot;Answered questions 
             <roleAndSubordinates>Eyecare_Delivery_Solutions_CRM_Support</roleAndSubordinates>
         </sharedTo>
     </listViews>
+    <recordTypeTrackFeedHistory>false</recordTypeTrackFeedHistory>
+    <recordTypeTrackHistory>true</recordTypeTrackHistory>
     <recordTypes>
         <fullName>CEC_Training</fullName>
         <active>true</active>
@@ -23235,6 +23580,29 @@ IF(INCLUDES(Reason_for_Contact__c, &quot;Other&quot; ),&quot;Answered questions 
             </values>
         </picklistValues>
     </recordTypes>
+    <searchLayouts>
+        <customTabListAdditionalFields>CASES.CASE_NUMBER</customTabListAdditionalFields>
+        <customTabListAdditionalFields>CASES.SUBJECT</customTabListAdditionalFields>
+        <customTabListAdditionalFields>CASES.CREATED_DATE</customTabListAdditionalFields>
+        <customTabListAdditionalFields>CASES.PRIORITY</customTabListAdditionalFields>
+        <lookupDialogsAdditionalFields>CASES.CASE_NUMBER</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>CASES.SUBJECT</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>NAME</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>ACCOUNT.NAME</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>CASES.STATUS</lookupDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>CASES.CASE_NUMBER</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>CASES.SUBJECT</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>NAME</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>ACCOUNT.NAME</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>CASES.STATUS</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>Callback_Phone__c</lookupPhoneDialogsAdditionalFields>
+        <searchResultsAdditionalFields>CASES.CASE_NUMBER</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>CASES.SUBJECT</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>CASES.STATUS</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>CASES.CREATED_DATE</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>CORE.USERS.ALIAS</searchResultsAdditionalFields>
+    </searchLayouts>
+    <sharingModel>Private</sharingModel>
     <validationRules>
         <fullName>VSPR22_OtherCaseDetailRequired</fullName>
         <active>true</active>
@@ -23714,4 +24082,16 @@ OR($RecordType.Name = &quot;VSP Global&quot;, $RecordType.Name = &quot;Client De
 NOT(OR($Profile.Name = &quot;VSP Customer Support Management User&quot;, $Profile.Name = &quot;System Administrator&quot;,  $Profile.Name = &quot;VSP Technical User&quot;, $Profile.Name = &quot;VSP LOB Admin User&quot;)))</errorConditionFormula>
         <errorMessage>You may not edit the following fields after initial entry: Case Origin, Subject, Type, Classification, and Initial Description.</errorMessage>
     </validationRules>
+    <webLinks>
+        <fullName>dsfs__Send_with_DocuSign</fullName>
+        <availability>online</availability>
+        <description>This button will initiate a DocuSign Envelope that is linked to the Case</description>
+        <displayType>button</displayType>
+        <height>600</height>
+        <linkType>page</linkType>
+        <masterLabel>Send with DocuSign</masterLabel>
+        <openType>noSidebar</openType>
+        <page>dsfs__CreateEnvelopeFromCase</page>
+        <protected>false</protected>
+    </webLinks>
 </CustomObject>

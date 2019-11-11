@@ -5,7 +5,7 @@
     <fields>
         <fullName>Escalated_Q_Name__c</fullName>
         <defaultValue>&apos;Escalated Queue&apos;</defaultValue>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <label>Escalated Q Name</label>
         <length>20</length>

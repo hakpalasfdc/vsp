@@ -4,7 +4,7 @@
     <enableFeeds>false</enableFeeds>
     <fields>
         <fullName>Consumer_Search_Token_Header__c</fullName>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <label>Consumer Search Token Header</label>
         <length>255</length>
@@ -15,7 +15,7 @@
     </fields>
     <fields>
         <fullName>Consumer_Search_Web_Service__c</fullName>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <label>Consumer Search Web Service</label>
         <length>255</length>

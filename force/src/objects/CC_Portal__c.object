@@ -4,7 +4,7 @@
     <enableFeeds>false</enableFeeds>
     <fields>
         <fullName>Base_URL__c</fullName>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <label>Base URL</label>
         <length>100</length>

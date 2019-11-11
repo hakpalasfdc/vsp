@@ -1,5 +1,100 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>AddCampaign</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>AddToCampaign</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CallHighlightAction</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>EmailHighlightAction</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>EnableCustomerPortal</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>EnablePartnerPortalUser</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>EnableSelfService</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>ListClean</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Merge</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>NewContact</actionName>
+        <content>VSPR5_ContactVFP</content>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Visualforce</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>RequestUpdate</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SmsHighlightAction</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>ViewCustomerPortal</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>ViewPartnerPortalUser</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>ViewSelfService</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
     <compactLayouts>
         <fullName>Contact_Publisher_Layout</fullName>
         <fields>Name</fields>
@@ -12,6 +107,10 @@
         <fields>Status__c</fields>
         <label>Contact Publisher Layout</label>
     </compactLayouts>
+    <enableEnhancedLookup>true</enableEnhancedLookup>
+    <enableFeeds>true</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <externalSharingModel>ControlledByParent</externalSharingModel>
     <fields>
         <fullName>Accommodates_Children_0_3_years__c</fullName>
         <defaultValue>false</defaultValue>
@@ -31,9 +130,16 @@
         <type>Checkbox</type>
     </fields>
     <fields>
+        <fullName>AccountId</fullName>
+        <inlineHelpText>Common Name for Account.</inlineHelpText>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
         <fullName>Account_Vision_Care_Location_Key__c</fullName>
         <description>This field is set from Populate Vision Care Location Key on Contact process builder and used in the workflow VSPR19b_Contact to check when changed</description>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <label>Account Vision Care Location Key</label>
         <length>125</length>
@@ -649,7 +755,7 @@
     <fields>
         <fullName>Adjusted_Subscriber_Coverage_End_Date__c</fullName>
         <description>Adjusted date the Subscriber’s coverage ended with the most recent Group coverage by using the 15/16 rule to calculate a 1st of month termination effective date.</description>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <label>Adjusted Subscriber Coverage End Date</label>
         <required>false</required>
@@ -659,7 +765,7 @@
     </fields>
     <fields>
         <fullName>All_Emails__c</fullName>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>true</externalId>
         <label>All Emails</label>
         <length>255</length>
@@ -694,7 +800,7 @@
     <fields>
         <fullName>Altair_Score__c</fullName>
         <description>The score indicates interaction and profile strength for Altair.</description>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <inlineHelpText>This score indicates interaction and profile strength. Profile strength ranges from A-D with A being the highest. The interaction score ranges from 1-4 with 1 being the highest.</inlineHelpText>
         <label>Altair Score</label>
@@ -707,7 +813,7 @@
     </fields>
     <fields>
         <fullName>As_of_Date__c</fullName>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <label>As of Date</label>
         <required>false</required>
@@ -716,9 +822,26 @@
         <type>Date</type>
     </fields>
     <fields>
+        <fullName>AssistantName</fullName>
+        <encrypted>false</encrypted>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>AssistantPhone</fullName>
+        <encrypted>false</encrypted>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>Birthdate</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
         <fullName>Birthdate__c</fullName>
         <businessStatus>Active</businessStatus>
-        <encryptionScheme>ProbabilisticEncryption</encryptionScheme>
+        <encrypted>true</encrypted>
         <externalId>false</externalId>
         <label>Birthdate</label>
         <required>false</required>
@@ -752,7 +875,7 @@ TRIM( CAQH_ID__c ) +  TRIM( LastName ))</formula>
     </fields>
     <fields>
         <fullName>CAQH_ID__c</fullName>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <label>CAQH ID</label>
         <length>9</length>
@@ -896,7 +1019,7 @@ TRIM( CAQH_ID__c ) +  TRIM( LastName ))</formula>
     <fields>
         <fullName>Campaign_Segment__c</fullName>
         <description>Details which segment of a campaign the Subscriber falls in.</description>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <label>Campaign Segment</label>
         <length>128</length>
@@ -908,7 +1031,7 @@ TRIM( CAQH_ID__c ) +  TRIM( LastName ))</formula>
     </fields>
     <fields>
         <fullName>Client_Exclusion_Reason__c</fullName>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <label>Client Exclusion Reason</label>
         <length>255</length>
@@ -921,7 +1044,7 @@ TRIM( CAQH_ID__c ) +  TRIM( LastName ))</formula>
     <fields>
         <fullName>Client_ID__c</fullName>
         <description>Client ID associated to the Subscriber at the time of the data pull, for the most recent Group coverage.</description>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <label>Client ID</label>
         <length>25</length>
@@ -934,7 +1057,7 @@ TRIM( CAQH_ID__c ) +  TRIM( LastName ))</formula>
     <fields>
         <fullName>Client_Name__c</fullName>
         <description>Client Name associated to the Subscriber from their most recent Group coverage (as displayed in the Client Report Name field from the DW.)</description>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <label>Client Name</label>
         <length>80</length>
@@ -947,7 +1070,7 @@ TRIM( CAQH_ID__c ) +  TRIM( LastName ))</formula>
     <fields>
         <fullName>Client_Product_Type__c</fullName>
         <description>Done=Client Product Type field is displayed on the Consumer Contacts record in the Vision Care information section.</description>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <inlineHelpText>Indicates if the client has a full service product, or not based on the client&apos;s primary product.</inlineHelpText>
         <label>Client Product Type</label>
@@ -961,7 +1084,7 @@ TRIM( CAQH_ID__c ) +  TRIM( LastName ))</formula>
     <fields>
         <fullName>Client_Status__c</fullName>
         <description>The Client’s status with VSP Group coverage as displayed in Siebel, for the client associated with the Subscriber.</description>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <label>Client Status</label>
         <length>64</length>
@@ -974,7 +1097,7 @@ TRIM( CAQH_ID__c ) +  TRIM( LastName ))</formula>
     <fields>
         <fullName>Client_Strategic_Business_Unit__c</fullName>
         <description>The Vision Care Sales Strategic Business Unit responsible for the Client.</description>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <label>Client Strategic Business Unit</label>
         <length>255</length>
@@ -987,7 +1110,7 @@ TRIM( CAQH_ID__c ) +  TRIM( LastName ))</formula>
     <fields>
         <fullName>Client_Termination_Date__c</fullName>
         <description>The date the client was inactivated or terminated in Siebel.</description>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <label>Client Termination Date</label>
         <required>false</required>
@@ -997,7 +1120,7 @@ TRIM( CAQH_ID__c ) +  TRIM( LastName ))</formula>
     </fields>
     <fields>
         <fullName>Comm_Contact_ID__c</fullName>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <label>Comm Contact ID</label>
         <length>30</length>
@@ -1010,7 +1133,7 @@ TRIM( CAQH_ID__c ) +  TRIM( LastName ))</formula>
     <fields>
         <fullName>Committee_Date__c</fullName>
         <description>Committee Date</description>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <inlineHelpText>Vision Care Committee Date</inlineHelpText>
         <label>Committee Date</label>
@@ -1022,7 +1145,7 @@ TRIM( CAQH_ID__c ) +  TRIM( LastName ))</formula>
     <fields>
         <fullName>Committee_Status__c</fullName>
         <description>Committee Status</description>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <inlineHelpText>Vision Care Committee Status</inlineHelpText>
         <label>Committee Status</label>
@@ -1036,7 +1159,7 @@ TRIM( CAQH_ID__c ) +  TRIM( LastName ))</formula>
     <fields>
         <fullName>Committee_Type__c</fullName>
         <description>Committee Type</description>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <inlineHelpText>Vision Care Committee Type</inlineHelpText>
         <label>Committee Type</label>
@@ -1049,7 +1172,7 @@ TRIM( CAQH_ID__c ) +  TRIM( LastName ))</formula>
     </fields>
     <fields>
         <fullName>ConsumerIdLeft4_index__c</fullName>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>true</externalId>
         <label>ConsumerIdLeft4_index</label>
         <length>4</length>
@@ -1061,7 +1184,7 @@ TRIM( CAQH_ID__c ) +  TRIM( LastName ))</formula>
     </fields>
     <fields>
         <fullName>Consumer_ID__c</fullName>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <label>Consumer ID</label>
         <length>15</length>
@@ -1142,7 +1265,7 @@ TRIM( CAQH_ID__c ) +  TRIM( LastName ))</formula>
     </fields>
     <fields>
         <fullName>Contact_Source_Details__c</fullName>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <label>Contact Source Details</label>
         <length>255</length>
@@ -1251,7 +1374,7 @@ TRIM( CAQH_ID__c ) +  TRIM( LastName ))</formula>
     </fields>
     <fields>
         <fullName>DOB_Text__c</fullName>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <label>DOB_Text</label>
         <length>20</length>
@@ -1263,7 +1386,7 @@ TRIM( CAQH_ID__c ) +  TRIM( LastName ))</formula>
     </fields>
     <fields>
         <fullName>Date_of_CMS_Medicare_Application_Submiss__c</fullName>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <inlineHelpText>Applied with the Center for Medicare Services to provide services to the Medicare population</inlineHelpText>
         <label>Date of CMS Application Submission</label>
@@ -1302,6 +1425,96 @@ TRIM( CAQH_ID__c ) +  TRIM( LastName ))</formula>
                 </value>
             </valueSetDefinition>
         </valueSet>
+    </fields>
+    <fields>
+        <fullName>Department</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>Description</fullName>
+        <encrypted>false</encrypted>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>DialSource__DS_Owner_ID__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The record owner&apos;s Salesforce ID. Used in Campaign source reports to distribute the records using the Record Owner Distribution feature</description>
+        <externalId>false</externalId>
+        <formula>OwnerId</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>DS Owner ID</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>DialSource__Datetime_of_Last_Disposition_DS__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Time stamp of when the last Disposition was clicked</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Datetime of Last Disposition</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>DialSource__Last_Call_Campaign_Name__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Name of the Call Campaign the record was last called from</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Last Call Campaign Name</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>DialSource__Last_Disposition_DS__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Name of the last Disposition clicked</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Last Disposition</label>
+        <length>140</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>DialSource__Next_Call_DS__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Datetime field used to set the next call datetime for reference in automation or Reports/List Views</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Next Call</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>DialSource__Total_Call_Count_DS__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Total number of calls made on this record</description>
+        <externalId>false</externalId>
+        <label>Total Call Count</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
     </fields>
     <fields>
         <fullName>Disposition_of_Call__c</fullName>
@@ -1350,7 +1563,7 @@ TRIM( CAQH_ID__c ) +  TRIM( LastName ))</formula>
     </fields>
     <fields>
         <fullName>Division_Id__c</fullName>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <label>Division Id</label>
         <length>10</length>
@@ -1359,6 +1572,11 @@ TRIM( CAQH_ID__c ) +  TRIM( LastName ))</formula>
         <trackHistory>false</trackHistory>
         <type>Text</type>
         <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>DoNotCall</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
     </fields>
     <fields>
         <fullName>Do_Not_Contact_Member_Client_Level__c</fullName>
@@ -1391,7 +1609,7 @@ TRIM( CAQH_ID__c ) +  TRIM( LastName ))</formula>
     </fields>
     <fields>
         <fullName>Doctor_ID__c</fullName>
-        <encryptionScheme>CaseSensitiveDeterministicEncryption</encryptionScheme>
+        <encrypted>true</encrypted>
         <externalId>false</externalId>
         <label>Doctor ID</label>
         <length>9</length>
@@ -1466,7 +1684,7 @@ AND(ISBLANK(Vision_Care_Effective_Date__c),NOT(ISBLANK(Vision_Care_End_Date__c))
     </fields>
     <fields>
         <fullName>Eloqua_Contact_ID__c</fullName>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <label>Eloqua Contact ID</label>
         <length>255</length>
@@ -1478,7 +1696,7 @@ AND(ISBLANK(Vision_Care_Effective_Date__c),NOT(ISBLANK(Vision_Care_End_Date__c))
     </fields>
     <fields>
         <fullName>Eloqua_Contact_Score__c</fullName>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <inlineHelpText>This score indicates interaction and profile strength. Profile strength ranges from A-D with A being the highest. The interaction score ranges from 1-4 with 1 being the highest.</inlineHelpText>
         <label>Eloqua Score</label>
@@ -1490,8 +1708,14 @@ AND(ISBLANK(Vision_Care_Effective_Date__c),NOT(ISBLANK(Vision_Care_End_Date__c))
         <unique>false</unique>
     </fields>
     <fields>
+        <fullName>Email</fullName>
+        <encrypted>true</encrypted>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+    </fields>
+    <fields>
         <fullName>Email_Match_1__c</fullName>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <label>Email Match 1</label>
         <length>255</length>
@@ -1503,7 +1727,7 @@ AND(ISBLANK(Vision_Care_Effective_Date__c),NOT(ISBLANK(Vision_Care_End_Date__c))
     </fields>
     <fields>
         <fullName>Email_Match_2__c</fullName>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <label>Email Match 2</label>
         <length>255</length>
@@ -1559,7 +1783,7 @@ AND(ISBLANK(Vision_Care_Effective_Date__c),NOT(ISBLANK(Vision_Care_End_Date__c))
     </fields>
     <fields>
         <fullName>Expected_Effective_Date__c</fullName>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <label>Expected Effective Date</label>
         <required>false</required>
@@ -1569,7 +1793,7 @@ AND(ISBLANK(Vision_Care_Effective_Date__c),NOT(ISBLANK(Vision_Care_End_Date__c))
     </fields>
     <fields>
         <fullName>Eyeconic_Address_Phone__c</fullName>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <label>Eyeconic Address Phone</label>
         <required>false</required>
@@ -1589,7 +1813,7 @@ AND(ISBLANK(Vision_Care_Effective_Date__c),NOT(ISBLANK(Vision_Care_End_Date__c))
     </fields>
     <fields>
         <fullName>Eyeconic_Benefit_Token_Number__c</fullName>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <label>Eyeconic Benefit Token Number</label>
         <length>255</length>
@@ -1601,7 +1825,7 @@ AND(ISBLANK(Vision_Care_Effective_Date__c),NOT(ISBLANK(Vision_Care_End_Date__c))
     </fields>
     <fields>
         <fullName>Eyeconic_Birthdate__c</fullName>
-        <encryptionScheme>ProbabilisticEncryption</encryptionScheme>
+        <encrypted>true</encrypted>
         <externalId>false</externalId>
         <label>Eyeconic Birthdate</label>
         <required>false</required>
@@ -1611,7 +1835,7 @@ AND(ISBLANK(Vision_Care_Effective_Date__c),NOT(ISBLANK(Vision_Care_End_Date__c))
     </fields>
     <fields>
         <fullName>Eyeconic_Customer_Number__c</fullName>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <label>Eyeconic Customer Number</label>
         <length>255</length>
@@ -1623,7 +1847,7 @@ AND(ISBLANK(Vision_Care_Effective_Date__c),NOT(ISBLANK(Vision_Care_End_Date__c))
     </fields>
     <fields>
         <fullName>Eyeconic_Email__c</fullName>
-        <encryptionScheme>CaseSensitiveDeterministicEncryption</encryptionScheme>
+        <encrypted>true</encrypted>
         <externalId>false</externalId>
         <label>Eyeconic Email</label>
         <required>false</required>
@@ -1634,7 +1858,7 @@ AND(ISBLANK(Vision_Care_Effective_Date__c),NOT(ISBLANK(Vision_Care_End_Date__c))
     </fields>
     <fields>
         <fullName>Eyeconic_First_Name__c</fullName>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <label>Eyeconic First Name</label>
         <length>255</length>
@@ -1646,7 +1870,7 @@ AND(ISBLANK(Vision_Care_Effective_Date__c),NOT(ISBLANK(Vision_Care_End_Date__c))
     </fields>
     <fields>
         <fullName>Eyeconic_Last_Name__c</fullName>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <label>Eyeconic Last Name</label>
         <length>255</length>
@@ -1658,7 +1882,7 @@ AND(ISBLANK(Vision_Care_Effective_Date__c),NOT(ISBLANK(Vision_Care_End_Date__c))
     </fields>
     <fields>
         <fullName>Eyeconic_Login_Email__c</fullName>
-        <encryptionScheme>CaseSensitiveDeterministicEncryption</encryptionScheme>
+        <encrypted>true</encrypted>
         <externalId>false</externalId>
         <label>Eyeconic Login Email</label>
         <required>false</required>
@@ -1669,7 +1893,7 @@ AND(ISBLANK(Vision_Care_Effective_Date__c),NOT(ISBLANK(Vision_Care_End_Date__c))
     </fields>
     <fields>
         <fullName>Eyeconic_Primary_Phone__c</fullName>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <label>Eyeconic Primary Phone</label>
         <required>false</required>
@@ -1679,7 +1903,7 @@ AND(ISBLANK(Vision_Care_Effective_Date__c),NOT(ISBLANK(Vision_Care_End_Date__c))
     </fields>
     <fields>
         <fullName>Eyeconic_Recent_Order_Number__c</fullName>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>true</externalId>
         <label>Eyeconic Recent Order Number</label>
         <length>25</length>
@@ -1723,7 +1947,7 @@ AND(ISBLANK(Vision_Care_Effective_Date__c),NOT(ISBLANK(Vision_Care_End_Date__c))
     <fields>
         <fullName>Eyefinity_Score__c</fullName>
         <description>The score indicates interaction and profile strength for Eyefinity.</description>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <inlineHelpText>This score indicates interaction and profile strength. Profile strength ranges from A-D with A being the highest. The interaction score ranges from 1-4 with 1 being the highest.</inlineHelpText>
         <label>Eyefinity Score</label>
@@ -1800,6 +2024,12 @@ AND(ISBLANK(Vision_Care_Effective_Date__c),NOT(ISBLANK(Vision_Care_End_Date__c))
         </valueSet>
     </fields>
     <fields>
+        <fullName>Fax</fullName>
+        <encrypted>false</encrypted>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
         <fullName>Gender__c</fullName>
         <description>Gender of the Vision Care Doctor.</description>
         <externalId>false</externalId>
@@ -1837,6 +2067,16 @@ AND(ISBLANK(Vision_Care_Effective_Date__c),NOT(ISBLANK(Vision_Care_End_Date__c))
         <type>Checkbox</type>
     </fields>
     <fields>
+        <fullName>HasOptedOutOfEmail</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>HasOptedOutOfFax</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
         <fullName>High_Profile_Count__c</fullName>
         <externalId>false</externalId>
         <formula>IF( High_Profile__c , 1, 0)</formula>
@@ -1858,6 +2098,12 @@ AND(ISBLANK(Vision_Care_Effective_Date__c),NOT(ISBLANK(Vision_Care_End_Date__c))
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>HomePhone</fullName>
+        <encrypted>false</encrypted>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
     </fields>
     <fields>
         <fullName>IP_Behavioral_Score__c</fullName>
@@ -1909,13 +2155,19 @@ AND(ISBLANK(Vision_Care_Effective_Date__c),NOT(ISBLANK(Vision_Care_End_Date__c))
     </fields>
     <fields>
         <fullName>IP_Purchase_Date__c</fullName>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <label>IP Purchase Date</label>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>IndividualId</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
     </fields>
     <fields>
         <fullName>Interested_in_Volunteering_for__c</fullName>
@@ -1989,8 +2241,19 @@ AND(ISBLANK(Vision_Care_Effective_Date__c),NOT(ISBLANK(Vision_Care_End_Date__c))
         <type>Checkbox</type>
     </fields>
     <fields>
+        <fullName>Jigsaw</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>LastCURequestDate</fullName>
+    </fields>
+    <fields>
+        <fullName>LastCUUpdateDate</fullName>
+    </fields>
+    <fields>
         <fullName>Last_Contact_Lens_Date__c</fullName>
-        <encryptionScheme>ProbabilisticEncryption</encryptionScheme>
+        <encrypted>true</encrypted>
         <externalId>false</externalId>
         <inlineHelpText>Indicates the date of the last claim for contact lenses.</inlineHelpText>
         <label>Last Contact Lens Date</label>
@@ -2002,7 +2265,7 @@ AND(ISBLANK(Vision_Care_Effective_Date__c),NOT(ISBLANK(Vision_Care_End_Date__c))
     <fields>
         <fullName>Last_Contact_Lens_Network__c</fullName>
         <description>Last Contact Lens Network field is displayed on the Consumer Contacts record in the Vision Care information section.</description>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <label>Last Contact Lens Network</label>
         <length>255</length>
@@ -2015,7 +2278,7 @@ AND(ISBLANK(Vision_Care_Effective_Date__c),NOT(ISBLANK(Vision_Care_End_Date__c))
     <fields>
         <fullName>Last_Exam_Date__c</fullName>
         <description>The last exam date the Subscriber had with the Client at the time of the data pull.</description>
-        <encryptionScheme>ProbabilisticEncryption</encryptionScheme>
+        <encrypted>true</encrypted>
         <externalId>false</externalId>
         <label>Last Exam Date</label>
         <required>false</required>
@@ -2026,7 +2289,7 @@ AND(ISBLANK(Vision_Care_Effective_Date__c),NOT(ISBLANK(Vision_Care_End_Date__c))
     <fields>
         <fullName>Last_Exam_Network__c</fullName>
         <description>Indicates if the Subscriber’s exam claim was in or out of network.</description>
-        <encryptionScheme>ProbabilisticEncryption</encryptionScheme>
+        <encrypted>true</encrypted>
         <externalId>false</externalId>
         <label>Last Exam Network</label>
         <length>128</length>
@@ -2039,7 +2302,7 @@ AND(ISBLANK(Vision_Care_Effective_Date__c),NOT(ISBLANK(Vision_Care_End_Date__c))
     <fields>
         <fullName>Last_Glasses_Date__c</fullName>
         <description>Done=Last Glasses Date field is displayed on the Consumer Contacts record in the Vision Care information section.</description>
-        <encryptionScheme>ProbabilisticEncryption</encryptionScheme>
+        <encrypted>true</encrypted>
         <externalId>false</externalId>
         <inlineHelpText>Indicates the date of the last claim for glasses (L, F, or LF).</inlineHelpText>
         <label>Last Glasses Date</label>
@@ -2051,7 +2314,7 @@ AND(ISBLANK(Vision_Care_Effective_Date__c),NOT(ISBLANK(Vision_Care_End_Date__c))
     <fields>
         <fullName>Last_Glasses_Network__c</fullName>
         <description>Done=Last Glasses Network field is displayed on the Consumer Contacts record in the Vision Care information section.</description>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <label>Last Glasses Network</label>
         <length>255</length>
@@ -2064,13 +2327,20 @@ AND(ISBLANK(Vision_Care_Effective_Date__c),NOT(ISBLANK(Vision_Care_End_Date__c))
     <fields>
         <fullName>Last_Survey_Sent__c</fullName>
         <description>Hidden field to help prevent duplicate surveys.</description>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <label>Last Survey Sent</label>
         <required>false</required>
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>LeadSource</fullName>
+        <inlineHelpText>The source of the Contact coming from a converted Lead.</inlineHelpText>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
     </fields>
     <fields>
         <fullName>Lead_Source_Most_Recent__c</fullName>
@@ -2122,6 +2392,12 @@ AND(ISBLANK(Vision_Care_Effective_Date__c),NOT(ISBLANK(Vision_Care_End_Date__c))
         </valueSet>
     </fields>
     <fields>
+        <fullName>MailingAddress</fullName>
+        <encrypted>true</encrypted>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+    </fields>
+    <fields>
         <fullName>Marchon_Marketing_Communications__c</fullName>
         <defaultValue>false</defaultValue>
         <description>Contact wants to opt-out of Marchon&apos;s marketing communications.</description>
@@ -2146,7 +2422,7 @@ AND(ISBLANK(Vision_Care_Effective_Date__c),NOT(ISBLANK(Vision_Care_End_Date__c))
     <fields>
         <fullName>Marchon_Score__c</fullName>
         <description>The score indicates interaction and profile strength for Marchon.</description>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <inlineHelpText>This score indicates interaction and profile strength. Profile strength ranges from A-D with A being the highest. The interaction score ranges from 1-4 with 1 being the highest.</inlineHelpText>
         <label>Marchon Score</label>
@@ -2159,7 +2435,7 @@ AND(ISBLANK(Vision_Care_Effective_Date__c),NOT(ISBLANK(Vision_Care_End_Date__c))
     </fields>
     <fields>
         <fullName>Marketing_Name__c</fullName>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <inlineHelpText>The contact&apos;s name used for Marketing Campaigns.</inlineHelpText>
         <label>Marketing Name</label>
@@ -2172,7 +2448,7 @@ AND(ISBLANK(Vision_Care_Effective_Date__c),NOT(ISBLANK(Vision_Care_End_Date__c))
     </fields>
     <fields>
         <fullName>Medicare_ID_Number__c</fullName>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <label>Medicare ID Number</label>
         <length>128</length>
@@ -2184,7 +2460,7 @@ AND(ISBLANK(Vision_Care_Effective_Date__c),NOT(ISBLANK(Vision_Care_End_Date__c))
     </fields>
     <fields>
         <fullName>Member_Id__c</fullName>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <label>Member Id</label>
         <length>10</length>
@@ -2221,7 +2497,7 @@ AND(ISBLANK(Vision_Care_Effective_Date__c),NOT(ISBLANK(Vision_Care_End_Date__c))
     </fields>
     <fields>
         <fullName>Middle_Initial__c</fullName>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <label>Middle Initial</label>
         <length>1</length>
@@ -2230,6 +2506,12 @@ AND(ISBLANK(Vision_Care_Effective_Date__c),NOT(ISBLANK(Vision_Care_End_Date__c))
         <trackHistory>false</trackHistory>
         <type>Text</type>
         <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>MobilePhone</fullName>
+        <encrypted>false</encrypted>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
     </fields>
     <fields>
         <fullName>Months_Since_Last_Exam__c</fullName>
@@ -2245,7 +2527,7 @@ AND(ISBLANK(Vision_Care_Effective_Date__c),NOT(ISBLANK(Vision_Care_End_Date__c))
     </fields>
     <fields>
         <fullName>NDA_Sign_Date__c</fullName>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <label>NDA Sign Date</label>
         <required>false</required>
@@ -2256,7 +2538,7 @@ AND(ISBLANK(Vision_Care_Effective_Date__c),NOT(ISBLANK(Vision_Care_End_Date__c))
     <fields>
         <fullName>NPI__c</fullName>
         <description>National Provider Indicator for a Vision Care Doctor.</description>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <inlineHelpText>National Provider Indicator for a Vision Care Doctor.</inlineHelpText>
         <label>NPI</label>
@@ -2268,8 +2550,14 @@ AND(ISBLANK(Vision_Care_Effective_Date__c),NOT(ISBLANK(Vision_Care_End_Date__c))
         <unique>false</unique>
     </fields>
     <fields>
+        <fullName>Name</fullName>
+        <encrypted>false</encrypted>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+    </fields>
+    <fields>
         <fullName>New_Email_Address_Added__c</fullName>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <label>New Email Address Added</label>
         <required>false</required>
@@ -2279,7 +2567,7 @@ AND(ISBLANK(Vision_Care_Effective_Date__c),NOT(ISBLANK(Vision_Care_End_Date__c))
     </fields>
     <fields>
         <fullName>Next_Recred_Date__c</fullName>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <label>Next Recred Date</label>
         <required>false</required>
@@ -2336,7 +2624,7 @@ AND(ISBLANK(Vision_Care_Effective_Date__c),NOT(ISBLANK(Vision_Care_End_Date__c))
     </fields>
     <fields>
         <fullName>Offered_IP_Opportunity__c</fullName>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <label>Offered IP Opportunity</label>
         <required>false</required>
@@ -2369,7 +2657,7 @@ AND(ISBLANK(Vision_Care_Effective_Date__c),NOT(ISBLANK(Vision_Care_End_Date__c))
     <fields>
         <fullName>Optics_Score__c</fullName>
         <description>The score indicates interaction and profile strength for Optics.</description>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <inlineHelpText>This score indicates interaction and profile strength. Profile strength ranges from A-D with A being the highest. The interaction score ranges from 1-4 with 1 being the highest.</inlineHelpText>
         <label>Optics Score</label>
@@ -2381,8 +2669,20 @@ AND(ISBLANK(Vision_Care_Effective_Date__c),NOT(ISBLANK(Vision_Care_End_Date__c))
         <unique>false</unique>
     </fields>
     <fields>
+        <fullName>OtherAddress</fullName>
+        <encrypted>false</encrypted>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>OtherPhone</fullName>
+        <encrypted>false</encrypted>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
         <fullName>Other_Email__c</fullName>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <inlineHelpText>The contacts other email address.</inlineHelpText>
         <label>Other Email</label>
@@ -2393,8 +2693,14 @@ AND(ISBLANK(Vision_Care_Effective_Date__c),NOT(ISBLANK(Vision_Care_End_Date__c))
         <unique>false</unique>
     </fields>
     <fields>
+        <fullName>OwnerId</fullName>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
         <fullName>Persona__c</fullName>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <label>Persona</label>
         <length>50</length>
@@ -2407,7 +2713,7 @@ AND(ISBLANK(Vision_Care_Effective_Date__c),NOT(ISBLANK(Vision_Care_End_Date__c))
     <fields>
         <fullName>Personal_Email__c</fullName>
         <description>The contacts email address.</description>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <inlineHelpText>The contacts email address.</inlineHelpText>
         <label>Personal Email</label>
@@ -2418,9 +2724,15 @@ AND(ISBLANK(Vision_Care_Effective_Date__c),NOT(ISBLANK(Vision_Care_End_Date__c))
         <unique>false</unique>
     </fields>
     <fields>
+        <fullName>Phone</fullName>
+        <encrypted>false</encrypted>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+    </fields>
+    <fields>
         <fullName>Phone_Extension__c</fullName>
         <description>Extension of the contact phone number.</description>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <inlineHelpText>Extension of the contact phone number.</inlineHelpText>
         <label>Phone Extension</label>
@@ -2433,7 +2745,7 @@ AND(ISBLANK(Vision_Care_Effective_Date__c),NOT(ISBLANK(Vision_Care_End_Date__c))
     </fields>
     <fields>
         <fullName>Policy_Id__c</fullName>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <label>Policy Id</label>
         <length>10</length>
@@ -2476,7 +2788,7 @@ AND(ISBLANK(Vision_Care_Effective_Date__c),NOT(ISBLANK(Vision_Care_End_Date__c))
     </fields>
     <fields>
         <fullName>Previous_Doctor_ID_1__c</fullName>
-        <encryptionScheme>CaseSensitiveDeterministicEncryption</encryptionScheme>
+        <encrypted>true</encrypted>
         <externalId>false</externalId>
         <label>Previous Doctor ID 1</label>
         <length>9</length>
@@ -2488,7 +2800,7 @@ AND(ISBLANK(Vision_Care_Effective_Date__c),NOT(ISBLANK(Vision_Care_End_Date__c))
     </fields>
     <fields>
         <fullName>Previous_Doctor_ID_2__c</fullName>
-        <encryptionScheme>CaseSensitiveDeterministicEncryption</encryptionScheme>
+        <encrypted>true</encrypted>
         <externalId>false</externalId>
         <label>Previous Doctor ID 2</label>
         <length>9</length>
@@ -2500,7 +2812,7 @@ AND(ISBLANK(Vision_Care_Effective_Date__c),NOT(ISBLANK(Vision_Care_End_Date__c))
     </fields>
     <fields>
         <fullName>Previous_Effective_Date_1__c</fullName>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <label>Previous Effective Date 1</label>
         <required>false</required>
@@ -2510,7 +2822,7 @@ AND(ISBLANK(Vision_Care_Effective_Date__c),NOT(ISBLANK(Vision_Care_End_Date__c))
     </fields>
     <fields>
         <fullName>Previous_Effective_Date_2__c</fullName>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <label>Previous Effective Date 2</label>
         <required>false</required>
@@ -2520,7 +2832,7 @@ AND(ISBLANK(Vision_Care_Effective_Date__c),NOT(ISBLANK(Vision_Care_End_Date__c))
     </fields>
     <fields>
         <fullName>Previous_End_Date_1__c</fullName>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <label>Previous End Date 1</label>
         <required>false</required>
@@ -2530,7 +2842,7 @@ AND(ISBLANK(Vision_Care_Effective_Date__c),NOT(ISBLANK(Vision_Care_End_Date__c))
     </fields>
     <fields>
         <fullName>Previous_End_Date_2__c</fullName>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <label>Previous End Date 2</label>
         <required>false</required>
@@ -2540,7 +2852,7 @@ AND(ISBLANK(Vision_Care_Effective_Date__c),NOT(ISBLANK(Vision_Care_End_Date__c))
     </fields>
     <fields>
         <fullName>Purchase_Channel__c</fullName>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <label>Purchase Channel</label>
         <length>50</length>
@@ -2614,6 +2926,12 @@ AND(ISBLANK(Vision_Care_Effective_Date__c),NOT(ISBLANK(Vision_Care_End_Date__c))
         <trackFeedHistory>false</trackFeedHistory>
         <trackHistory>false</trackHistory>
         <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>ReportsToId</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
     </fields>
     <fields>
         <fullName>Salesforce_ID__c</fullName>
@@ -2705,7 +3023,7 @@ AND(ISBLANK(Vision_Care_Effective_Date__c),NOT(ISBLANK(Vision_Care_End_Date__c))
     </fields>
     <fields>
         <fullName>Specialty_Board_Award_Date__c</fullName>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <label>Specialty Board Award Date</label>
         <required>false</required>
@@ -2715,7 +3033,7 @@ AND(ISBLANK(Vision_Care_Effective_Date__c),NOT(ISBLANK(Vision_Care_End_Date__c))
     </fields>
     <fields>
         <fullName>Specialty_Board_Expiration_Date__c</fullName>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <label>Specialty Board Expiration Date</label>
         <required>false</required>
@@ -2818,7 +3136,7 @@ AND(ISBLANK(Vision_Care_Effective_Date__c),NOT(ISBLANK(Vision_Care_End_Date__c))
     <fields>
         <fullName>Subscriber_Coverage_End_Date__c</fullName>
         <description>Actual date the Subscriber’s coverage ended (through midnight) with the most recent Group coverage; might be a mid-month date.</description>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <label>Subscriber Coverage End Date</label>
         <required>false</required>
@@ -2828,7 +3146,7 @@ AND(ISBLANK(Vision_Care_Effective_Date__c),NOT(ISBLANK(Vision_Care_End_Date__c))
     </fields>
     <fields>
         <fullName>Subscriber_Status__c</fullName>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <label>Subscriber Status</label>
         <length>64</length>
@@ -2837,6 +3155,12 @@ AND(ISBLANK(Vision_Care_Effective_Date__c),NOT(ISBLANK(Vision_Care_End_Date__c))
         <trackHistory>false</trackHistory>
         <type>Text</type>
         <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Title</fullName>
+        <encrypted>false</encrypted>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
     </fields>
     <fields>
         <fullName>UPS_Return_Label__c</fullName>
@@ -3020,7 +3344,7 @@ AND(ISBLANK(Vision_Care_Effective_Date__c),NOT(ISBLANK(Vision_Care_End_Date__c))
     </fields>
     <fields>
         <fullName>Vision_Care_Effective_Date__c</fullName>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <label>Vision Care Effective Date</label>
         <required>false</required>
@@ -3030,7 +3354,7 @@ AND(ISBLANK(Vision_Care_Effective_Date__c),NOT(ISBLANK(Vision_Care_End_Date__c))
     </fields>
     <fields>
         <fullName>Vision_Care_End_Date__c</fullName>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <label>Vision Care End Date</label>
         <required>false</required>
@@ -3146,7 +3470,7 @@ AND(ISBLANK(Vision_Care_Effective_Date__c),NOT(ISBLANK(Vision_Care_End_Date__c))
     </fields>
     <fields>
         <fullName>Vision_Care_Relationship_Type_s__c</fullName>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <inlineHelpText>Based on Active Location Relationships</inlineHelpText>
         <label>Vision Care Relationship Type(s)</label>
@@ -3160,7 +3484,7 @@ AND(ISBLANK(Vision_Care_Effective_Date__c),NOT(ISBLANK(Vision_Care_End_Date__c))
     <fields>
         <fullName>Vision_Care_Score__c</fullName>
         <description>The score indicates interaction and profile strength for Vision Care.</description>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <inlineHelpText>This score indicates interaction and profile strength. Profile strength ranges from A-D with A being the highest. The interaction score ranges from 1-4 with 1 being the highest.</inlineHelpText>
         <label>Vision Care Score</label>
@@ -3200,8 +3524,66 @@ AND(ISBLANK(Vision_Care_Effective_Date__c),NOT(ISBLANK(Vision_Care_End_Date__c))
         <type>Lookup</type>
     </fields>
     <fields>
+        <fullName>qualtrics__Informed_Consent_Date__c</fullName>
+        <deprecated>false</deprecated>
+        <description>This date is populated when a contact grants Informed Consent via Qualtrics Informed Consent Quick Start Survey</description>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Informed Consent Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>qualtrics__Informed_Consent__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>This is populated as a result of the Qualtrics Informed Consent Quick Start Survey</description>
+        <externalId>false</externalId>
+        <label>Informed Consent</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>qualtrics__Last_Survey_Invitation__c</fullName>
+        <deprecated>false</deprecated>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Last Survey Invitation</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>qualtrics__Last_Survey_Response__c</fullName>
+        <deprecated>false</deprecated>
+        <encrypted>false</encrypted>
+        <externalId>false</externalId>
+        <label>Last Survey Response</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>qualtrics__Net_Promoter_Score__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Net Promoter Score</label>
+        <precision>2</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
         <fullName>sfxId__c</fullName>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>true</externalId>
         <label>sfxId</label>
         <length>18</length>
@@ -3309,6 +3691,8 @@ AND(ISBLANK(Vision_Care_Effective_Date__c),NOT(ISBLANK(Vision_Care_End_Date__c))
         </filters>
         <label>New This Week</label>
     </listViews>
+    <recordTypeTrackFeedHistory>false</recordTypeTrackFeedHistory>
+    <recordTypeTrackHistory>false</recordTypeTrackHistory>
     <recordTypes>
         <fullName>Client</fullName>
         <active>true</active>
@@ -5809,6 +6193,40 @@ AND(ISBLANK(Vision_Care_Effective_Date__c),NOT(ISBLANK(Vision_Care_End_Date__c))
             </values>
         </picklistValues>
     </recordTypes>
+    <searchLayouts>
+        <customTabListAdditionalFields>FULL_NAME</customTabListAdditionalFields>
+        <customTabListAdditionalFields>ACCOUNT.NAME</customTabListAdditionalFields>
+        <customTabListAdditionalFields>CONTACT.PHONE1</customTabListAdditionalFields>
+        <customTabListAdditionalFields>CONTACT.EMAIL</customTabListAdditionalFields>
+        <customTabListAdditionalFields>CORE.USERS.ALIAS</customTabListAdditionalFields>
+        <listViewButtons>Eyeconic_New_Contact_and_Case</listViewButtons>
+        <lookupDialogsAdditionalFields>FULL_NAME</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>ACCOUNT.NAME</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>CONTACT.PHONE1</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>CONTACT.EMAIL</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>CORE.USERS.ALIAS</lookupDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>FULL_NAME</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>ACCOUNT.NAME</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>ACCOUNT.SITE</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>CONTACT.PHONE1</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>CONTACT.PHONE3</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>CONTACT.PHONE4</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>CONTACT.PHONE5</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>CONTACT.PHONE6</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>Eyeconic_Address_Phone__c</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>Eyeconic_Primary_Phone__c</lookupPhoneDialogsAdditionalFields>
+        <searchResultsAdditionalFields>FULL_NAME</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>ACCOUNT.NAME</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>CONTACT.PHONE1</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>CONTACT.EMAIL</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>VC__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Consumer_ID__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Other_Email__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>CONTACT.ADDRESS2_STREET</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>CONTACT.ADDRESS2_CITY</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>CONTACT.ADDRESS2_STATE</searchResultsAdditionalFields>
+    </searchLayouts>
+    <sharingModel>ControlledByParent</sharingModel>
     <validationRules>
         <fullName>VSPR16_NPI_Type1_Check</fullName>
         <active>true</active>
@@ -6247,6 +6665,53 @@ Bypass_VC_Validation_Rules__c = false</errorConditionFormula>
         <errorMessage>You cannot enter a Vision Care End Date without a Vision Care Effective Date.</errorMessage>
     </validationRules>
     <webLinks>
+        <fullName>CLS4SF__Email_Pitch</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <hasMenubar>false</hasMenubar>
+        <hasScrollbars>true</hasScrollbars>
+        <hasToolbar>false</hasToolbar>
+        <height>600</height>
+        <isResizable>true</isResizable>
+        <linkType>page</linkType>
+        <masterLabel>(Deprecated)ClearSlide Email</masterLabel>
+        <openType>newWindow</openType>
+        <page>CLS4SF__EmailPitchContactDetail</page>
+        <position>none</position>
+        <protected>false</protected>
+        <showsLocation>false</showsLocation>
+        <showsStatus>false</showsStatus>
+    </webLinks>
+    <webLinks>
+        <fullName>CLS4SF__Email_Pitch_List</fullName>
+        <availability>online</availability>
+        <displayType>massActionButton</displayType>
+        <linkType>page</linkType>
+        <masterLabel>Compose ClearSlide Email</masterLabel>
+        <openType>replace</openType>
+        <page>CLS4SF__EmailPitchContactList</page>
+        <protected>false</protected>
+        <requireRowSelection>true</requireRowSelection>
+    </webLinks>
+    <webLinks>
+        <fullName>CLS4SF__Live_Pitch</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <hasMenubar>false</hasMenubar>
+        <hasScrollbars>true</hasScrollbars>
+        <hasToolbar>false</hasToolbar>
+        <height>600</height>
+        <isResizable>true</isResizable>
+        <linkType>page</linkType>
+        <masterLabel>(Deprecated)ClearSlide Meeting</masterLabel>
+        <openType>newWindow</openType>
+        <page>CLS4SF__LivePitchContactDetail</page>
+        <position>none</position>
+        <protected>false</protected>
+        <showsLocation>false</showsLocation>
+        <showsStatus>false</showsStatus>
+    </webLinks>
+    <webLinks>
         <fullName>ContactActivityOverview</fullName>
         <availability>online</availability>
         <displayType>link</displayType>
@@ -6264,6 +6729,72 @@ Bypass_VC_Validation_Rules__c = false</errorConditionFormula>
         <showsLocation>false</showsLocation>
         <showsStatus>false</showsStatus>
         <url>https://login.eloqua.com/cvp?LoginPrefix=VPR2&amp;Username=SFDC.Integration&amp;Password=999645ce-a4ad-472d-9255-59602b503e98%2c90D4DAE7AE1378919BB027306496565B43DC03CC77447F9E068E4DAD8A37B6EC66F9DD4C532C20C815997B9DD321EACBB9CAFDCC3524ECAB54086C8DC2F801A8&amp;Url=FlexReports%2fDisplayReport2.aspx%3fStandardReportID%3d1297%2526EmailAddress%3d%7b!Contact_Email%7d%2526ShowPrintOption%3dTrue</url>
+    </webLinks>
+    <webLinks>
+        <fullName>DialSource__DS_InstaQueue</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>DS InstaQueue</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <url>{!REQUIRESCRIPT(&quot;/soap/ajax/22.0/connection.js&quot;)}
+{!REQUIRESCRIPT(&quot;/soap/ajax/22.0/apex.js&quot;)}
+var sid = &quot;{!JSENCODE($Api.Session_ID)}&quot;; 
+var loc = &quot;{!JSENCODE($Api.Partner_Server_URL_80)}&quot;; 
+var aid = &quot;{!JSENCODE($Organization.Id)}&quot;; 
+var uid = &quot;{!JSENCODE($User.Id)}&quot;; 
+var phone = &quot;{!JSENCODE(Contact.Phone)}&quot;; 
+var name = &quot;{!JSENCODE(Contact.Name)}&quot;; 
+var oid = &quot;{!JSENCODE(Contact.Id)}&quot;; 
+
+if({!$User.DialSource__DialSource_Development_Mode__c} == true) { 
+var url = &apos;https://websocket-dev-andrew.dialsource.com:8000/addToQueue?aid=&apos;+aid+&apos;&amp;uid=&apos;+uid+&apos;&amp;object_id=&apos;+oid; 
+
+} 
+else { 
+
+var url = &apos;https://ws.dialsource.com:8000/addToQueue?aid=&apos;+aid+&apos;&amp;uid=&apos;+uid+&apos;&amp;object_id=&apos;+oid; 
+} 
+console.log(url); 
+
+var result = sforce.apex.execute(&quot;DialSource.addToQueue&quot;,&quot;httpPOSTrecord&quot;, 
+{urlParams : url, phone : phone, name: name}); 
+
+//window.alert(&apos;Record successfully queued&apos;);</url>
+    </webLinks>
+    <webLinks>
+        <fullName>DialSource__DS_InstaQueue_List</fullName>
+        <availability>online</availability>
+        <displayType>massActionButton</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>DS InstaQueue List</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <requireRowSelection>true</requireRowSelection>
+        <url>{!REQUIRESCRIPT(&quot;/soap/ajax/22.0/connection.js&quot;)}
+{!REQUIRESCRIPT(&quot;/soap/ajax/22.0/apex.js&quot;)}
+var records = {!GETRECORDIDS($ObjectType.Contact)}; 
+var aid = &quot;{!JSENCODE($Organization.Id)}&quot;; 
+var uid = &quot;{!JSENCODE($User.Id)}&quot;; 
+var phoneField = &quot;Phone&quot;; 
+var list = records.join(); 
+var type = &quot;Contact&quot;; 
+var nameField = &quot;Name&quot;; 
+
+if (records[0] == null) { 
+alert(&quot;Please select at least one Contact to submit.&quot;); 
+} 
+else{ 
+
+var result = sforce.apex.execute(&quot;DialSource.addToQueue&quot;,&quot;httpPOSTlist&quot;, 
+{phoneField : phoneField, nameField : nameField, recordIDs : list, objectType : type, uid : uid, aid : aid}); 
+//window.alert(&apos;Records successfully queued&apos;); 
+} 
+
+if(result !=&quot;&quot;){ 
+alert(&quot;Records Not Added to Queue: \n&quot; + result); 
+}</url>
     </webLinks>
     <webLinks>
         <fullName>EmailUnsubscribe</fullName>
@@ -6422,5 +6953,39 @@ Bypass_VC_Validation_Rules__c = false</errorConditionFormula>
         <showsLocation>false</showsLocation>
         <showsStatus>false</showsStatus>
         <url>http://weather.yahoo.com/search/weather2?p={!Contact_MailingPostalCode}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>cnx__CallToPhoneButton</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>obsolete</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <url>return true;</url>
+    </webLinks>
+    <webLinks>
+        <fullName>dsfs__Send_with_DocuSign</fullName>
+        <availability>online</availability>
+        <description>This button will initiate a DocuSign Envelope that is linked to the Contact</description>
+        <displayType>button</displayType>
+        <height>600</height>
+        <linkType>page</linkType>
+        <masterLabel>Send with DocuSign</masterLabel>
+        <openType>noSidebar</openType>
+        <page>dsfs__CreateEnvelopeFromContact</page>
+        <protected>false</protected>
+    </webLinks>
+    <webLinks>
+        <fullName>qualtrics__Send_Qualtrics_Survey</fullName>
+        <availability>online</availability>
+        <displayType>massActionButton</displayType>
+        <height>600</height>
+        <linkType>page</linkType>
+        <masterLabel>Send Qualtrics Survey</masterLabel>
+        <openType>noSidebar</openType>
+        <page>qualtrics__ContactListSendSurvey</page>
+        <protected>false</protected>
+        <requireRowSelection>true</requireRowSelection>
     </webLinks>
 </CustomObject>

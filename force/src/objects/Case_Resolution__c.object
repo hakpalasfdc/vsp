@@ -4,7 +4,7 @@
     <enableFeeds>false</enableFeeds>
     <fields>
         <fullName>Reason_for_Contact__c</fullName>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <label>Reason for Contact</label>
         <length>40</length>
@@ -15,7 +15,7 @@
     </fields>
     <fields>
         <fullName>Resolution_of_Contact__c</fullName>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <label>Resolution of Contact</label>
         <length>100</length>
@@ -26,7 +26,7 @@
     </fields>
     <fields>
         <fullName>Topic__c</fullName>
-        <encryptionScheme>None</encryptionScheme>
+        <encrypted>false</encrypted>
         <externalId>false</externalId>
         <label>Topic</label>
         <length>40</length>
